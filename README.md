@@ -72,6 +72,8 @@
 
 >*Francisco Greco: Tengo 26 años de edad, vivo en Argentina, Córdoba, Córdoba. Estoy en proceso del cursado de web developer y este es mi primer proyecto.  Cuento con título universitario de contador publico y me encuentro trabajando en mi empresa familiar llamada Marmoles Suquia perteneciente al rubro de la industra de la piedra y también pertenezco al emprendimiento de la marca Suquia Home sobre el cual se basa este proyecto
 
+>* Mauricho Chocholacek: Tengo 24 años, soy de Neuquén Capital. Soy técnico óptico y trabajo en una óptica. Cuento con unos años de estudio en licenciatura en ciencias de la computacion la cual deje luego de 2 años para poder ayudar en la óptica pero nuevamente volvió el interés por la programación, lo cual tengo pensado en un futuro poder trabajar ya que es algo que me gusta mucho y tiene una posibilidad inmensa de proyecto para realizar.
+
 
 ## Paginas de referencia de este proyecto
 > [Restoration Hardware](https://rh.com/): Tomaremos de referencia este diseño de página para la *estructura* HTML para la página de **inicio** y el *formato* de la **tipografía**
