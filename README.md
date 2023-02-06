@@ -60,12 +60,12 @@
 
 
 ## Nombre y origen empresa: 
-> Suquia Home: es un emprendimiento familiar llevado a cabo por tres hermanos que nace a partir de una empresa perteneciente al rubro de la industria de la piedra tales como el **mármol**, el **granito**, **cuarcitas** y otros materiales mas innovadores como el **neolith**, **purastone** y **dekton**, siendo estos últimos ideales para encimeras de cocina por su resistencia a las manchas, rayado y a las altas temperaturas. Es por ello que el toque especial de la marca Suquia Home es la ventas de productos involucrando estos materiales de la industra de la piedra
+> Suquia Home: Es un emprendimiento familiar llevado a cabo por tres hermanos que nace a partir de una empresa perteneciente al rubro de la industria de la piedra tales como el **mármol**, el **granito**, **cuarcitas** y otros materiales mas innovadores como el **neolith**, **purastone** y **dekton**, siendo estos últimos ideales para encimeras de cocina por su resistencia a las manchas, rayado y a las altas temperaturas. Es por ello que el toque especial de la marca Suquia Home es la ventas de productos involucrando estos materiales de la industra de la piedra
 
 
-## Publico Objetivo
+## Público Objetivo
 
->El cliente potencial de esta marca de decoración es aquel que esta interesado en realizar remodelaciones en su hogar o esta amoblando y decorando su casa desde un inicio. Dirigido a toda persona entre los 20 y 50 años aprox que vive en Argentina (ya que Suquia Home cuenta con logística a nivel nacional )y son personas con una edad entre el rango de 25 y 50 años aprox
+>El cliente potencial de esta marca de decoración es aquel que esta interesado en realizar remodelaciones en su hogar o esta amoblando y decorando su casa desde un inicio. Dirigido a toda persona entre los 20 y 50 años aprox que vive en Argentina (ya que Suquia Home cuenta con logística a nivel nacional ) y son personas con una edad entre el rango de 25 y 50 años aprox
 
 
 ## Integrantes pertenecientes a este proyecto de desarrollo web:
@@ -80,7 +80,7 @@
 
 > [Casa Chula](http://www.casachula.com.ar/): De este modelo de pagina tomaremos el fromato de facilidades de pago en **cuotas** mostrando las promociones con tarjeta de credito y tambien **descuentos** con transferencia.
 
-> [Interiores B.AP](https://interioresbap.mitiendanube.com/comprar/): De esta página web tomaremos como ejemplo a seguir el modelo de la seccion de carrito de compras.
+> [Interiores B.AP](https://interioresbap.mitiendanube.com/comprar/): De esta página web tomaremos como ejemplo a seguir el modelo de la seccion de carrito de compras y el de la página de login
 
 
 
