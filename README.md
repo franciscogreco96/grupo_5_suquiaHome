@@ -74,6 +74,8 @@
 
 >* Mauricho Chocholacek: Tengo 24 años, soy de Neuquén Capital. Soy técnico óptico y trabajo en una óptica. Cuento con unos años de estudio en licenciatura en ciencias de la computacion la cual deje luego de 2 años para poder ayudar en la óptica pero nuevamente volvió el interés por la programación, lo cual tengo pensado en un futuro poder trabajar ya que es algo que me gusta mucho y tiene una posibilidad inmensa de proyecto para realizar.
 
+>* Andres Robles: Tengo 44 años, soy de San Miguel, Buenos Aires. Soy soporte técnico y administrador de infraestructura en una escuela. Cuento con 9 años de experiencia en el sector, siempre me intereso todo lo referente a la tecnologia. Me anote en programacion para aprender y entender un poco mas de estos conceptos nuevos. Siempre intentando adquirir conocimientos nuevos que ayuden.
+
 
 ## Paginas de referencia de este proyecto
 > [Restoration Hardware](https://rh.com/) : Tomaremos de referencia este diseño de página para la *estructura* HTML para la página de **inicio** y el *formato* de la **tipografía**
