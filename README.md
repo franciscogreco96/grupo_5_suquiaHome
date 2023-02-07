@@ -76,11 +76,16 @@
 
 
 ## Paginas de referencia de este proyecto
-> [Restoration Hardware](https://rh.com/): Tomaremos de referencia este diseño de página para la *estructura* HTML para la página de **inicio** y el *formato* de la **tipografía**
+> [Restoration Hardware](https://rh.com/) : Tomaremos de referencia este diseño de página para la *estructura* HTML para la página de **inicio** y el *formato* de la **tipografía**
 
-> [Casa Chula](http://www.casachula.com.ar/): De este modelo de pagina tomaremos el fromato de facilidades de pago en **cuotas** mostrando las promociones con tarjeta de credito y tambien **descuentos** con transferencia.
+> [Casa Chula](http://www.casachula.com.ar/): De este modelo de pagina tomaremos el fromato de facilidades de pago en **cuotas** mostrando las promociones con tarjeta de credito y tambien **descuentos** con transferencia
 
-> [Interiores B.AP](https://interioresbap.mitiendanube.com/comprar/): De esta página web tomaremos como ejemplo a seguir el modelo de la seccion de carrito de compras y el de la página de login
+> [Interiores B.AP](https://interioresbap.mitiendanube.com/comprar/) : De esta página web tomaremos como ejemplo a seguir el modelo de la seccion de carrito de compras y el de la página de login
+
+> [morph](https://www.morph.com.ar/deco-hogar.html) : En esta página usaremos de referencia la paleta de colores de la misma ya que suquia home para a tener esa paleta de colores de blanco y negro
+
+> []():
+
 
 
 
