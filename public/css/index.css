@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap'); /* tipografia: raleway */
+
+body{
+    font-family: "raleway", sans-serif;
+    color: black;
+}
+
+header {
+    background-color: black;
+}
+
+header img{
+    text-align: left;
+    padding: 10px;
+}
+
+main{
+    background-color: yellow;
+}
