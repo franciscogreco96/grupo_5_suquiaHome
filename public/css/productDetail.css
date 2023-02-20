@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap'); /* tipografia: raleway */
+
+body{
+    font-family: "raleway", sans-serif;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Estilo al header para comenzar */
+header{
+   background-color: black ;
+}
+.logo{
+    width: 10%;
+}
+
+nav ul li{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+@media (min-width:360px){
+    main{
+        margin: 5px;
+    }
+    img{
+        max-width: 100%;
+    }
+    h2{
+        text-align: center;
+    }
+    .fotoPricipal{
+        max-width: 100%;
+    }
+   
+    .fotoInf{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .fotoInf img{
+        width: 40%;
+    }
+   .precio, .stock, .carrito, .descripcion{
+    margin: 10px 0px;
+   }
+}
+
+@media(min-width: 768px){
+
+    
+        
+    }
