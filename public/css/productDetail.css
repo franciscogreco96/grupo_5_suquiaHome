@@ -25,19 +25,38 @@ nav ul li{
 img{
     max-width: 100%;
 }
+.descripcion768{
+    display: none;
+}
+.precio768{
+    display: none;
+}
+.caracteristicas{
+    padding-top: 40px;
+}
+.caracteristicas p{
+    padding-top: 15px;
+}
 
+/* Estilo al footer */
+footer{
+    margin-top: 30px;
+}
+footer h1{
+    text-align: center;
+}
+
+/* Media querys */
 @media (min-width:360px){
     main{
         margin: 5px;
     }
-    img{
-        max-width: 100%;
-    }
+    
     h2{
         text-align: center;
     }
-    .fotoPricipal{
-        max-width: 100%;
+    .fotoPrincipal img{
+        width: 100%;
     }
    
     .fotoInf{
@@ -51,10 +70,102 @@ img{
    .precio, .stock, .carrito, .descripcion{
     margin: 10px 0px;
    }
+   .unidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:stretch;
+}
+}
+/* Media querys */
+@media(min-width: 460px){
+
+    .fotoPrincipal img{
+        width: 100%;
+    }
+    .detalle .precio{
+        padding: 5px;
+    }
+    .detalle .stock{
+        padding: 5px;
+    }
+    .detalle .carrito{
+        padding: 5px;
+    }
+    
+    
+        
+}
+/* Media querys */
+@media(min-width: 768px){
+
+    button{
+        font-size: 20px;
+    }
+    h2{
+        text-align: right;
+        margin: 15px 200px 15px 0px;
+    }
+    .fotoPrincipal {
+        display: flex;
+    }
+    .fotoPrincipal img{
+        min-width: 50%;
+        margin: 10px;
+    }
+   
+    .descripcion768{
+        display: block;
+        justify-content: left;
+        margin-left: 160px;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        padding-top: 100px;
+        padding-right: 50px;
+        width: 65%;
+    }
+    .descripcion768 h3{
+        padding-bottom: 70px;
+    }
+    .descripcion768 p{
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .fotoInf{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:left;
+        margin-left: 70px;
+    }
+        .fotoInf img{
+            width: 20%;
+        }
+   
+
+    .detalle{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+     .detalle .precio{
+        display: none;
+    } 
+    .detalle .stock{
+        align-self: center;
+    }
+    .detalle .carrito{
+        padding-right: 130px;
+    }
+    .detalle .carrito button{
+        border-radius: 5px;
+        padding: 5px;
+    }
 }
 
-@media(min-width: 768px){
+    
+
 
     
         
-    }
+    
