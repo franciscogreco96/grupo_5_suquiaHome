@@ -11,7 +11,12 @@ app.get("/", function(req, res){
 });
 
 /* Ruta para ingreso a detalle de producto */
-app.get('/productDetail.html', function(req, res){
+app.get("/productDetail.html", function(req, res){
     res.sendFile(path.join(__dirname, "./views/productDetail.html"))
+});
+
+/* Ruta para ingreso a carrito de compras */
+app.get("/productCart.html", function(req, res){
+    res.sendFile(path.join(__dirname, "./views/productCart.html"))
 });
 

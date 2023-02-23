@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap'); /* tipografia: raleway */
+
+body{
+    font-family: "raleway", sans-serif;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* --------------------------MOBILE FIRST-------------------------- */
+/* Estilo al header para comenzar */
+@media (min-width:360px){
+header{
+   background-color: black ;
+}
+.cuotas-header{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    word-spacing: 5px;
+    width: 100%;
+    display: none;
+}
+.logo{
+    width: 100%;
+    padding: 15px 80px;
+}
+.burger-menu{
+    display: none;
+}
+.iconoBurger{
+        display: block;
+        color: black;
+        background-color:white;
+        font-size: 30px;
+        padding: 4px;
+        border-radius: 5px;
+        text-align: center;
+        margin: 20px 45.5%;
+}
+nav ul li{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ESTILO AL MAIN Y SECCIONES */
+
+.titulo{ 
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.barraCarrito{  
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color:rgb(78, 77, 77) ;
+     border: 2px solid black;   
+}
+
+   
+
+.itemCarro{
+    color: white;
+    background-color: rgb(78, 77, 77);
+    padding: 10px 10px;
+}
+
+
+.producto-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.producto-container  li img{
+    width: 40px;
+}
+
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    font-size: 15px;
+}
+.cantidad , .precio, .subtotal{
+    padding: 5px;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.selector-cantidad{
+    border-radius: 5px;
+}
+.subtotal i{
+    padding-left: 3px;
+}
+.total-carrito{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 2px solid rgb(78, 77, 77);;
+}
+.boton-compra{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+ 
+.boton-compra button{
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(78, 77, 77);
+}
+}
+/* -----------------------QUERYS TABLET----------------------- */
+
+@media (min-width: 768px) {
+    .cuotas-header{
+        display: block;
+        font-size: 18px;}
+    .logo{
+        width: 100%;
+        
+    padding: 0px;
+
+
+    }
+    .logo img{
+        width: 100vw;
+        height: 25vh;
+    }
+    .burger-menu{
+        display: flex;
+        flex-wrap:  wrap;
+        justify-content:space-around;
+    }
+    .barra-menu ul {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-evenly;
+    }
+    .barra-menu ul li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 22px;
+    }
+    .barra-menu ul li a{
+        padding: 15px 18px;
+    }
+    header .iconoBurger{
+        display: none;
+    }
+    
+
+    .producto-container  li img{
+        width: 60px;
+    }
+    
+    .producto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        font-size: 18px;
+    }
+    .cantidad , .precio, .subtotal{
+        padding: 5px;
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .total-carrito{
+        font-size: 20px;
+    }
+    .seguir-comprando{
+        margin-left: 40px;
+    }
+    .totalCompra{
+        margin-right: 10%;
+    }
+    .boton-compra button{
+        font-size: 22px;
+    }
+
+}
+
+/* QUERY 1024 PARA  DETALLE */
+
+@media(min-width:1024px){
+
+    .burger-menu {
+        padding: 20px 0px;
+    }
+    .barra-menu ul li a{
+        padding: 10px 30px;
+    }
+}

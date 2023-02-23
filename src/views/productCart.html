@@ -5,9 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="/public/css/productCart.css">
+    <link rel="stylesheet" href="../css/productCart.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <header>
+
+        <!-- Prueba de nav para correr el sv y pasar a las demas secciones -->
+        <div class="cuotas-header">
+            <p><i class="fas fa-fire"></i>Hasta 12 pagos sin interés con tarjetas de crédito<i class="fas fa-fire"></i>Hasta 20% con transferencia bancaria<i class="fas fa-fire"></i> </p>
+        </div>
+        <div class="logo">
+            <img src="/img/logo-SuquiaHome.svg.svg" alt="logo-suquia-home"> 
+        </div>
+
+        <div class="burger-menu">
+            <nav class="barra-menu">
+                <ul>
+                    <li class="item-menu"><a href="#"></a>Home</li>
+                    <li><a href="/productDetail.html"></a>Detalle Producto</li>
+                    <li><a href="#"></a>Carrito de Compras</li>
+                    <li><a href="#"></a>Registro</li>
+                    <li><a href="#"></a>Login</li>
+                </ul>
+            </nav>
+
+        </div>  
+    
+    <i class="fas fa-bars iconoBurger"></i>
+
+    </header>
+
+    <main>
+
+        <h2 class="titulo">Carrito de Compras</h2>
+
+            <ul class="barraCarrito">
+                <li class="itemCarro">Producto</li>
+                <li class="itemCarro">Cantidad</li>
+                <li class="itemCarro">Precio</li>
+                <li class="itemCarro">Subtotal</li>
+            </ul>
+
+
+    <section>
+        <ul class="producto-container">
+            <li class="producto"><img src="/img/mesa.jfif" alt=""> Mesa Prueba</li>
+            <li class="cantidad"> <form action="#">
+                <select class="selector-cantidad" name="selector-cantidad" id="">
+                    <option value="1">1</option>       
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select> 
+            </form></li>
+            <li class="precio"> $Precio</li>
+            <li class="subtotal"> Subtotal <i class="fas fa-trash-alt"></i></li>
+        </ul>
+        <ul class="producto-container">
+            <li class="producto"><img src="/img/mesa.jfif" alt=""> Mesa Prueba</li>
+            <li class="cantidad"> <form action="#">
+                <select class="selector-cantidad" name="selector-cantidad" id="">
+                    <option value="1">1</option>       
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select> 
+            </form></li>
+            <li class="precio"> $Precio</li>
+            <li class="subtotal"> Subtotal <i class="fas fa-trash-alt"></i></li>
+        </ul>
+        <ul class="producto-container">
+            <li class="producto"><img src="/img/mesa.jfif" alt=""> Mesa Prueba</li>
+            <li class="cantidad"> <form action="#">
+                <select class="selector-cantidad" name="selector-cantidad" id="">
+                    <option value="1">1</option>       
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select> 
+            </form></li>
+            <li class="precio"> $Precio</li>
+            <li class="subtotal"> Subtotal <i class="fas fa-trash-alt"></i></li>
+        </ul>
+
+
+        <ul class="total-carrito">
+            <li class="seguir-comprando">Seguir Comprando</li>
+            <li class="totalCompra">Total: $$$</li>
+        </ul>
+
+        <div class="boton-compra">
+        <button>Iniciar Compra </button>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <h1>
+            ACA VA EL FOOTER
+        </h1>
+    </footer>
     
 </body>
 </html>
