@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap'); /* tipografia: raleway */
+
+body{
+    font-family: "raleway", sans-serif;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Media querys */
+@media (min-width:360px){
+    header{
+       background-color: black ;
+    }
+    .cuotas-header{
+        color: white;
+        text-align: center;
+        padding: 10px;
+        word-spacing: 5px;
+        width: 100%;
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        padding: 15px 80px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .iconoBurger{
+            display: block;
+            color: black;
+            background-color:white;
+            font-size: 30px;
+            padding: 4px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 45.5%;
+    }
+    nav ul li a{
+        color: white;
+        list-style: none;
+        text-decoration: none;
+    }
+}
+/* Media querys */
+@media (min-width: 768px) {
+    .cuotas-header{
+        display: block;
+        font-size: 18px;}
+    .logo{
+        width: 100%;
+    padding: 0px;
+    }
+    .logo img{
+        width: 100vw;
+        height: 25vh;
+    }
+    .burger-menu{
+        display: flex;
+        flex-wrap:  wrap;
+        justify-content:space-around;
+    }
+    .barra-menu ul {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-evenly;
+    }
+    .barra-menu ul li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 22px;
+    }
+    .barra-menu ul li a{
+        padding: 15px 18px;
+    }
+    header .iconoBurger{
+        display: none;
+    }
+}
+/* QUERY 1024 PARA  DETALLE */
+@media(min-width:1024px){
+
+    .burger-menu {
+        padding: 20px 0px;
+    }
+    .barra-menu ul li a{
+        padding: 10px 30px;
+    }
+}
