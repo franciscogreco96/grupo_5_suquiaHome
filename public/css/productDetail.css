@@ -34,7 +34,7 @@ footer h1{
 }
 
 /* Media querys */
-    @media (min-width:360px){
+   
         header{
            background-color: black ;
         }
@@ -96,7 +96,7 @@ footer h1{
     flex-wrap: wrap;
     justify-content:stretch;
 }
-}
+
 /* Media querys */
 @media(min-width: 460px){
 
@@ -194,7 +194,6 @@ footer h1{
         .fotoInf img{
             width: 20%;
         }
-   
 
     .detalle{
         display: flex;
