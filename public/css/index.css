@@ -271,3 +271,8 @@ footer a{
     color: white;
     background-color: white;
 }
+
+/* TABLET */
+@media (min-width:768px){
+    
+}
