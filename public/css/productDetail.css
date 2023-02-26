@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap'); /* tipografia: raleway */
+
+body{
+    font-family: "raleway", sans-serif;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* --------------------------MOBILE FIRST-------------------------- */
+/* Estilo al header para comenzar */
+
+.descripcion768{
+    display: none;
+}
+.precio768{
+    display: none;
+}
+.caracteristicas{
+    padding-top: 40px;
+}
+.caracteristicas p{
+    padding-top: 15px;
+}
+
+/* Estilo al footer */
+footer{
+    margin-top: 30px;
+}
+footer h1{
+    text-align: center;
+}
+
+/* Media querys */
+    @media (min-width:360px){
+        header{
+           background-color: black ;
+        }
+        .cuotas-header{
+            color: white;
+            text-align: center;
+            padding: 10px;
+            word-spacing: 5px;
+            width: 100%;
+            display: none;
+        }
+        .logo{
+            width: 100%;
+            padding: 15px 80px;
+        }
+        .burger-menu{
+            display: none;
+        }
+        .iconoBurger{
+                display: block;
+                color: black;
+                background-color:white;
+                font-size: 30px;
+                padding: 4px;
+                border-radius: 5px;
+                text-align: center;
+                margin: 20px 45.5%;
+        }
+        nav ul li{
+            color: white;
+            list-style: none;
+            text-decoration: none;
+        }
+    
+    main{
+        margin: 5px;
+    }
+    
+    h2{
+        text-align: center;
+    }
+    .fotoPrincipal img{
+        width: 100%;
+    }
+   
+    .fotoInf{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .fotoInf img{
+        width: 40%;
+    }
+   .precio, .stock, .carrito, .descripcion{
+    margin: 10px 0px;
+   }
+   .unidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:stretch;
+}
+}
+/* Media querys */
+@media(min-width: 460px){
+
+    .fotoPrincipal img{
+        width: 100%;
+    }
+    .detalle .precio{
+        padding: 5px;
+    }
+    .detalle .stock{
+        padding: 5px;
+    }
+    .detalle .carrito{
+        padding: 5px;
+    }
+    
+    
+        
+}
+/* Media querys */
+@media (min-width: 768px) {
+    .cuotas-header{
+        display: block;
+        font-size: 18px;}
+    .logo{
+        width: 100%;
+    padding: 0px;
+    }
+    .logo img{
+        width: 100vw;
+        height: 25vh;
+    }
+    .burger-menu{
+        display: flex;
+        flex-wrap:  wrap;
+        justify-content:space-around;
+    }
+    .barra-menu ul {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-evenly;
+    }
+    .barra-menu ul li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 22px;
+    }
+    .barra-menu ul li a{
+        padding: 15px 18px;
+    }
+    header .iconoBurger{
+        display: none;
+    }
+
+    button{
+        font-size: 20px;
+    }
+    h2{
+        text-align: right;
+        margin: 15px 200px 15px 0px;
+    }
+    .fotoPrincipal {
+        display: flex;
+    }
+    .fotoPrincipal img{
+        min-width: 50%;
+        margin: 10px;
+    }
+   
+    .descripcion768{
+        display: block;
+        justify-content: left;
+        margin-left: 160px;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        padding-top: 100px;
+        padding-right: 50px;
+        width: 65%;
+    }
+    .descripcion768 h3{
+        padding-bottom: 70px;
+    }
+    .descripcion768 p{
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .fotoInf{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:left;
+        margin-left: 70px;
+    }
+        .fotoInf img{
+            width: 20%;
+        }
+   
+
+    .detalle{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+     .detalle .precio{
+        display: none;
+    } 
+    .detalle .stock{
+        align-self: center;
+    }
+    .detalle .carrito{
+        padding-right: 130px;
+    }
+    .detalle .carrito button{
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
+
+
+
+/* QUERY 1024 PARA  DETALLE */
+@media(min-width:1024px){
+
+    .burger-menu {
+        padding: 20px 0px;
+    }
+    .barra-menu ul li a{
+        padding: 10px 30px;
+    }
+}
+
+    
+
+
+    
+        
+    

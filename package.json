@@ -4,7 +4,8 @@
   "description": "Crearemos la página web de e-commerce de un comercio de venta de artículos de decoración para el hogar llamado Suquia Home, que cuenta con una seccion especial exclusiva de cerámica y mármol",
   "main": "./src/app.js",
   "scripts": {
-    "test": "nodemon src/app.js"
+    "test": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
