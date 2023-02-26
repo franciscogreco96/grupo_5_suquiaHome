@@ -10,7 +10,7 @@ body{
     box-sizing: border-box;
 }
 /* --------------------------MOBILE FIRST-------------------------- */
-/* Estilo al header para comenzar */
+/* MAIN */
 
 .descripcion768{
     display: none;
@@ -23,14 +23,6 @@ body{
 }
 .caracteristicas p{
     padding-top: 15px;
-}
-
-/* Estilo al footer */
-footer{
-    margin-top: 30px;
-}
-footer h1{
-    text-align: center;
 }
 
 /* Media querys */
@@ -112,45 +104,9 @@ footer h1{
     .detalle .carrito{
         padding: 5px;
     }
-    
-    
         
 }
 /* Media querys */
-@media (min-width: 768px) {
-    .cuotas-header{
-        display: block;
-        font-size: 18px;}
-    .logo{
-        width: 100%;
-    padding: 0px;
-    }
-    .logo img{
-        width: 100vw;
-        height: 25vh;
-    }
-    .burger-menu{
-        display: flex;
-        flex-wrap:  wrap;
-        justify-content:space-around;
-    }
-    .barra-menu ul {
-        display: flex;
-        flex-wrap: wrap;  
-        justify-content: space-evenly;
-    }
-    .barra-menu ul li {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        font-size: 22px;
-    }
-    .barra-menu ul li a{
-        padding: 15px 18px;
-    }
-    header .iconoBurger{
-        display: none;
-    }
 
     button{
         font-size: 20px;
@@ -214,19 +170,9 @@ footer h1{
         border-radius: 5px;
         padding: 5px;
     }
-}
-
-
 
 /* QUERY 1024 PARA  DETALLE */
 @media(min-width:1024px){
-
-    .burger-menu {
-        padding: 20px 0px;
-    }
-    .barra-menu ul li a{
-        padding: 10px 30px;
-    }
 }
 
     
