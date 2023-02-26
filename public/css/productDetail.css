@@ -63,7 +63,7 @@ footer h1{
                 text-align: center;
                 margin: 20px 45.5%;
         }
-        nav ul li{
+        nav ul li a{
             color: white;
             list-style: none;
             text-decoration: none;
