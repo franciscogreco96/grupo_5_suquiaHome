@@ -1,276 +1,223 @@
  /* tipografia: raleway */
  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-    
-body{
-    font-family:  "raleway" ,sans-serif;
-}
+ * {
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+ }
 
-header {
-    background-color: black;
-    color: white;
-}
+ body {
+     font-family: "raleway", sans-serif;
+ }
 
-header a{
-    text-decoration: none;
-}
+ /* HEADER */
 
-header i:hover, a:hover {
-    color: #90bfc6;
-}
+ header {
+     background-color: black;
+     color: white;
+ }
 
-.encabezado-fueguitos-12-pagos{
-    width: 100%;
-    font-size: 0.9vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1%;
-    color: white;
-}
+ header a {
+     text-decoration: none;
+ }
 
-.imagenes-todo-el-ancho{
-    width: 100%;
-    height: auto;
-}
-.mesas-background-imagen{
-    background-image: url(/img/portada/mesas.png);
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    
-}
+ header i:hover,
+ a:hover {
+     color: #90bfc6;
+ }
 
-main article{
-    width: 16%;
-}
-main section{
-    position: relative;
-    font-size: 1vh;
-}
+ .encabezado-fueguitos-12-pagos {
+     width: 100%;
+     font-size: 0.9vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     padding: 1%;
+     color: white;
+ }
 
+ .encabezado-fueguitos-12-pagos i, p {
+     padding: 0% 1%;
+ }
 
-.padding-articulos{
-    padding: 20% 0%;
-}
+ #logo {
+     width: 8%;
+     padding: 0%;
+     position: relative;
+     left: 15vw;
+ }
 
-#refleja-tu-estilo{
-    padding-top: 3%;
-    text-align: center;
-    font-size: 2vw;
-}
-#linea-refleja-tu-estilo{ 
-    border:none; 
-    height: 0.2vw;  
-    color: black; 
-    background-color: black;
-    margin: 0% 20%; 
-}
+ #posicionamiento-header {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ }
 
-main article img{
-    width: 100%;
-    height: auto;
-}
-main article h2{
-    font-size: 1vw;
-}
-main article p{
-    font-weight: 600;
-    font-size: 1vw;
-}
-main article{
-    transition: all 0.8s;
-    background-color: #c5cdce;
-    transition: all 1s;
-}
+ .iconos-blancos {
+     color: white;
+     font-size: 1.2vw;
+     position: relative;
+     right: 200%;
+ }
 
-main article:hover{
-    box-shadow: 4px 4px 2px 2px rgb(195, 200, 201);
-    background-color: #e3e4e5;
-    transform: rotateY(10deg);
-}
+ #icono-login {
+     position: relative;
+     left: 24vw;
+     color: white;
+     font-size: 1.2vw;
+ }
 
-main section article h2, p{
-    line-height: 120%;
-}
+ #posicionamiento-header form,
+ section {
+     display: inline;
+ }
 
-main i{
-    font-size: 1vw;
-    display: block;
-    position: relative;
-    left: 7.5vw;
-    padding: 1% 1%;
-}
+ #lupita {
+     background-color: black;
+     color: white;
+     border: 0;
+     display: block;
+     position: relative;
+     left: 200%;
+     font-size: 1.2vw;
+ }
 
-.flex-articulos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 2% 0%;
-}
+ header nav ul {
+     display: flex;
+     color: white;
+     list-style: none;
+     justify-content: space-evenly;
+     margin-top: 1%;
+     font-size: 0.8vw;
+     white-space: nowrap;
+     padding-bottom: 2%;
+     text-decoration: none;
+     margin-right: 4%;
+ }
 
-.mostrar-todos-los-productos{
-    text-align: center;
-    margin-bottom: 5%;
-}
+ header nav ul a {
+     color: white;
+ }
 
-.mostrar-todos-los-productos button{
-    background-color: white;
-    color: black;
-    border: solid black 1px;
-    transition: all 0.6s;
-    border-radius: 9px;
-    font-weight: 700;
-}
-
-.mostrar-todos-los-productos button:hover{
-    background-color: black;
-    color: white;
-}
-
-footer button{
-    background-color: black;
-    color: white;
-    border: solid #e3e4e5 1px;
-    transition: all 0.6s;
-}
-footer a{
-    transition: all 0.6s;
-}
-
-footer a:hover{
-    color: #5a8284;
-}
-
-footer button:hover{
-    background-color: #5a8284;
-    color: black;
-    border: solid #5a8284 1px;
-}
-
-.encabezado-fueguitos-12-pagos i, p{
-    padding: 0% 1%;
-}
+ header nav ul li {
+     padding: 0% 2%;
+     margin-right: 4%;
+ }
 
 
-#logo{
-    width: 8%;
-    padding: 0%;
-    position: relative;
-    left: 15vw; 
-}
+ /* MAIN */
 
-#posicionamiento-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+ .imagenes-todo-el-ancho {
+     width: 100%;
+     height: auto;
+ }
 
-.iconos-blancos{
-    color: white;
-    font-size: 1.2vw;
-    position: relative;
-    right: 200%;
-}
+ .mesas-background-imagen {
+     background-image: url(/img/portada/mesas.png);
+     background-repeat: no-repeat;
+     width: 100vw;
+     height: 100vh;
+     background-size: cover;
 
-#icono-login{
-    position: relative;
-    left: 24vw;
-    color: white;
-    font-size: 1.2vw;
-}
+ }
 
-#posicionamiento-header form, section{
-    display: inline;
-}
+ main article {
+     width: 16%;
+ }
 
-#lupita {
-    background-color: black;
-    color: white;
-    border: 0;
-    display: block;
-    position: relative;
-    left: 200%;
-    font-size: 1.2vw;
-}
+ main section {
+     position: relative;
+     font-size: 1vh;
+ }
 
-header nav ul{
-    display: flex;
-    color: white;
-    list-style: none;
-    justify-content: space-evenly;
-    margin-top: 1%;
-    font-size: 0.8vw;
-    white-space: nowrap;
-    padding-bottom: 2%;
-    text-decoration: none;
-    margin-right: 4%;
-}
 
-header nav ul a{
-    color: white;
-}
+ .padding-articulos {
+     padding: 20% 0%;
+ }
 
-header nav ul li{
-    padding: 0% 2%;
-    margin-right: 4%;
-}
+ #refleja-tu-estilo {
+     padding-top: 3%;
+     text-align: center;
+     font-size: 2vw;
+ }
 
-main{
-    background-color: white;
-}
-footer{
-    font-size: 0.8vw;
-    line-height: 200%;
-}
+ #linea-refleja-tu-estilo {
+     border: none;
+     height: 0.2vw;
+     color: black;
+     background-color: black;
+     margin: 0% 20%;
+ }
 
-#formulario-footer-flex{
-    display: flex;
-    flex-direction: column;
-}
-footer div a, div, section  {
-    padding: 1%;
-}
+ main article img {
+     width: 100%;
+     height: auto;
+ }
 
-#fromulario-footer-flex-column{
-    display: flex;
-    flex-direction: column;
-    width: 24vw;
-}
+ main article h2 {
+     font-size: 1vw;
+ }
 
-#fromulario-footer-flex-column input, button{
-    font-size: 0.8vw;
-    margin-top: 2%;
-    padding: 1%;
-}
+ main article p {
+     font-weight: 600;
+     font-size: 1vw;
+ }
 
-.footer-flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-    justify-content: space-around;
-    background-color: black;
-    color: white;
-    position: relative;
-}
+ main article {
+     transition: all 0.8s;
+     background-color: #c5cdce;
+     transition: all 1s;
+ }
 
-footer button{
-    display: block
-}
+ main article:hover {
+     box-shadow: 4px 4px 2px 2px rgb(195, 200, 201);
+     background-color: #e3e4e5;
+     transform: rotateY(10deg);
+ }
 
-footer a{
-    color: white;
-}
+ main section article h2,
+ p {
+     line-height: 120%;
+ }
 
-#linea-findus{
+ main i {
+     font-size: 1vw;
+     display: block;
+     position: relative;
+     left: 7.5vw;
+     padding: 1% 1%;
+ }
+
+ .flex-articulos {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     padding: 2% 0%;
+ }
+
+ .mostrar-todos-los-productos {
+     text-align: center;
+     margin-bottom: 5%;
+ }
+
+ .mostrar-todos-los-productos button {
+     background-color: white;
+     color: black;
+     border: solid black 1px;
+     transition: all 0.6s;
+     border-radius: 9px;
+     font-weight: 700;
+ }
+
+ .mostrar-todos-los-productos button:hover {
+     background-color: black;
+     color: white;
+ }
+
+ #linea-findus {
     margin-right: 30%;
     border: none;
     height: 0.1vw;
@@ -278,7 +225,79 @@ footer a{
     background-color: white;
 }
 
-/* TABLET */
-@media (min-width:768px){
-    
-}
+ /* FOOTER */
+
+ footer button {
+     background-color: black;
+     color: white;
+     border: solid #e3e4e5 1px;
+     transition: all 0.6s;
+ }
+
+ footer a {
+     transition: all 0.6s;
+ }
+
+ footer a:hover {
+     color: #5a8284;
+ }
+
+ footer button:hover {
+     background-color: #5a8284;
+     color: black;
+     border: solid #5a8284 1px;
+ }
+
+ main {
+     background-color: white;
+ }
+
+ footer {
+     font-size: 0.8vw;
+     line-height: 200%;
+ }
+
+ #formulario-footer-flex {
+     display: flex;
+     flex-direction: column;
+ }
+
+ footer div a,
+ div,
+ section {
+     padding: 1%;
+ }
+
+ #fromulario-footer-flex-column {
+     display: flex;
+     flex-direction: column;
+     width: 24vw;
+ }
+
+ #fromulario-footer-flex-column input,
+ button {
+     font-size: 0.8vw;
+     margin-top: 2%;
+     padding: 1%;
+ }
+
+ .footer-flex {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: no-wrap;
+     justify-content: space-around;
+     background-color: black;
+     color: white;
+     position: relative;
+ }
+
+ footer button {
+     display: block
+ }
+
+ footer a {
+     color: white;
+ }
+
+ /* TABLET */
+ @media (min-width:768px) {}
