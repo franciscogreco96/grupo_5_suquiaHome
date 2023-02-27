@@ -26,41 +26,7 @@ body{
 }
 
 /* Media querys */
-   
-        header{
-           background-color: black ;
-        }
-        .cuotas-header{
-            color: white;
-            text-align: center;
-            padding: 10px;
-            word-spacing: 5px;
-            width: 100%;
-            display: none;
-        }
-        .logo{
-            width: 100%;
-            padding: 15px 80px;
-        }
-        .burger-menu{
-            display: none;
-        }
-        .iconoBurger{
-                display: block;
-                color: black;
-                background-color:white;
-                font-size: 30px;
-                padding: 4px;
-                border-radius: 5px;
-                text-align: center;
-                margin: 20px 45.5%;
-        }
-        nav ul li a{
-            color: white;
-            list-style: none;
-            text-decoration: none;
-        }
-    
+
     main{
         margin: 5px;
     }
