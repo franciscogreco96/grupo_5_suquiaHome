@@ -13,29 +13,48 @@
 <body>
 
     <header>
-
-        <!-- Prueba de nav para correr el sv y pasar a las demas secciones -->
-        <div class="cuotas-header">
-            <p><i class="fas fa-fire"></i>Hasta 12 pagos sin interés con tarjetas de crédito<i class="fas fa-fire"></i>Hasta 20% con transferencia bancaria<i class="fas fa-fire"></i> </p>
+        <section class="encabezado-fueguitos-12-pagos">
+            <i class="fas fa-fire-alt"></i>
+            <p>Hasta 12 pagos sin interés con Tarjeta de crédito</p>
+            <i class="fas fa-fire-alt"></i>
+            <p>Hasta 20% descuento con Transferencia bancaria</p>
+            <i class="fas fa-fire-alt"></i>
+            <p>Hasta 20% descuento con Transferencia bancaria</p>
+            <i class="fas fa-fire-alt"></i>
+        </section>
+        <div id="posicionamiento-header">
+            <form action="/home" method="get">
+                <button id="lupita"><i class="fas fa-search"></i></button>
+            </form>
+            <section id="logo">
+                <a href="/home"><img src="/img/logo-SuquiaHome.svg.svg" alt="logo-suquia-home"></a>
+            </section>
+            <div>
+                <a href="/login" id="icono-login"><i class="far fa-user"></i></a>
+            </div>
+            <div>
+                <a href="/productCart" class="iconos-blancos"><i class="fas fa-shopping-bag"></i></a>
+            </div>
         </div>
-        <div class="logo">
-            <a href="/home"><img src="/img/logo-SuquiaHome.svg.svg" alt="logo-suquia-home"></a>
-        </div>
-        <div class="burger-menu">
-            <nav class="barra-menu">
-                <ul>
-                    <li class="item-menu"><a href="/">Home</a></li>
-                    <li><a href="/productDetail.html">Detalle Producto</a></li>
-                    <li><a href="/productCart.html">Carrito de Compras</a></li>
-                    <li><a href="/register.html">Registro</a></li>
-                    <li><a href="/login.html">Login</a></li>
-                </ul>
-            </nav>
-
-        </div>  
-    
-    <i class="fas fa-bars iconoBurger"></i>
-
+        <nav class="barra-menu">
+            <ul>
+                <a href="/home">
+                    <li>HOME</li>
+                </a>
+                <a href="/productDetail">
+                    <li>PRODUCT DETAIL</li>
+                </a>
+                <a href="/productCart">
+                    <li>PRODUCT CART</li>
+                </a>
+                <a href="/register">
+                    <li>REGISTER</li>
+                </a>
+                <a href="/login">
+                    <li>LOGIN</li>
+                </a>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -103,10 +122,34 @@
 
 
     <footer>
-
-        <h1>
-            ACA VA EL FOOTER
-        </h1>
+        <div class="footer-flex">
+            <a href="#">
+                <h3>PREGUNTAS FRECUENTES</h3>
+            </a>
+            <a href="#">
+                <h3>SOBRE NOSOTROS</h3>
+            </a>
+            <a href="#">
+                <h3>CÓMO COMPRAR</h3>
+            </a>
+            <div>
+                <h3>FIND US</h3>
+                <hr id="linea-findus">
+                <p>DIRECCIÓN: Recta Martinolli 8568, Córdoba</p>
+                <p>HORARIOS: Lunes a Viernes de 9 a 13 hs y de 15 a 19 hs. Sábados de 9 a 13 hs</p>
+                <p>CONTACTO: info@suquiahome.com</p>
+            </div>
+            <section id="formulario-footer-flex">
+                <h3> NEWSLETTER</h3>
+                <P>DÉJANOS TU EMAIL PARA RECIBIR ALERTAS EXCLUSIVAS Y NOVEDADES</P>
+                <form action="" method="post" id="fromulario-footer-flex-column">
+                    <input type="text" name="nombre" title="Inserte su nombre y apellido"
+                        placeholder="Nombre y Apellido" required>
+                    <input type="email" name="E-mail" title="Inserte su e-mail" placeholder="E-mail" required>
+                    <button type="submit">SUSCRIBIRSE</button>
+                </form>
+            </section>
+        </div>
     </footer>
     
 </body>

@@ -26,8 +26,7 @@ body{
 }
 
 /* Media querys */
-    @media (min-width:360px){
-       
+
     main{
         margin: 5px;
     }
@@ -55,7 +54,7 @@ body{
     flex-wrap: wrap;
     justify-content:stretch;
 }
-}
+
 /* Media querys */
 @media(min-width: 460px){
 
@@ -117,7 +116,6 @@ body{
         .fotoInf img{
             width: 20%;
         }
-   
 
     .detalle{
         display: flex;
