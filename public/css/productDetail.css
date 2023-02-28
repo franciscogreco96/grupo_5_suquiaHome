@@ -206,7 +206,7 @@ footer a {
         text-align: center;
     }
     .fotoPrincipal img{
-        width: 100%;
+        width: 50%;
     }
    
     .fotoInf{
@@ -215,7 +215,8 @@ footer a {
         justify-content: space-around;
     }
     .fotoInf img{
-        width: 40%;
+        width: 40vw;
+        height: auto;
     }
    .precio, .stock, .carrito, .descripcion{
     margin: 10px 0px;
@@ -230,7 +231,8 @@ footer a {
 @media(min-width: 460px){
 
     .fotoPrincipal img{
-        width: 100%;
+        width: 50vw;
+        min-height: 50vh;
     }
     .detalle .precio{
         padding: 5px;
@@ -246,7 +248,19 @@ footer a {
 
     main button{
         font-size: 20px;
-    }
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+    transition: all 0.6s;
+    border-radius: 9px;
+    font-weight: 700;
+}
+
+main button:hover {
+    background-color: black;
+    color: white;
+}
+    
 
     main h2{
         text-align: right;
