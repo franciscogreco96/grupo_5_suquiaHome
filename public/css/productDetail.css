@@ -229,6 +229,10 @@ footer a {
 /* Media querys */
 @media(min-width: 460px){
 
+    .encabezado-fueguitos-12-pagos {
+        display: none;
+    }
+
     .fotoPrincipal img{
         width: 100%;
     }
@@ -309,9 +313,11 @@ footer a {
         padding: 5px;
     }
 
-/* QUERY 1024 PARA  DETALLE */
+/* DESKTOP */
 @media(min-width:1024px){
 }
+
+
 
     
 

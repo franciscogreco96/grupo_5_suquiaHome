@@ -124,8 +124,19 @@
  }
 
  main article {
-     width: 16%;
- }
+    transition: all 0.8s;
+    background-color: #c5cdce;
+    transition: all 1s;
+    width: 40%;
+    margin-bottom: 4%;
+   text-align: center; 
+}
+
+main article:hover {
+    box-shadow: 4px 4px 2px 2px rgb(195, 200, 201);
+    background-color: #e3e4e5;
+    transform: rotateY(10deg);
+}
 
  main section {
      position: relative;
@@ -165,18 +176,6 @@
      font-size: 1vw;
  }
 
- main article {
-     transition: all 0.8s;
-     background-color: #c5cdce;
-     transition: all 1s;
- }
-
- main article:hover {
-     box-shadow: 4px 4px 2px 2px rgb(195, 200, 201);
-     background-color: #e3e4e5;
-     transform: rotateY(10deg);
- }
-
  main section article h2,
  p {
      line-height: 120%;
@@ -186,7 +185,6 @@
      font-size: 1vw;
      display: block;
      position: relative;
-     left: 7.5vw;
      padding: 1% 1%;
  }
 
@@ -300,4 +298,19 @@
  }
 
  /* TABLET */
- @media (min-width:768px) {}
+ @media (min-width:460px) {
+   main article{
+    width: 28%;
+   }
+   .encabezado-fueguitos-12-pagos {
+    display: none;
+}
+ }
+
+ /* DESKTOP */
+ @media (min-width:800px) {
+    main article{
+        width: 15%;
+       }
+ }
+
