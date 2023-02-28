@@ -283,9 +283,14 @@ footer a {
     color: white;
 }
 }
-/* -----------------------QUERYS TABLET----------------------- */
+/* ----------------------- TABLET----------------------- */
 
-@media (min-width: 768px) { 
+@media (min-width: 460px) { 
+
+    .encabezado-fueguitos-12-pagos {
+        display: none;
+    }
+
     .producto-container  li img{
         width: 60px;
     }
@@ -320,8 +325,8 @@ footer a {
 
 }
 
-/* QUERY 1024 PARA  DETALLE */
+/* --------------DESKTOP---------------- */
 
-@media(min-width:1024px){
+@media(min-width:800px){
     
 }

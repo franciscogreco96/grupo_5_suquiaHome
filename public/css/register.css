@@ -179,3 +179,16 @@ footer button {
 footer a {
     color: white;
 }
+
+/* TABLET */
+@media (min-width:460px) {
+    
+    .encabezado-fueguitos-12-pagos {
+     display: none;
+ }
+  }
+ 
+  /* DESKTOP */
+  @media (min-width:800px) {
+    
+  }
