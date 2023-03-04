@@ -82,6 +82,7 @@ section {
     position: relative;
     left: 200%;
     font-size: 1.2vw;
+    cursor: pointer;
 }
 
 header nav ul {
@@ -104,6 +105,39 @@ header nav ul a {
 header nav ul li {
     padding: 0% 2%;
     margin-right: 4%;
+}
+
+/* MAIN */
+main h2{
+    text-align: center;
+    margin: 2%;
+}
+.form{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form input{
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.form button{
+    background-color: black;
+    color: white;
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.form button:hover{
+    width: 32%;
+    padding: 1.2%;
 }
 
 /* FOOTER */
@@ -173,11 +207,15 @@ button {
 }
 
 footer button {
-    display: block
+    display: block;
+    cursor: pointer;
 }
 
 footer a {
     color: white;
+}
+#find-us{
+    width: 25%;
 }
 
 /* TABLET */
