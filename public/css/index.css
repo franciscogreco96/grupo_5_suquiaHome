@@ -82,6 +82,7 @@
      position: relative;
      left: 200%;
      font-size: 1.2vw;
+     cursor: pointer;
  }
 
  header nav ul {
@@ -176,10 +177,6 @@ main article:hover {
      font-size: 1vw;
  }
 
- main section article h2,
- p {
-     line-height: 120%;
- }
 
  main i {
      font-size: 1vw;
@@ -290,12 +287,16 @@ main article:hover {
  }
 
  footer button {
-     display: block
- }
+    display: block;
+    cursor: pointer;
+}
 
  footer a {
      color: white;
  }
+ #find-us{
+    width: 25%;
+}
 
  /* TABLET */
  @media (min-width:460px) {
