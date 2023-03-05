@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,13 @@
     <title>Detalle de Producto | Suquia Home</title>
     <!-- Rutas de estilo y fuentes -->
     <link rel="stylesheet" href="../css/productDetail.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
     <header>
@@ -59,127 +63,130 @@
     </header>
 
     <main>
-        
+
         <button><a href="/home">Volver</a></button>
 
         <div class="containerMain800px">
-        <div class="producto800px">
-        <section>
-            
-            <div class="fotoPrincipal">
-        <img src="/img/vajilla/taza.jpeg" alt="Taza">
+            <div class="producto800px">
+                <section>
+
+                    <div class="fotoPrincipal">
+                        <img src="/img/vajilla/taza.jpeg" alt="Taza">
+                    </div>
+
+                    <section>
+                        <div class="fotoInf">
+                            <img src="/img/vajilla/taza.jpeg" alt="Taza">
+                            <img src="/img/vajilla/taza.jpeg" alt="Taza">
+                        </div>
+                    </section>
             </div>
-                
-        <section>
-            <div class="fotoInf">
-            <img src="/img/vajilla/taza.jpeg" alt="Taza">
-            <img src="/img/vajilla/taza.jpeg" alt="Taza">
+
+
+
+            <h1 class="nombre400px">Juego de té Copenghue</h1>
+
+
+            <div class="descripcion800px">
+
+                <h1>Juego de té Copenaghue</h1>
+
+                <h4> Algo de descripcion : </h4>
+                <div>
+                    <p>Taza de té 100ml</p>
+                    <p>Plato 10cm</p>
+                    <p>Cuchara 15cm</p>
+                </div>
             </div>
-        </section>
+
+            </section>
+
         </div>
-        
-   
 
-        <h1 class="nombre400px">Nombre Producto</h1>
-        
+        <section class="detalle">
+            <div class="precio">
+                <h3>$3.199</h3>
+            </div>
 
-         <div  class="descripcion800px">
+            <div class="unidades">
+                <div class="stock">
+                    <form action="#">
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
 
-            <h1>Nombre Producto</h1>
-            
-            <h4> Algo de descripcion : </h4>
-               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugit ullam quam excepturi eos deserunt dolore doloribus vero, ipsum magnam harum. Quis vero dolore quas quod sed tempore alias hic? </p>
-        </div> 
-    
+                        </select>
+                    </form>
+                </div>
+
+                <div class="carrito">
+                    <button> Agregar al carrito<i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <div class="caracteristicas">
+
+                <h3>Características</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt magnam molestiae cum
+                    perferendis veritatis, aperiam non dicta repellat, nesciunt neque!</p>
+            </div>
+
         </section>
 
-    </div>
-
-  <section class="detalle">   
-   <div class="precio">
-    <h3>$3.199</h3>
-   </div>
-
-   <div class="unidades">
-   <div class="stock">
-    <form action="#">
-        <select name="cantidad" id="cantidad">
-            <option value="1">1</option>       
-            <option value="2">2</option>
-            <option value="3">3</option>
-            
-        </select> 
-    </form>
-   </div>
-
-   <div class="carrito">
-    <button> Agregar al carrito<i class="fas fa-shopping-cart"></i></button> 
-   </div>
-</div>
-
-   <div class="caracteristicas">
-
-    <h3>Características</h3>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, incidunt magnam molestiae cum perferendis veritatis, aperiam non dicta repellat, nesciunt neque!</p>
-   </div>
-
-</section>
 
 
+        <h1 class="masArticulos">También te puede interesar...</h1>
+        <hr id="linea-refleja-tu-estilo">
 
-<h1 class="masArticulos">También te puede interesar...</h1>
-<hr id="linea-refleja-tu-estilo">
-
-<section class="articulosInteres" class="padding-articulos">
-    <article>
-        <img src="\img\mesas, dressoires, ratonas\Mesas, dressoires, ratonas\MESA NEOLITH BETON.jpg"
-            alt="mesa neolith beton">
-        <h2>Mesa Neolith Beton + Base Hierro</h2>
-        <p>2,40mx1,10m</p>
-        <p>$900.000</p>
-        <i class="fas fa-eye"></i>
-    </article>
-    <article>
-        <img src="\img\sillas\COMBO SILLAS DELUXE.JPG" alt="mesa neolith beton">
-        <h2>Sillas Deluxe</h2>
-        <p>x6 Unidades</p>
-        <p>$90,000</p>
-        <i class="fas fa-eye"></i>
-    </article>
-    <article>
-        <img src="\img\sillas\SILLA MATERA NEGRA.jpg" alt="mesa neolith beton">
-        <h2>Silla Matera Negra</h2>
-        <p>$45,000</p>
-        <i class="fas fa-eye"></i>
-    </article>
-    <article>
-        <img src="\img\mesas, dressoires, ratonas\Mesas, dressoires, ratonas\MESA NEOLITH NERO.jpg"
-            alt="mesa neolith beton">
-        <h2>Mesa Neolith Nero + Base Madera ¨Cuadros¨</h2>
-        <p>2,50mx1,120m</p>
-        <p>$975.000</p>
-        <i class="fas fa-eye"></i>
-    </article>
-    <article>
-        <img src="/img/home decor/espejo.jpeg"
-            alt="mesa neolith beton">
-        <h2>Mesa Neolith Nero + Base Madera ¨Cuadros¨</h2>
-        <p>2,50mx1,120m</p>
-        <p>$975.000</p>
-        <i class="fas fa-eye"></i>
-    </article>
-    <article>
-        <img src="/img/vajilla/taza.jpeg"
-            alt="mesa neolith beton">
-        <h2>Mesa Neolith Nero + Base Madera ¨Cuadros¨</h2>
-        <p>2,50mx1,120m</p>
-        <p>$975.000</p>
-        <i class="fas fa-eye"></i>
-    </article>
+        <section class="articulosInteres" class="padding-articulos">
+            <article>
+                <img src="\img\mesas, dressoires, ratonas\Mesas, dressoires, ratonas\MESA NEOLITH BETON.jpg"
+                    alt="mesa neolith beton">
+                <h2>Mesa Neolith Beton + Base Hierro</h2>
+                <p>2,40mx1,10m</p>
+                <p>$900.000</p>
+                <i class="fas fa-eye"></i>
+            </article>
+            <article>
+                <img src="\img\sillas\COMBO SILLAS DELUXE.JPG" alt="mesa neolith beton">
+                <h2>Sillas Deluxe</h2>
+                <p>x6 Unidades</p>
+                <p>$90,000</p>
+                <i class="fas fa-eye"></i>
+            </article>
+            <article>
+                <img src="\img\sillas\SILLA MATERA NEGRA.jpg" alt="mesa neolith beton">
+                <h2>Silla Matera Negra</h2>
+                <p>$45,000</p>
+                <i class="fas fa-eye"></i>
+            </article>
+            <article>
+                <img src="\img\mesas, dressoires, ratonas\Mesas, dressoires, ratonas\MESA NEOLITH NERO.jpg"
+                    alt="mesa neolith beton">
+                <h2>Mesa Neolith Nero + Base Madera ¨Cuadros¨</h2>
+                <p>2,50mx1,120m</p>
+                <p>$975.000</p>
+                <i class="fas fa-eye"></i>
+            </article>
+            <article>
+                <img src="/img/home decor/espejo.jpeg" alt="mesa neolith beton">
+                <h2>Mesa Neolith Nero + Base Madera ¨Cuadros¨</h2>
+                <p>2,50mx1,120m</p>
+                <p>$975.000</p>
+                <i class="fas fa-eye"></i>
+            </article>
+            <article>
+                <img src="/img/vajilla/taza.jpeg" alt="mesa neolith beton">
+                <h2>Mesa Neolith Nero + Base Madera ¨Cuadros¨</h2>
+                <p>2,50mx1,120m</p>
+                <p>$975.000</p>
+                <i class="fas fa-eye"></i>
+            </article>
 
 
-</section>
+        </section>
 
 
     </main>
@@ -215,6 +222,7 @@
             </section>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
