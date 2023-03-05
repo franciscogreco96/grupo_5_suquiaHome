@@ -188,7 +188,7 @@ footer a {
 
 /* --------------------------MOBILE FIRST-------------------------- */
 /* Estilo al header para comenzar */
-@media (min-width:360px){
+
 
 /* ESTILO AL MAIN Y SECCIONES */
 
@@ -213,14 +213,11 @@ footer a {
      border: 2px solid black;   
 }
 
-   
-
 .itemCarro{
     color: white;
     background-color: black;
     padding: 10px 10px;
 }
-
 
 .producto-container{
     display: flex;
@@ -266,6 +263,11 @@ footer a {
     padding: 20px;
     border-top: 2px solid black;;
 }
+.total-carrito .seguir-comprando  a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
 .boton-compra{
     display: flex;
     flex-wrap: nowrap;
@@ -282,15 +284,16 @@ footer a {
     transition: all 0.6s;
     border-radius: 9px;
     font-weight: 700;
+    font-size: 15px;
 }
 .boton-compra button:hover {
     background-color: black;
     color: white;
 }
-}
+
 /* ----------------------- TABLET----------------------- */
 
-@media (min-width: 460px) { 
+@media (min-width: 400px) { 
 
     .encabezado-fueguitos-12-pagos {
         display: none;

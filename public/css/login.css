@@ -107,6 +107,39 @@ header nav ul li {
     margin-right: 4%;
 }
 
+/* MAIN */
+main h2{
+    text-align: center;
+    margin: 2%;
+}
+.form{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form input{
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.form button{
+    background-color: black;
+    color: white;
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.form button:hover{
+    width: 32%;
+    padding: 1.2%;
+}
+
 /* FOOTER */
 
 footer button {
