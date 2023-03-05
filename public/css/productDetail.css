@@ -249,9 +249,7 @@ main h2{
     border-radius: 10px;
 }
 
- .descripcion800{
-    display: none;
-}
+ 
 
 .caracteristicas{
     padding-top: 30px;
@@ -275,9 +273,13 @@ main h2{
     padding-top: 2%;
 }
 
-.descripcion800px h1, h4, p{
+.descripcion800px h1, h4{
     margin: 3% 0;
 } 
+.descripcion800px  p{
+    margin: 3% 0;
+}
+
 .descripcion800px h1{
     font-size: 20px;
 }
