@@ -243,9 +243,6 @@ footer a {
 /* TABLET */
 @media (min-width:460px) {
     
-    .encabezado-fueguitos-12-pagos {
-     display: none;
- }
   }
  
   /* DESKTOP */

@@ -361,10 +361,6 @@ main i {
 
 /* Media querys */
  @media(min-width: 400px){
-
-    .encabezado-fueguitos-12-pagos {
-        display: none;
-    }
     main article{
         width: 28%;
        }

@@ -198,7 +198,7 @@ footer a {
     margin-top: 20px;
     margin-left: 20%;
     margin-right: 20%;
-    font-size: 4vw;
+    font-size: 2.0vw;
 }
 #linea-titulo {
     border: none;
@@ -223,7 +223,7 @@ footer a {
     color: white;
     background-color: black;
     padding: 10px 10px;
-    font-size: 3vw;
+    font-size: 1.5vw;
 }
 
 .producto-container{
@@ -268,7 +268,7 @@ main .producto-container li{
     font-weight: 600;
     width: 10vw;
     text-align: center;
-    font-size: 3vw;
+    font-size: 1.5vw;
 }
 .subtotal i{
     padding-left: 3px;
@@ -292,7 +292,7 @@ main .producto-container li{
 }
 
 .seguir-comprando, .totalCompra{
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 600;
 }
 
@@ -306,28 +306,23 @@ main .producto-container li{
  
 .boton-compra button{
     margin-right: 20px;
-    padding: 5px;
+    padding: 0.3vw;
     background-color: black;
     color: white;
-    border: solid black 1px;
     transition: all 0.6s;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2vw;
     cursor: pointer;
     width: 20vw;
     margin-right: 10%;
 }
 .boton-compra button:hover {
-   padding: 0.5vw;
+   padding: 0.4vw;
 }
 
 /* ----------------------- TABLET----------------------- */
 
 @media (min-width: 400px) { 
-
-    .encabezado-fueguitos-12-pagos {
-        display: none;
-    }
 
     .producto-container  li img{
         width: 60px;
@@ -356,9 +351,6 @@ main .producto-container li{
     }
     .totalCompra{
         margin-right: 10%;
-    }
-    .boton-compra button{
-        font-size: 22px;
     }
 
 }
