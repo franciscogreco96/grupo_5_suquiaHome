@@ -23,8 +23,11 @@ header a {
     text-decoration: none;
 }
 
-header i:hover,
-a:hover {
+header i:hover{
+    color: #90bfc6;
+}
+
+header a:hover {
     color: #90bfc6;
 }
 
@@ -197,11 +200,11 @@ font-size: 12px;
 background-color: black;
 color: white;
 border: solid black 1px;
-transition: all 0.8s;
 border-radius: 9px;
 font-weight: 700;
 cursor: pointer;
 }
+
 
 main button a{
     list-style: none;
@@ -223,6 +226,7 @@ main button a{
 .fotoInf img{
     width: 40vw;
     height: auto;
+    cursor: pointer;
 }
 main h2{
     text-align: center;
@@ -283,6 +287,12 @@ main h2{
     font-size: 30px;
 }
 
+#cantidad{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
 
 /* ----------------------------- */
 /* SECCION INTERES */
@@ -293,6 +303,7 @@ main article {
     margin-bottom: 4%;
    text-align: center; 
    color: white;
+   cursor: pointer;
 }
 main article:hover {
     background-color: rgba(0, 0, 0);
@@ -383,6 +394,7 @@ main i {
     }
         .fotoInf img{
             width: 45%;
+            cursor: pointer;
         }
         .fotoInf img:hover{
             transition: 0.8s;
