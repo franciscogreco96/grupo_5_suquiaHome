@@ -139,6 +139,25 @@ main h2{
     width: 32%;
     padding: 1.2%;
 }
+.form .recordar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+}
+.form .recordar label{
+    color: black;
+    font-size: 1.25vw;
+}
+.form .recordar input:checked{
+    background-color: black;
+    color: black;
+}
+.preguntasExtras {
+    padding-bottom: 15px;
+    color: black;
+    list-style: none;
+}
 
 /* FOOTER */
 
