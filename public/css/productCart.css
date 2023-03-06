@@ -274,6 +274,7 @@ main .producto-container li{
 .subtotal i{
     padding-left: 3px;
     cursor: pointer;
+    width: 0.1vw;
 }
 .total-carrito{
     display: flex;
