@@ -87,5 +87,9 @@
 > [morph](https://www.morph.com.ar/deco-hogar.html) : En esta página usaremos de referencia la paleta de colores de la misma ya que suquia home para a tener esa paleta de colores de blanco y negro
 
 
+## Link de tablero de trabajo con app trello
+https://trello.com/b/3cpShJsO/proyecto-integrador-dh
+
+
 
 
