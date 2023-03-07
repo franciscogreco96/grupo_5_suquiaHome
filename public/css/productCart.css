@@ -262,6 +262,7 @@ footer a {
     background-color: black;
     color: white;
     cursor: pointer;
+    font-size: 15px;
 }
 
 main .producto-container li{
@@ -344,9 +345,9 @@ main .producto-container li{
         flex-wrap: wrap;
         align-items: center;
     }
-    .total-carrito{
+    /* .total-carrito{
         font-size: 20px;
-    }
+    } */
     .seguir-comprando{
         margin-left: 40px;
     }
