@@ -1,0 +1,50 @@
+
+<!-- head -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Suquia Home</title>
+
+    <!-- Rutas de estilo y fuentes -->
+    <link rel="stylesheet" href="../css/register.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- header -->
+
+    <%- include('../partials/header') %>    
+
+    <main>
+        <div>
+            <h2>CREA UNA CUENTA</h2>
+            <form class="form" action="/home" formmethod="post" >
+                <input type="text" name="nombre" placeholder="Nombre" title="Inserte su nombre" required >
+                <input type="text" name="apellido" placeholder="Apellido" title="Inserte su apellido" required>
+                <input type="email" name="e-mail" placeholder="Correo electrónico" title="Inserte su e-mail" required>
+                <input type="tel" name="telefono" placeholder="Teléfono +549()" title="Indique su número de teléfono" required>
+                <input type="password" name="contraseña" placeholder="Contraseña (8 a 20 caracteres)" title="Inserte lo que va a ser su próxima contraseña" minlength="8"
+                    maxlength="20" required>
+                <input type="password" name="confirmar contraseña" placeholder="Confirmar Contraseña" title="Debe ser igual a la contraseña anterior" required>
+                <button type="submit">CREAR CUENTA</button>
+            </form>
+        </div>
+    </main>
+
+<!-- footer -->
+
+  <%- include('../partials/footer') %>
+
+</body>
+
+</html>
