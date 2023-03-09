@@ -17,6 +17,7 @@ body {
 header {
     background-color: black;
     color: white;
+    padding-top: 2%;
 }
 
 header a {
@@ -34,7 +35,7 @@ header a:hover {
 .encabezado-fueguitos-12-pagos {
     width: 100%;
     font-size: 0.9vw;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     padding: 1%;
@@ -362,10 +363,24 @@ main i {
     
 
 /* Media querys */
- @media(min-width: 400px){
+ @media(min-width: 460px){
     main article{
         width: 28%;
        }
+       header {
+        background-color: black;
+        color: white;
+        padding-top: 0;
+    }
+    .encabezado-fueguitos-12-pagos {
+        width: 100%;
+        font-size: 0.9vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1%;
+        color: white;
+    }   
       
 } 
 

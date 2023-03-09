@@ -16,6 +16,7 @@ body {
 header {
     background-color: black;
     color: white;
+    padding-top: 2%;
 }
 
 header a {
@@ -30,7 +31,7 @@ a:hover {
 .encabezado-fueguitos-12-pagos {
     width: 100%;
     font-size: 0.9vw;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     padding: 1%;
@@ -242,7 +243,20 @@ footer a {
 
 /* TABLET */
 @media (min-width:460px) {
-    
+    .encabezado-fueguitos-12-pagos {
+        width: 100%;
+        font-size: 0.9vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1%;
+        color: white;
+    }
+    header {
+        background-color: black;
+        color: white;
+        padding-top: 0;
+    }
   }
  
   /* DESKTOP */
