@@ -16,6 +16,7 @@ body {
 header {
     background-color: black;
     color: white;
+    padding-top: 2%;
 }
 
 header a {
