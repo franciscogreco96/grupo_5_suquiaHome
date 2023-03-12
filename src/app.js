@@ -60,3 +60,15 @@ app.get("/register", function(req, res){
     res.render(path.join(__dirname, "./views/users/login.ejs"))
 }); */
 
+
+//Ruta para ingreso a creacion de produto
+
+app.get("/productCreation", function(req,res){
+    res.render(path.join(__dirname,"./views/products/productCreation.ejs" ))
+})
+
+//Ruta para ingreso a edicion de produto
+
+app.get("/productEdition", function(req,res){
+    res.render(path.join(__dirname,"./views/products/productEdition.ejs" ))
+})
