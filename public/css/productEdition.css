@@ -1,0 +1,268 @@
+/* tipografia: raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "raleway", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+    color: white;
+    padding-top: 2%;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header i:hover,
+a:hover {
+    color: #90bfc6;
+}
+
+.encabezado-fueguitos-12-pagos {
+    width: 100%;
+    font-size: 0.9vw;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+    color: white;
+}
+
+.encabezado-fueguitos-12-pagos i, p {
+    padding: 0% 1%;
+}
+
+#logo {
+    width: 8%;
+    padding: 0%;
+    position: relative;
+    left: 16.5vw;
+}
+
+#posicionamiento-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconos-blancos {
+    color: white;
+    font-size: 1.2vw;
+    position: relative;
+    right: 200%;
+}
+
+#icono-login {
+    position: relative;
+    left: 24vw;
+    color: white;
+    font-size: 1.2vw;
+}
+
+#posicionamiento-header form,
+section {
+    display: inline;
+}
+
+#lupita {
+    background-color: black;
+    color: white;
+    border: 0;
+    display: block;
+    position: relative;
+    left: 200%;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    font-size: 0.8vw;
+    white-space: nowrap;
+    padding-bottom: 2%;
+    text-decoration: none;
+    margin-right: 4%;
+}
+
+header nav ul a {
+    color: white;
+}
+
+header nav ul li {
+    padding: 0% 2%;
+    margin-right: 4%;
+}
+
+/* MAIN */
+main h2{
+    text-align: center;
+    margin: 2%;
+}
+.form{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.form input{
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+}
+.imagen-producto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+    text-align: left;
+    width: 30%;
+    border: solid #9c9c9d 1px;
+}
+.imagen-producto label{
+    font-size: 1.2vw;
+}
+.imagen-producto input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.categoria{
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+}
+
+.form button{
+    background-color: black;
+    color: white;
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.form button:hover{
+    width: 32%;
+    padding: 1.2%;
+}
+
+/* FOOTER */
+
+footer button {
+    background-color: black;
+    color: white;
+    border: solid #e3e4e5 1px;
+    transition: all 0.6s;
+}
+
+footer a {
+    transition: all 0.6s;
+}
+
+footer a:hover {
+    color: #5a8284;
+}
+
+footer button:hover {
+    background-color: #5a8284;
+    color: black;
+    border: solid #5a8284 1px;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    font-size: 0.8vw;
+    line-height: 200%;
+}
+
+#formulario-footer-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div a,
+div,
+section {
+    padding: 1%;
+}
+
+#fromulario-footer-flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+}
+
+#fromulario-footer-flex-column input,
+button {
+    font-size: 0.8vw;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+footer button {
+    display: block;
+    cursor: pointer;
+}
+
+footer a {
+    color: white;
+}
+#find-us{
+    width: 25%;
+}
+
+/* TABLET */
+@media (min-width:460px) {
+    header {
+        background-color: black;
+        color: white;
+        padding-top: 0;
+    }
+    .encabezado-fueguitos-12-pagos {
+        width: 100%;
+        font-size: 0.9vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1%;
+        color: white;
+    }
+  }
+ 
+  /* DESKTOP */
+  @media (min-width:800px) {
+    
+  }

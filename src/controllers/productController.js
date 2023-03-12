@@ -1,15 +1,15 @@
 const productController = {
     cart: (req, res) => {
-        res.render("products/productCart")
+        res.render("product/productCart")
     },
     detail: (req, res) => {
-        res.render("products/productDetail")
+        res.render("product/productDetail")
     },
     edition: (req, res) => {
-        res.render("products/productEdition")
+        res.render("product/productEdition")
     },
     creation: (req, res) => {
-        res.render("products/productCreation")
+        res.render("product/productCreation")
     },
 
 }

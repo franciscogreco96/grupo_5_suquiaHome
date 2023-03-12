@@ -1,0 +1,64 @@
+
+<!-- head -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produt Creation | Suquia Home</title>
+
+    <!-- Rutas de estilo y fuentes -->
+    <link rel="stylesheet" href="../css/productEdition.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- header -->
+
+    <%- include('../partials/header') %>    
+
+    <main>
+        <div>
+            <h2>PRODUCT EDITION</h2>
+            <form class="form" action="/home" formmethod="post" >
+                <input type="text" name="nombre" placeholder="Nombre" title="Inserte nombre del producto" required >
+                
+                <select name="categoria" id="categoria" class="categoria" placeholder="Categoría">
+                    <option value="Categoría">Categoría </option>
+                    <option value="interior">Interior</option>
+                    <option value="exterior">Exterior</option>
+                    <option value="baño">Bazar</option>
+                    <option value="exterior">Sillas</option>
+                    <option value="baño">Mesas</option>
+                </select>
+
+                <div class="imagen-producto">
+                <label>Ingrese una imagen del producto</label>
+                <input type="file" name="imagen" id="imagen" placeholder="Añadir imagen del producto" title="Agregar imagen del producto" required>
+                </div>
+                
+                <input type="text" name="descripcion" placeholder="Descipción" title="Inserte una descripcion" required>
+                <input type="text" name="color" placeholder="Color" title="Inserte el color" required>
+                <input type="text" name="tamaño" placeholder="Tamaño" title="Indique tamaño del producto" required>
+                <input type="text" name="precio" placeholder="Precio" title="Inserte precio" required>
+                
+                <button type="submit">EDITAR PRODUCTO</button>
+            </form>
+        </div>
+    </main>
+
+<!-- footer -->
+
+  <%- include('../partials/footer') %>
+
+</body>
+
+</html>
