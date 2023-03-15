@@ -16,7 +16,8 @@ body {
 header {
     background-color: black;
     color: white;
-    padding-top: 2%;
+    padding-top: 1%;
+   
 }
 
 header a {
@@ -107,6 +108,7 @@ color: white;
 background-color: black;
 display: flex;
 justify-content: center;
+align-items: center;    
 }
 
 header nav ul a {
@@ -253,10 +255,19 @@ footer a {
 
 /* TABLET */
 @media (min-width:460px) {
-    .encabezado-fueguitos-12-pagos{
+    .encabezado-fueguitos-12-pagos {
+        width: 100%;
+        font-size: 0.9vw;
         display: flex;
-        
+        flex-direction: row;
+        justify-content: center;
+        padding: 1%;
+        color: white;
     }
+    header {
+        padding-top: 1%;
+    }
+   
     header nav ul {
         display: flex;
         flex-direction: row;
@@ -273,8 +284,6 @@ footer a {
     header nav .menuHamburguesa i{
         display: none;
         }
-
-
   }
  
   /* DESKTOP */
