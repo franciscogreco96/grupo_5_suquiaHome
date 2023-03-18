@@ -2,6 +2,9 @@ const productController = {
     index: (req, res) => {
         res.render("product/productList");
     },
+    list:(req, res) => {
+        res.render("product/productList")
+    },
     cart: (req, res) => {
         res.render("product/productCart")
     },
