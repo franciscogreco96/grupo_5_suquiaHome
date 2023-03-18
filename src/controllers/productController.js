@@ -1,9 +1,12 @@
 const productController = {
+    index: (req, res) => {
+        res.render("product/productList");
+    },
     cart: (req, res) => {
         res.render("product/productCart")
     },
     detail: (req, res) => {
-        res.render("/productDetail")
+        res.render("product/productDetail")
     },
     edition: (req, res) => {
         res.render("product/productEdition")

@@ -103,7 +103,8 @@ header nav .menuHamburguesa i{
     background-color: black;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
+    font-size: 70%; 
     }
 
 header nav ul a {
@@ -119,6 +120,7 @@ header nav ul li {
 main h2{
     text-align: center;
     margin: 2%;
+    font-size: 4vw;
 }
 .form{
     width: 100%;
@@ -133,6 +135,7 @@ main h2{
     width: 30%;
     margin: 1%;
     padding: 1%;
+    font-size: 1.5vw;
 }
 .imagen-producto{
     display: flex;
@@ -158,6 +161,7 @@ main h2{
     width: 30%;
     margin: 1%;
     padding: 1%;
+    font-size: 1.5vw;
 }
 
 .form button{

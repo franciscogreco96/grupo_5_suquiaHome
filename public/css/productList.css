@@ -16,7 +16,9 @@ body {
 header {
     background-color: black;
     color: white;
-    padding-top: 1%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+   
 }
 
 header a {
@@ -31,11 +33,12 @@ a:hover {
 .encabezado-fueguitos-12-pagos {
     width: 100%;
     font-size: 0.9vw;
-    display: none;
+    /* display: flex; */
     flex-direction: row;
     justify-content: center;
     padding: 1%;
     color: white;
+    display: none;
 }
 
 .encabezado-fueguitos-12-pagos i, p {
@@ -45,7 +48,7 @@ a:hover {
 #logo {
     width: 8%;
     padding: 0%;
-    position: relative;
+    position:relative;
     left: 16.5vw;
 }
 
@@ -54,6 +57,8 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 2vw;
+
 }
 
 .iconos-blancos {
@@ -88,24 +93,28 @@ section {
 
 header nav ul {
     display: none;
+    flex-direction: column;
     color: white;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     margin-top: 1%;
     font-size: 0.8vw;
     white-space: nowrap;
     padding-bottom: 2%;
     text-decoration: none;
-    margin-right: 4%;
+   /*  margin-right: 4%; */
 }
+
 header nav .menuHamburguesa i{
-    color: white;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    font-size: 70%;   
-    }
+color: white;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;    
+font-size: 70%;
+margin-left: 2%;
+}
 
 header nav ul a {
     color: white;
@@ -117,65 +126,121 @@ header nav ul li {
 }
 
 /* MAIN */
-main h2{
-    text-align: center;
-    margin: 2%;
-    font-size: 4vw;
-}
-.form{
-    width: 100%;
+.flex-articulos {
     display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} 
-
-.form input{
-    width: 30%;
-    margin: 1%;
-    padding: 1%;
-    font-size: 1.5vw;
-}
-.imagen-producto{
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
-    margin: 1%;
-    padding: 1%;
-    text-align: left;
-    width: 30%;
-    border: solid #9c9c9d 1px;
+    justify-content: space-evenly;
+    padding: 2% 0%;
 }
-.imagen-producto label{
-    font-size: 1.2vw;
+
+
+
+main section {
+    font-size: 1vh;
 }
-.imagen-producto input{
-    display: flex;
-    flex-wrap: wrap;
+main article img {
     width: 100%;
+    height: auto;
+}
+
+main article h2 {
+    font-size: 1vw;
+}
+
+main article p {
+    font-weight: 600;
+    font-size: 1vw;
 }
 
 
-.categoria{
-    width: 30%;
-    margin: 1%;
-    padding: 1%;
-    font-size: 1.5vw;
+main i {
+    font-size: 1vw;
+    display: block;
+    position: relative;
+    padding: 1% 1%;
 }
 
-.form button{
+main article {
+    transition: all 0.8s;
     background-color: black;
     color: white;
-    width: 30%;
-    cursor: pointer;
-    transition: all 0.8s;
+    transition: all 0.6s;
+    width: 40%;
+    margin-bottom: 4%;
+   text-align: center; 
+   cursor: pointer;
 }
 
-.form button:hover{
-    width: 32%;
-    padding: 1.2%;
+main article:hover {
+    box-shadow: 4px 4px 2px 2px rgb(195, 200, 201);
+    background-color: #e3e4e5;
+    color: black;
+    transform: rotateY(10deg);
 }
+
+.main-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.flex-categorias{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1%;
+    padding-right: 4%;
+}
+
+.flex-categorias a{
+    color: black;
+    padding: 3%;
+    text-decoration: none;
+    font-weight: 600;
+    border: black solid 1px;
+    text-align: center;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.flex-categorias a:hover{
+   background-color: black;
+   color: white;
+}
+
+.flex-categorias h2{
+    color: black;
+    padding-bottom: 5%;
+    font-weight: 900;
+    font-size: 3vw;
+}
+main h1{
+    border: black solid ;
+    width: 20%;
+    color: white;
+    font-size: 2vw;
+    margin-left: 40%;
+    text-align: center;
+    margin-top: 5%;
+    padding: 1%;
+    background-color: black;
+}
+
+.ordenar-por{
+    text-align: center;
+    padding: 4% 0%;
+}
+
+.ordenar-por label{
+    font-weight: 600;
+}
+
+.ordenar-por select{
+    cursor: pointer;
+}
+
+
 
 /* FOOTER */
 
@@ -215,9 +280,12 @@ footer {
 }
 
 footer div a,
-div,
 section {
     padding: 1%;
+}
+
+footer div div{
+   padding: 1%;
 }
 
 #fromulario-footer-flex-column {
@@ -244,19 +312,20 @@ button {
 }
 
 footer button {
-    display: block;
-    cursor: pointer;
+   display: block;
+   cursor: pointer;
 }
 
 footer a {
     color: white;
 }
 #find-us{
-    width: 25%;
+   width: 25%;
 }
 
-/* TABLET */
-@media (min-width:460px) {
+
+@media (min-width: 460px) { 
+
     .encabezado-fueguitos-12-pagos {
         width: 100%;
         font-size: 0.9vw;
@@ -269,6 +338,9 @@ footer a {
     header {
         padding-top: 0;
     }
+    main article{
+        width: 28%;
+       }
     
     header nav ul {
         display: flex;
@@ -286,9 +358,13 @@ footer a {
     header nav .menuHamburguesa i{
         display: none;
         }
-  }
- 
-  /* DESKTOP */
-  @media (min-width:800px) {
-    
-  }
+
+}
+
+/* DESKTOP */
+@media (min-width:800px) {
+    main article{
+        width: 15%;
+       }
+ }
+

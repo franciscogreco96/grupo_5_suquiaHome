@@ -104,6 +104,7 @@ header nav .menuHamburguesa i{
     display: flex;
     justify-content: center;
     align-items: center;    
+    font-size: 70%;
     }
 
 header nav ul a {
