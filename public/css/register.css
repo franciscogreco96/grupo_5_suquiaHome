@@ -135,6 +135,10 @@ main h2{
     margin: 1%;
     padding: 1%;
 }
+#fotoPerfil{
+    border: 1px solid #5a8284;
+    border-radius: 2px;
+}
 
 .form button{
     background-color: black;

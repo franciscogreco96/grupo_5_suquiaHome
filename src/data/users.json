@@ -1,0 +1,42 @@
+[{
+    "id": 1,
+    "first_name": "Chucho",
+    "last_name": "Blacklawe",
+    "email": "cblacklawe0@tripod.com",
+    "contraseña": "Jmc4WnUz",
+    "categoria": "administrador",
+    "imagen": "http://dummyimage.com/199x100.png/dddddd/000000"
+  }, {
+    "id": 2,
+    "first_name": "Anestassia",
+    "last_name": "Duff",
+    "email": "aduff1@go.com",
+    "contraseña": "gheuBbEuGqn3",
+    "categoria": "administrador",
+    "imagen": "http://dummyimage.com/193x100.png/cc0000/ffffff"
+  }, {
+    "id": 3,
+    "first_name": "Townie",
+    "last_name": "Houlworth",
+    "email": "thoulworth2@surveymonkey.com",
+    "contraseña": "dg8rglg",
+    "categoria": "usuario",
+    "imagen": "http://dummyimage.com/145x100.png/cc0000/ffffff"
+  }, {
+    "id": 4,
+    "first_name": "Flo",
+    "last_name": "Soonhouse",
+    "email": "fsoonhouse3@yellowbook.com",
+    "contraseña": "VYZMVeb0B",
+    "categoria": "administrador",
+    "imagen": "http://dummyimage.com/223x100.png/dddddd/000000"
+  }, {
+    "id": 5,
+    "first_name": "Cully",
+    "last_name": "Bodechon",
+    "email": "cbodechon4@wikimedia.org",
+    "contraseña": "LASx9QiWfXP",
+    "categoria": "administrador",
+    "imagen": "http://dummyimage.com/248x100.png/cc0000/ffffff"
+  }]
+  
