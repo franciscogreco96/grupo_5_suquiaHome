@@ -11,83 +11,83 @@
   },
   {
     "id": 2,
-    "nombre": "Mesa Neolith Beton + Base de Caño Modelo 'H'",
-    "descripcion": "2,40x1,20m",
+    "nombre": "Dressoire Granito Negro Brasil Leather + Base madera Paraíso",
+    "descripcion": "1,50x0,40m",
     "categoria": "",
     "colores": "Indigo",
-    "precio": 900000,
-    "descuento": 10,
-    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA-NEOLITH-BETON.jpg"
+    "precio": 350000,
+    "descuento": 15,
+    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/DRESSOIRE GRANITO NEGRO BRASIL LEATHER.jpg"
   },
   {
     "id": 3,
-    "nombre": "Mesa Neolith Beton + Base de Caño Modelo 'H'",
-    "descripcion": "2,40x1,20m",
+    "nombre": "Dressoire Mármol Negro Marquina + Base Hierro Negra",
+    "descripcion": "1,60x0,50m",
     "categoria": "",
     "colores": "Indigo",
-    "precio": 900000,
-    "descuento": 10,
-    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA-NEOLITH-BETON.jpg"
+    "precio": 410000,
+    "descuento": 5,
+    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/DRESSOIRE MARMOL NEGRO MARQUINA.jpg"
   },
   {
     "id": 4,
-    "nombre": "Mesa Neolith Beton + Base de Caño Modelo 'H'",
+    "nombre": "Mesa Auxiliar Marmol Carrara + Base Hierro Dorada",
     "descripcion": "2,40x1,20m",
     "categoria": "",
     "colores": "Indigo",
     "precio": 900000,
     "descuento": 10,
-    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA-NEOLITH-BETON.jpg"
+    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA AUXILIAR MARMOL CARRARA.jpg"
   },
   {
     "id": 5,
-    "nombre": "Mesa Neolith Beton + Base de Caño Modelo 'H'",
-    "descripcion": "2,40x1,20m",
+    "nombre": "Mesa Neolith Nero + Base de Madera Modelo 'CUADROS'",
+    "descripcion": "2,50x1,25m",
     "categoria": "",
     "colores": "Indigo",
-    "precio": 900000,
-    "descuento": 10,
-    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA-NEOLITH-BETON.jpg"
+    "precio": 100000,
+    "descuento": 12,
+    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA NEOLITH NERO.jpg"
   },
   {
     "id": 6,
-    "nombre": "Mesa Neolith Beton + Base de Caño Modelo 'H'",
-    "descripcion": "2,40x1,20m",
+    "nombre": "Silla Matera Blanca",
+    "descripcion": "",
     "categoria": "",
     "colores": "Indigo",
-    "precio": 900000,
-    "descuento": 10,
-    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA-NEOLITH-BETON.jpg"
+    "precio": 120000,
+    "descuento": 8,
+    "imagen": "../../img/sillas/SILLA MATERA BLANCA.jpg"
   },
   {
     "id": 7,
-    "nombre": "Mesa Neolith Beton + Base de Caño Modelo 'H'",
-    "descripcion": "2,40x1,20m",
+    "nombre": "Silla Matera Negra",
+    "descripcion": "",
     "categoria": "",
     "colores": "Indigo",
-    "precio": 900000,
+    "precio": 120000,
     "descuento": 10,
-    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA-NEOLITH-BETON.jpg"
+    "imagen": "../../img/sillas/SILLA MATERA NEGRA.jpg"
   },
   {
     "id": 8,
-    "nombre": "Mesa Neolith Beton + Base de Caño Modelo 'H'",
-    "descripcion": "2,40x1,20m",
+    "nombre": "Sillas Deluxe Natuarls",
+    "descripcion": "x 6 uds",
     "categoria": "",
     "colores": "Indigo",
-    "precio": 900000,
-    "descuento": 10,
-    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA-NEOLITH-BETON.jpg"
+    "precio": 190000,
+    "descuento": 15,
+    "imagen": "../../img/sillas/COMBO SILLAS DELUXE.jpg"
   },
   {
     "id": 9,
-    "nombre": "Mesa Neolith Beton + Base de Caño Modelo 'H'",
-    "descripcion": "2,40x1,20m",
+    "nombre": "Taza + Platito",
+    "descripcion": "250ml",
     "categoria": "",
     "colores": "Indigo",
-    "precio": 900000,
-    "descuento": 10,
-    "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA-NEOLITH-BETON.jpg"
+    "precio": 3500,
+    "descuento": 7,
+    "imagen": "../../img/vajilla/taza.jpeg"
   },
   {
     "id": 10,

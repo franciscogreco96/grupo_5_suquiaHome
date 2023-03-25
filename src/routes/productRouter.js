@@ -7,11 +7,11 @@ router.get("/", productController.list);
 
 router.get("/productCart", productController.cart);
 
-router.get("/productDetail", productController.detail);
+router.get("/productDetail/:id", productController.detail);
 
 router.get("/productCreation", productController.creation);
 
-router.get("/productEdition", productController.edition);
+router.get("/productEdition/:id", productController.edition);
 
 module.exports = router;
 

@@ -134,6 +134,17 @@ header nav ul li {
     padding: 2% 0%;
 }
 
+.flex-articulos a{
+    color:white;
+    text-decoration: none;
+}
+.flex-articulos a:hover{
+    color:black;
+}
+
+article h2, p, i{
+    padding: 2%;
+}
 
 
 main section {

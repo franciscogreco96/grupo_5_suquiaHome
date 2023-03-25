@@ -36,7 +36,9 @@
             <% products.forEach( product=> {
               let precioFinal = (product.precio * ((100 - product.descuento) /100)).toFixed(0)
               %>
+
               <article>
+                <a href="/product/productDetail/<%= product.id%>">
                 <img src="<%= product.imagen  %>" alt="mesa neolith beton">
                 <h2>
                   <%= product.nombre%>
@@ -52,6 +54,8 @@
                 </p>
                 <i class="fas fa-eye"></i>
               </article>
+               </a>
+
               <% }); %>
           </div>
         </div>
