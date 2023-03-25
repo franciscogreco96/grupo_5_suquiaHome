@@ -7,13 +7,16 @@ const mainRouter = require("./routes/mainRouter.js");
 const productRouter = require("./routes/productRouter.js");
 const userRouter = require("./routes/userRouter.js");
 
-/* usando recursos estaticos public para evitar path.resolve */
+/* Middlewares*/
 app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
+/* app.use(methodOverride("_method")); */
 
-/* usando el mmotor de plantillas */
+/* usando el motor de plantillas */
 app.set("view engine", "ejs");
 
-/* para evitar usar path.resolve */
+/* para evitar usar path.resolve para acceder a la vistas */
 app.set("views", path.resolve(__dirname, "views"));
 
 /* Usando los enrutadores importados */
@@ -25,16 +28,3 @@ app.use("/user", userRouter);
 
 /* levantando el servidor */
 app.listen (3003, () => console.log("Servidor corriendo en el puerto 3003"));
-
-
-//Ruta para ingreso a creacion de produto
-
-/* app.get("/productCreation", function(req,res){
-    res.render(path.join(__dirname,"./views/products/productCreation.ejs" ))
-}) */
-
-//Ruta para ingreso a edicion de produto
-
-/* app.get("/productEdition", function(req,res){
-    res.render(path.join(__dirname,"./views/products/productEdition.ejs" ))
-}) */

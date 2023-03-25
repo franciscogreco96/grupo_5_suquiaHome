@@ -251,9 +251,6 @@ main h2{
     align-items: center;
 }
 
-/* .unidades div .stock form, .carrito form{
-    font-size: 5vw;
-} */
 
 .detalle .stock{
 
@@ -262,7 +259,6 @@ main h2{
 .detalle .stock select{
     padding: 10px;
     border-radius: 10px;
-    font-size: 1vw;
 }
 
  
@@ -503,7 +499,7 @@ main i {
     }
     .detalle .carrito button{
         border-radius: 5px;
-        padding: 5px;
+        padding: 1vw;
     } 
 .caracteristicas{
     display: flex;
