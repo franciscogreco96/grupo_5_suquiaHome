@@ -159,12 +159,6 @@ footer {
     flex-direction: column;
 }
 
-/* footer div a,
-div,
-section {
-    padding: 1%;
-}
- */
 footer div a,
 section {
     padding: 1%;
@@ -260,7 +254,7 @@ footer a {
     margin-top: 10px;
 }
 .producto-container  li img{
-    width: 20vw;
+    width: 15vw;
 }
 .producto-container .producto{
     width: 25vw;
@@ -287,7 +281,9 @@ footer a {
     background-color: black;
     color: white;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 1.5vw;
+    width: 4vw;
+    height: 2vw;
 }
 
 main .producto-container li{
@@ -352,7 +348,7 @@ main .producto-container li{
 @media (min-width: 460px) { 
 
     .producto-container  li img{
-        width: 60px;
+        width: 15vw;
     }
     
     .producto{

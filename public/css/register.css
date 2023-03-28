@@ -126,6 +126,7 @@ header nav ul li {
 main h2{
     text-align: center;
     margin: 2%;
+    font-size: 2.5vw;
 }
 .form{
     width: 100%;
@@ -137,9 +138,10 @@ main h2{
 } 
 
 .form input{
-    width: 30%;
+    width: 25vw;
     margin: 1%;
     padding: 1%;
+    font-size: 1vw;
 }
 #fotoPerfil{
     border: 1px solid #5a8284;
@@ -195,12 +197,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
-/* footer div a,
-div,
-section {
-    padding: 1%;
-} */
 
 footer div a,
 section {
