@@ -11,9 +11,7 @@ body {
     font-family: "raleway", sans-serif;
 }
 
- /* HEADER */
-
- header {
+header {
     background-color: black;
     color: white;
     padding-top: 1%;
@@ -121,6 +119,9 @@ header nav ul li {
     padding: 0% 2%;
     margin-right: 4%;
 }
+
+
+ 
 
 
 
@@ -306,8 +307,11 @@ footer div div{
 } */
 
 footer div a,
-div,
 section {
+    padding: 1%;
+}
+
+ footer div div {
     padding: 1%;
 }
 

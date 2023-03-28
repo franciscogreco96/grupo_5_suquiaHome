@@ -91,6 +91,10 @@ section {
     cursor: pointer;
 }
 
+footer{
+    margin-top: 2%;
+}
+
 header nav ul {
     display: none;
     color: white;
