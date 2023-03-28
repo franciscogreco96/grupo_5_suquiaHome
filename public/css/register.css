@@ -44,9 +44,15 @@ a:hover {
 
 #logo {
     width: 8%;
-    padding: 0%;
+    padding-top: 1%;
     position: relative;
     left: 16.5vw;
+}
+
+.menuHamburguesa{
+    padding: 1% 0%;
+    padding-left: 2%;
+    font-size: 2.5vw;
 }
 
 #posicionamiento-header {
@@ -190,10 +196,23 @@ footer {
     flex-direction: column;
 }
 
-footer div a,
+/* footer div a,
 div,
 section {
     padding: 1%;
+} */
+
+footer div a,
+section {
+    padding: 1%;
+}
+
+ footer div div {
+    padding: 1%;
+}
+
+footer {
+    margin-top: 2%;
 }
 
 #fromulario-footer-flex-column {

@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const methodOverride = require("method-override");
 
 /* importando los enrutadores */
 const mainRouter = require("./routes/mainRouter.js");
@@ -11,6 +12,7 @@ const userRouter = require("./routes/userRouter.js");
 app.use(express.static(path.join(__dirname, "../public")));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+app.use(methodOverride("_method"));
 /* app.use(methodOverride("_method")); */
 
 /* usando el motor de plantillas */

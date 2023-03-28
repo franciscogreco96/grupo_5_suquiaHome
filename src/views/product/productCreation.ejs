@@ -14,7 +14,7 @@
     <main>
         <div>
             <h2>PRODUCT CREATION</h2>
-            <form class="form" action="/home" formmethod="post" >
+            <form class="form" action="/product" method="POST" enctype="multipart/form-data">
                 <input type="text" name="nombre" placeholder="Nombre" title="Inserte nombre del producto" required >
                 
                 <select name="categoria" id="categoria" class="categoria" placeholder="Categoría">
@@ -28,13 +28,13 @@
 
                 <div class="imagen-producto">
                 <label>Ingrese una imagen del producto</label>
-                <input type="file" name="imagen" id="imagen" placeholder="Añadir imagen del producto" title="Agregar imagen del producto" required>
+                <input type="file" name="imagen" id="imagen" placeholder="Añadir imagen del producto" title="Agregar imagen del producto">
                 </div>
                 
                 <input type="text" name="descripcion" placeholder="Descipción" title="Inserte una descripcion" required>
-                <input type="text" name="color" placeholder="Color" title="Inserte el color" required>
-                <input type="text" name="tamaño" placeholder="Tamaño" title="Indique tamaño del producto" required>
-                <input type="text" name="precio" placeholder="Precio" title="Inserte precio" required>
+                <input type="text" name="colores" placeholder="Color" title="Inserte el color" required>
+                <input type="number" name="precio" placeholder="Precio" title="Inserte precio" required>
+                <input type="number" name="descuento" placeholder="Descuento" title="Inserte descuento" required>
                 
                 <button type="submit">CREAR PRODUCTO</button>
             </form>

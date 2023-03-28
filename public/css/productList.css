@@ -11,14 +11,12 @@ body {
     font-family: "raleway", sans-serif;
 }
 
-/* HEADER */
+ /* HEADER */
 
-header {
+ header {
     background-color: black;
     color: white;
-    padding-top: 3%;
-    padding-bottom: 1%;
-   
+    padding-top: 1%;
 }
 
 header a {
@@ -33,12 +31,11 @@ a:hover {
 .encabezado-fueguitos-12-pagos {
     width: 100%;
     font-size: 0.9vw;
-    /* display: flex; */
+    display: none;
     flex-direction: row;
     justify-content: center;
     padding: 1%;
     color: white;
-    display: none;
 }
 
 .encabezado-fueguitos-12-pagos i, p {
@@ -47,9 +44,15 @@ a:hover {
 
 #logo {
     width: 8%;
-    padding: 0%;
-    position:relative;
+    padding-top: 1%;
+    position: relative;
     left: 16.5vw;
+}
+
+.menuHamburguesa{
+    padding: 1% 0%;
+    padding-left: 2%;
+    font-size: 2.5vw;
 }
 
 #posicionamiento-header {
@@ -57,8 +60,6 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 2vw;
-
 }
 
 .iconos-blancos {
@@ -93,28 +94,24 @@ section {
 
 header nav ul {
     display: none;
-    flex-direction: column;
     color: white;
     list-style: none;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     margin-top: 1%;
     font-size: 0.8vw;
     white-space: nowrap;
     padding-bottom: 2%;
     text-decoration: none;
-   /*  margin-right: 4%; */
+    margin-right: 4%;
 }
-
 header nav .menuHamburguesa i{
-color: white;
-background-color: black;
-display: flex;
-justify-content: center;
-align-items: center;    
-font-size: 70%;
-margin-left: 2%;
-}
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 70%;
+    }
 
 header nav ul a {
     color: white;
@@ -124,6 +121,8 @@ header nav ul li {
     padding: 0% 2%;
     margin-right: 4%;
 }
+
+
 
 /* MAIN */
 .flex-articulos {
@@ -142,7 +141,13 @@ header nav ul li {
     color:black;
 }
 
-article h2, p, i{
+article h2{
+    padding: 2%;
+}
+article p{
+    padding: 2%;
+}
+article i{
     padding: 2%;
 }
 
@@ -181,6 +186,9 @@ main article {
     margin-bottom: 4%;
    text-align: center; 
    cursor: pointer;
+}
+main {
+    background-color: white;
 }
 
 main article:hover {
@@ -276,9 +284,7 @@ footer button:hover {
     border: solid #5a8284 1px;
 }
 
-main {
-    background-color: white;
-}
+
 
 footer {
     font-size: 0.8vw;
@@ -290,13 +296,19 @@ footer {
     flex-direction: column;
 }
 
-footer div a,
+/* footer div a,
 section {
     padding: 1%;
 }
 
 footer div div{
    padding: 1%;
+} */
+
+footer div a,
+div,
+section {
+    padding: 1%;
 }
 
 #fromulario-footer-flex-column {

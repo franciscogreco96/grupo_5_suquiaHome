@@ -13,112 +13,117 @@
 
  /* HEADER */
 
- header {
-     background-color: black;
-     color: white;
-     padding-top: 1%;
- }
+header {
+    background-color: black;
+    color: white;
+    padding-top: 1%;
+}
 
- header a {
-     text-decoration: none;
- }
+header a {
+    text-decoration: none;
+}
 
- header i:hover {
-     color: #90bfc6;
- }
- header a:hover {
-     color: #90bfc6;
- }
+header i:hover,
+a:hover {
+    color: #90bfc6;
+}
 
- .encabezado-fueguitos-12-pagos {
-     width: 100%;
-     font-size: 0.9vw;
-     display: none;
-     flex-direction: row;
-     justify-content: center;
-     padding: 1%;
-     color: white;
- }
+.encabezado-fueguitos-12-pagos {
+    width: 100%;
+    font-size: 0.9vw;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+    color: white;
+}
 
- .encabezado-fueguitos-12-pagos i, p {
-     padding: 0% 1%;
- }
+.encabezado-fueguitos-12-pagos i, p {
+    padding: 0% 1%;
+}
 
- #logo {
-     width: 8%;
-     padding: 0%;
-     position: relative;
-     left: 15.5vw;
- }
+#logo {
+    width: 8%;
+    padding-top: 1%;
+    position: relative;
+    left: 16.5vw;
+}
 
- #posicionamiento-header {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     align-items: center;
- }
+.menuHamburguesa{
+    padding: 1% 0%;
+    padding-left: 2%;
+    font-size: 2.5vw;
+}
 
- .iconos-blancos {
-     color: white;
-     font-size: 1.2vw;
-     position: relative;
-     right: 200%;
- }
+#posicionamiento-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
- #icono-login {
-     position: relative;
-     left: 24vw;
-     color: white;
-     font-size: 1.2vw;
- }
+.iconos-blancos {
+    color: white;
+    font-size: 1.2vw;
+    position: relative;
+    right: 200%;
+}
 
- #posicionamiento-header form,
- section {
-     display: inline;
- }
+#icono-login {
+    position: relative;
+    left: 24vw;
+    color: white;
+    font-size: 1.2vw;
+}
 
- #lupita {
-     background-color: black;
-     color: white;
-     border: 0;
-     display: block;
-     position: relative;
-     left: 200%;
-     font-size: 1.2vw;
-     cursor: pointer;
- }
+#posicionamiento-header form,
+section {
+    display: inline;
+}
 
- header nav ul {
-     display: none;
-     color: white;
-     list-style: none;
-     justify-content: space-evenly;
-     margin-top: 1%;
-     font-size: 0.8vw;
-     white-space: nowrap;
-     padding-bottom: 2%;
-     text-decoration: none;
-     margin-right: 4%;
- }
- header nav .menuHamburguesa i{
+#lupita {
+    background-color: black;
+    color: white;
+    border: 0;
+    display: block;
+    position: relative;
+    left: 200%;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: none;
+    color: white;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    font-size: 0.8vw;
+    white-space: nowrap;
+    padding-bottom: 2%;
+    text-decoration: none;
+    margin-right: 4%;
+}
+header nav .menuHamburguesa i{
     color: white;
     background-color: black;
     display: flex;
     justify-content: center;
-    align-items: center;  
-    font-size: 70%;  
+    align-items: center;    
+    font-size: 70%;
     }
 
- header nav ul a {
-     color: white;
- }
+header nav ul a {
+    color: white;
+}
 
- header nav ul li {
-     padding: 0% 2%;
-     margin-right: 4%;
- }
+header nav ul li {
+    padding: 0% 2%;
+    margin-right: 4%;
+}
 
 
+ 
  /* MAIN */
 
 main a{
@@ -237,6 +242,9 @@ main article:hover {
      font-weight: 600;
      font-size: 1vw;
  }
+ main {
+    background-color: white;
+}
 
 
  main i {
@@ -305,9 +313,7 @@ main article:hover {
      border: solid #5a8284 1px;
  }
 
- main {
-     background-color: white;
- }
+ 
 
  footer {
      font-size: 0.8vw;
@@ -319,10 +325,28 @@ main article:hover {
      flex-direction: column;
  }
 
- footer div a,
- section {
-     padding: 1%;
- }
+
+ /* footer div a,
+div,
+section {
+    padding: 1%;
+}
+
+ footer div div {
+    padding: 1%;
+}
+ */
+footer div a,
+section {
+    padding: 1%;
+}
+
+ footer div div {
+    padding: 1%;
+}
+ 
+
+
 
  footer div div{
     padding: 1%;
@@ -397,6 +421,7 @@ header nav ul {
 header nav .menuHamburguesa i{
     display: none;
     }
+
 }
  
 
