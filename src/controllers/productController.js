@@ -62,6 +62,13 @@ const productController = {
         fs.writeFileSync(productsFilePath, productsJSON);
 
         res.redirect("/productList");
+        const productss = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        let id=req.params.id
+
+        /* Buscamos producto */
+        let productToEdit= productss.find(product=> product.id==id);
+
+        res.render("product/productEdition", {productToEdit})
     },
 
     creation: (req, res) => {
