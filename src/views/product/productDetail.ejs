@@ -1,7 +1,7 @@
 
 <!-- head -->
 
-<%- include ('../partials/head', {tituloWeb:'Detalle de Producto | Suquia Home',css: 'productDetail.css'}); %>
+<%- include ('../partials/head', {tituloWeb:'Detalle de Producto | Suquia Home', css:'productDetail.css'}); %>
 
 
 
@@ -20,31 +20,31 @@
                 <section>
 
                     <div class="fotoPrincipal">
-                        <img src="/img/vajilla/taza.jpeg" alt="Taza">
+                        <img src="/img/vajilla/<%= product.imagen %>" alt="product image">
                     </div>
 
                     <section>
                         <div class="fotoInf">
-                            <img src="/img/vajilla/taza.jpeg" alt="Taza">
-                            <img src="/img/vajilla/taza.jpeg" alt="Taza">
+                            <img src="/img/vajilla/<%= product.imagen %>" alt="product image">
+                            <img src="/img/vajilla/<%= product.imagen %>" alt="product image">
                         </div>
                     </section>
             </div>
 
 
 
-            <h1 class="nombre400px">Juego de té Copenghue</h1>
+            <h1 class="nombre400px"><%= product.nombre %></h1>
 
 
             <div class="descripcion800px">
 
-                <h1>Juego de té Copenaghue</h1>
+                <h1><%= product.nombre %></h1>
 
                 <h4> Algo de descripcion : </h4>
                 <div>
-                    <p>Taza de té 100ml</p>
-                    <p>Plato 10cm</p>
-                    <p>Cuchara 15cm</p>
+                    <p><%= product.nombre %></p>
+                    <p><%= product.descripcion %></p>
+                    <p><%= product.colores %></p>
                 </div>
             </div>
 
@@ -54,7 +54,7 @@
 
         <section class="detalle">
             <div class="precio">
-                <h3>$3.199</h3>
+                <h3>$<%= product.precio %></h3>
             </div>
 
             <div class="unidades">
@@ -73,6 +73,15 @@
                     <button> Agregar al carrito<i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
+
+            <!-- BOTONES PARA ELMINAR Y EDITAR PRODUCTO -->
+            <!--  <a href="#" class="buy-now-button">COMPRAR AHORA</a>
+						<hr>
+
+						<a href="/products/productEdition/<%= product.id %>" class="action-button edit">EDITAR PRODUCTO</a>
+						<form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+							<button type="submit" class="action-button delete">ELIMINAR</button> -->
+
 
             <div class="caracteristicas">
 

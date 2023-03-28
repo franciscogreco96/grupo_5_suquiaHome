@@ -13,12 +13,15 @@
 
     <main>
         <div>
-            <h2>PRODUCT EDITION</h2>
-            <form class="form" action="/home" formmethod="post" >
-                <input type="text" name="nombre" placeholder="Nombre" title="Inserte nombre del producto" required >
-                
+            <h2>PRODUCT EDITION OF <%= productToEdit.nombre %> </h2>
+            <form class="form" action="/products/productEdition/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
+                <label for="nombre">Nombre del Producto</label>
+                <input type="text" name="nombre" placeholder="Nombre" 
+                value="<%= productToEdit.nombre %>" title="Inserte nombre del producto" required >
+
+               <label for="categoria">Seleccione la categoria del producto</label>
                 <select name="categoria" id="categoria" class="categoria" placeholder="Categoría">
-                    <option value="Categoría">Categoría </option>
+                    <option value="Categoría"><%= productToEdit.categoria %>  </option>
                     <option value="interior">Interior</option>
                     <option value="exterior">Exterior</option>
                     <option value="baño">Bazar</option>
@@ -26,15 +29,18 @@
                     <option value="baño">Mesas</option>
                 </select>
 
+                
                 <div class="imagen-producto">
                 <label>Ingrese una imagen del producto</label>
                 <input type="file" name="imagen" id="imagen" placeholder="Añadir imagen del producto" title="Agregar imagen del producto" required>
                 </div>
-                
-                <input type="text" name="descripcion" placeholder="Descipción" title="Inserte una descripcion" required>
-                <input type="text" name="color" placeholder="Color" title="Inserte el color" required>
-                <input type="text" name="tamaño" placeholder="Tamaño" title="Indique tamaño del producto" required>
-                <input type="text" name="precio" placeholder="Precio" title="Inserte precio" required>
+                <label for="descripcion">Descripcion</label>
+                <input type="text" name="descripcion" placeholder="Descipción" value="<%= productToEdit.descripcion %>"  title="Inserte una descripcion" required>
+                <label for="color">Color del producto</label>
+                <input type="text" name="color" placeholder="Color" value="<%= productToEdit.colores %>" title="Inserte el color" required>
+                <!-- <input type="text" name="tamaño" placeholder="Tamaño" title="Indique tamaño del producto" required> -->
+                <label for="precio">Precio</label>
+                <input type="text" name="precio" placeholder="Precio" value="<%= productToEdit.precio %>" title="Inserte precio" required>
                 
                 <button type="submit">EDITAR PRODUCTO</button>
             </form>

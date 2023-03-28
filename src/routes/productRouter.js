@@ -27,7 +27,11 @@ router.get("/productDetail/:id", productController.detail);
 router.get("/productCreation", productController.creation);
 router.post("/", upload.single("imagen"), productController.store);
 
+/* EDICION DE PRODUCTOS */
 router.get("/productEdition/:id", productController.edition);
+
+router.patch("/productEdition/:id", productController.update);
+
 
 router.delete("/delete/:id", productController.delete)
 
