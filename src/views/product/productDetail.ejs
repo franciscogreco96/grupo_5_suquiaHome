@@ -72,15 +72,13 @@
                 <div class="carrito">
                     <button> Agregar al carrito<i class="fas fa-shopping-cart"></i></button>
                 </div>
+                <br>
+                <a href="/product/productEdition/<%= product.id %>" class="editar-producto">EDITAR PRODUCTO</a>
+						<form action="/product/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+							<button type="submit" class="eliminar-producto">ELIMINAR</button> 
+                        </form>
             </div>
-
-            <!-- BOTONES PARA ELMINAR Y EDITAR PRODUCTO -->
-            <!--  <a href="#" class="buy-now-button">COMPRAR AHORA</a>
-						<hr>
-
-						<a href="/products/productEdition/<%= product.id %>" class="action-button edit">EDITAR PRODUCTO</a>
-						<form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-							<button type="submit" class="action-button delete">ELIMINAR</button> -->
+						
 
 
             <div class="caracteristicas">

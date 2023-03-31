@@ -35,7 +35,8 @@ const productController = {
         res.render("product/productEdition", {productToEdit})
     },
     update: (req,res)=>{
-        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        let id = req.params.id
+        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8")); 
 
         let productSinEdit= products.find(product=> product.id==id);
 
@@ -47,11 +48,11 @@ const productController = {
 			categoria: req.body.categoria,
             colores: req.body.colores,
 			descripcion: req.body.descripcion,
-			imagen: req.file ? req.file.filename : productSinEdit.image
+			imagen: req.file ? req.file.filename : productSinEdit.imagen,
 		};
         /* Buscamos en el json el producto */
         let indice=products.findIndex(product=>{
-            return product.id==id;
+            return product.id == id;
         })
             /* Reemplazamos el producto editado (sobrescribiendolo) */
             products[indice]=productoEditado;
@@ -61,14 +62,8 @@ const productController = {
 
         fs.writeFileSync(productsFilePath, productsJSON);
 
-        res.redirect("/productList");
-        const productss = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
-        let id=req.params.id
-
-        /* Buscamos producto */
-        let productToEdit= productss.find(product=> product.id==id);
-
-        res.render("product/productEdition", {productToEdit})
+        /* Redireccionar */
+        res.redirect("/product");
     },
 
     creation: (req, res) => {
@@ -76,7 +71,7 @@ const productController = {
     },
     
     store: (req, res) => {
-        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf8"));
+        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
         let productoNuevo = {
             id: products[products.length -1].id + 1,
@@ -84,9 +79,9 @@ const productController = {
             descripcion: req.body.descripcion,
             categoria: req.body.categoria,
             colores: req.body.colores,
-            precio: req.body.precio,
-            descuento: req.body.descuento,
-            imagen: req.body.imagen
+            precio: parseInt(req.body.precio),
+            descuento: parseInt(req.body.descuento),
+            imagen: req.file ? req.file.filename : "default-image.png",
         };
 
         products.push(productoNuevo);

@@ -13,8 +13,8 @@
 
     <main>
         <div>
-            <h2>PRODUCT EDITION OF <%= productToEdit.nombre %> </h2>
-            <form class="form" action="/products/productEdition/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
+            <h2>EDITANDO PRODUCTO: <%= productToEdit.nombre %> </h2>
+            <form class="form" action="/product/productEdition/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
                 <label for="nombre">Nombre del Producto</label>
                 <input type="text" name="nombre" placeholder="Nombre" 
                 value="<%= productToEdit.nombre %>" title="Inserte nombre del producto" required >
@@ -42,7 +42,7 @@
                 <label for="precio">Precio</label>
                 <input type="text" name="precio" placeholder="Precio" value="<%= productToEdit.precio %>" title="Inserte precio" required>
                 
-                <button type="submit">EDITAR PRODUCTO</button>
+                <a href="/product"></a><button type="submit">EDITAR PRODUCTO</button></a>
             </form>
         </div>
     </main>
