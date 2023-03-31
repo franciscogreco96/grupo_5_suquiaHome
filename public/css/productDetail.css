@@ -227,6 +227,7 @@ height: 4vw;
 
 .editar-eliminar{
     padding-top: 10%;
+    text-align: center;
 }
 
 
@@ -289,7 +290,7 @@ main h2{
     margin: 10px 0px;
    }
    .precio{
-    font-size: 2vw;
+    font-size: 4vw;
     margin-left: 10%;
     font-weight: 600;
    }
@@ -329,7 +330,10 @@ main h2{
     background-color: black;
     color: white;
     cursor: pointer;
-    margin-left: 100%;
+    margin-left: 50%;
+    width: 6vw;
+    height: 3vw;
+    font-size: 2vw;
 }
 
 .editar-producto{
@@ -339,7 +343,6 @@ main h2{
     color: white;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 5px;
     font-size: 1.2vw;
     font-weight: 600;
 }
@@ -349,12 +352,11 @@ main h2{
     flex-wrap:nowrap;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content:center
 
 }
 
 .eliminar-producto{
-    border-radius: 5px;
     padding: 1vw;
 }
 
@@ -508,6 +510,11 @@ main i {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .precio{
+        font-size: 2vw;
+        margin-left: 10%;
+        font-weight: 600;
+       }
 
      .descripcion800px{
         display: block;
@@ -561,6 +568,28 @@ main i {
 main article{
     width: 15%;
    }
+
+   .precio-cantidad-carrito{
+    display: flex;
+    flex-wrap:nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#cantidad{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-left: 90%;
+    width: 3.5vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+}
+.editar-eliminar{
+    padding-top: 10%;
+    
+}
 
 
 }
