@@ -51,7 +51,7 @@ const productController = {
 			imagen: req.file ? req.file.filename : productSinEdit.imagen,
 		};
         /* Buscamos en el json el producto */
-        let indice=products.findIndex(product=>{
+        let indice = products.findIndex (product=>{
             return product.id == id;
         })
             /* Reemplazamos el producto editado (sobrescribiendolo) */

@@ -221,7 +221,12 @@ border: solid black 1px;
 font-weight: 700;
 cursor: pointer;
 margin-left: 4%;
+height: 4vw;
 
+}
+
+.editar-eliminar{
+    padding-top: 10%;
 }
 
 
@@ -283,6 +288,11 @@ main h2{
    .precio, .descripcion{
     margin: 10px 0px;
    }
+   .precio{
+    font-size: 2vw;
+    margin-left: 10%;
+    font-weight: 600;
+   }
    .detalle .precio{
     padding: 5px;
     font-size: 4vw;
@@ -312,14 +322,43 @@ main h2{
 
 
 .nombre400px{
-    font-size: 8vw;
+    font-size: 6vw;
 }
 
 #cantidad{
     background-color: black;
     color: white;
     cursor: pointer;
+    margin-left: 100%;
 }
+
+.editar-producto{
+    border: black solid 1px;
+    padding: 1.2vw;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.precio-cantidad-carrito{
+    display: flex;
+    flex-wrap:nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.eliminar-producto{
+    border-radius: 5px;
+    padding: 1vw;
+}
+
+
 
 
 /* ----------------------------- */
@@ -484,7 +523,7 @@ main i {
         padding: 10% 0px;
         font-size: 20px;
     }
-    .descripcion800px div{
+    .borde-descripcion{
         border: 2px solid black;
         border-radius: 5px;
     }
