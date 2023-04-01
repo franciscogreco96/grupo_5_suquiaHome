@@ -58,7 +58,8 @@ const productController = {
 			categoria: req.body.categoria,
             colores: req.body.colores,
 			descripcion: req.body.descripcion,
-			imagen: req.file ? req.file.filename : productSinEdit.imagen,
+            descuento: req.body.descuento,
+			imagen: req.file ? req.file.filename : productSinEdit.imagen
 		};
         /* Buscamos en el json el producto */
         let indice = products.findIndex (product=>{

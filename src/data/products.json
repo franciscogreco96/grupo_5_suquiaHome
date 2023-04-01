@@ -7,17 +7,17 @@
   "colores": "gris",
   "precio": "900000",
   "descuento": "10",
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA-NEOLITH-BETON.jpg"
+  "imagen": "../../img/MESA-NEOLITH-BETON.jpg"
  },
  {
-  "id": 2,
+  "id": "2",
   "nombre": "Dressoire Granito Negro Brasil Leather + Base madera Paraíso",
-  "descripcion": "1,50x0,40m",
-  "categoria": "muebles",
-  "colores": "negro",
   "precio": 350000,
-  "descuento": 15,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/DRESSOIRE GRANITO NEGRO BRASIL LEATHER.jpg"
+  "categoria": "Categoría",
+  "colores": "negro",
+  "descripcion": "1,50x0,40m",
+  "descuento": "10",
+  "imagen": "../../img/imagen-1680390493194.jpeg"
  },
  {
   "id": 3,
@@ -27,7 +27,7 @@
   "colores": "negro",
   "precio": 410000,
   "descuento": 5,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/DRESSOIRE MARMOL NEGRO MARQUINA.jpg"
+  "imagen": "../../img/DRESSOIRE MARMOL NEGRO MARQUINA.jpg"
  },
  {
   "id": 4,
@@ -37,7 +37,7 @@
   "colores": "blanco",
   "precio": 900000,
   "descuento": 10,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA AUXILIAR MARMOL CARRARA.jpg"
+  "imagen": "../../img/MESA AUXILIAR MARMOL CARRARA.jpg"
  },
  {
   "id": 5,
@@ -47,7 +47,7 @@
   "colores": "negro",
   "precio": 100000,
   "descuento": 12,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/MESA NEOLITH NERO.jpg"
+  "imagen": "../../img/MESA NEOLITH NERO.jpg"
  },
  {
   "id": 6,
@@ -57,7 +57,7 @@
   "colores": "blanco",
   "precio": 120000,
   "descuento": 8,
-  "imagen": "../../img/sillas/SILLA MATERA BLANCA.jpg"
+  "imagen": "../../img/SILLA MATERA BLANCA.jpg"
  },
  {
   "id": 7,
@@ -67,7 +67,7 @@
   "colores": "negro",
   "precio": 120000,
   "descuento": 10,
-  "imagen": "../../img/sillas/SILLA MATERA NEGRA.jpg"
+  "imagen": "../../img/SILLA MATERA NEGRA.jpg"
  },
  {
   "id": 8,
@@ -77,7 +77,7 @@
   "colores": "marron",
   "precio": 190000,
   "descuento": 15,
-  "imagen": "../../img/sillas/COMBO SILLAS DELUXE.jpg"
+  "imagen": "../../img/COMBO SILLAS DELUXE.jpg"
  },
  {
   "id": 9,
@@ -87,7 +87,7 @@
   "colores": "blanco",
   "precio": 3500,
   "descuento": 7,
-  "imagen": "../../img/vajilla/taza.jpeg"
+  "imagen": "../../img/taza.jpeg"
  },
  {
   "id": 10,
@@ -97,7 +97,7 @@
   "colores": "blanco",
   "precio": 950000,
   "descuento": 10,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/mesa neolith estatuario pulido.jpeg"
+  "imagen": "../../img/mesa neolith estatuario pulido.jpeg"
  },
  {
   "id": 11,
@@ -107,7 +107,7 @@
   "colores": "marron",
   "precio": 850000,
   "descuento": 10,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/mesa neolith iron corten.jpeg"
+  "imagen": "../../img/mesa neolith iron corten.jpeg"
  },
  {
   "id": 12,
@@ -117,7 +117,7 @@
   "colores": "blanco",
   "precio": 750000,
   "descuento": 4,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/mesa neolitj calacatta.jpeg"
+  "imagen": "../../img/mesa neolitj calacatta.jpeg"
  },
  {
   "id": 13,
@@ -127,7 +127,7 @@
   "colores": "negro",
   "precio": 180000,
   "descuento": 6,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/mesa rectangular granito negro brasil leather.jpeg"
+  "imagen": "../../img/mesa rectangular granito negro brasil leather.jpeg"
  },
  {
   "id": 14,
@@ -137,7 +137,7 @@
   "colores": "negro",
   "precio": 80000,
   "descuento": 8,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/mesa redonda granito  negro brasil leather.jpeg"
+  "imagen": "../../img/mesa redonda granito  negro brasil leather.jpeg"
  },
  {
   "id": 15,
@@ -147,7 +147,7 @@
   "colores": "gris",
   "precio": 75000,
   "descuento": 5,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/mesa redonda granito gris mara leather.jpeg"
+  "imagen": "../../img/mesa redonda granito gris mara leather.jpeg"
  },
  {
   "id": 16,
@@ -157,7 +157,7 @@
   "colores": "blanco",
   "precio": 50000,
   "descuento": 15,
-  "imagen": "../../img/sillas/puff camastro.jpeg"
+  "imagen": "../../img/puff camastro.jpeg"
  },
  {
   "id": 17,
@@ -167,7 +167,7 @@
   "colores": "dorado",
   "precio": 5000,
   "descuento": 5,
-  "imagen": "../../img/vajilla/cubiertos dorados.jpeg"
+  "imagen": "../../img/cubiertos dorados.jpeg"
  },
  {
   "id": 18,
@@ -177,7 +177,7 @@
   "colores": "gris",
   "precio": 450000,
   "descuento": 12,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/mesa redonda reja.jpeg"
+  "imagen": "../../img/mesa redonda reja.jpeg"
  },
  {
   "id": 19,
@@ -187,7 +187,7 @@
   "colores": "negro",
   "precio": 290000,
   "descuento": 5,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/mesas ratonas duo negras.jpeg"
+  "imagen": "../../img/mesas ratonas duo negras.jpeg"
  },
  {
   "id": 20,
@@ -197,6 +197,16 @@
   "colores": "blanco",
   "precio": 310000,
   "descuento": 7,
-  "imagen": "../../img/mesas, dressoires, ratonas/Mesas, dressoires, ratonas/mesas ratonas duo blancas.jpeg"
+  "imagen": "../../img/mesas ratonas duo blancas.jpeg"
+ },
+ {
+  "id": 21,
+  "nombre": "Mesa Auxiliar Marmol Carrara + Base Hierro Dorada",
+  "descripcion": "123",
+  "categoria": "Categoría",
+  "colores": "123",
+  "precio": 123,
+  "descuento": 10,
+  "imagen": "../../img/imagen-1680390017860.jpeg"
  }
 ]

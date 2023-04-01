@@ -37,10 +37,12 @@
                 <label for="descripcion">Descripcion</label>
                 <input type="text" name="descripcion" placeholder="Descipción" value="<%= productToEdit.descripcion %>"  title="Inserte una descripcion" required>
                 <label for="color">Color del producto</label>
-                <input type="text" name="color" placeholder="Color" value="<%= productToEdit.colores %>" title="Inserte el color" required>
+                <input type="text" name="colores" placeholder="Color" value="<%= productToEdit.colores %>" title="Inserte el color" required>
                 <!-- <input type="text" name="tamaño" placeholder="Tamaño" title="Indique tamaño del producto" required> -->
                 <label for="precio">Precio</label>
                 <input type="text" name="precio" placeholder="Precio" value="<%= productToEdit.precio %>" title="Inserte precio" required>
+                <label for="descuento">Descuento</label>
+                <input type="number" name="descuento" placeholder="Descuento" title="Inserte descuento" required>
                 
                 <a href="/product"></a><button type="submit">EDITAR PRODUCTO</button></a>
             </form>

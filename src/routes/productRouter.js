@@ -9,7 +9,7 @@ let storage = multer.diskStorage({
         cb(null, "public/img/products")
     },
     filename: function(req, file, cb){
-        cb(null, file.fieldname + "-" + Date.now() + path.extname(file.originalname))
+        cb(null,"../../img/"+ file.fieldname + "-" + Date.now() + path.extname(file.originalname))
     }
 });
 
@@ -28,7 +28,7 @@ router.get("/productDetail/:id", productController.detail);
 router.get("/productCreation", productController.creation);
 router.post("/", upload.single("imagen"), productController.store);
 
-/* EDICION DE PRODUCTOS */
+/* EDICION DE PRODUCTOS */ 
 router.get("/productEdition/:id", productController.edition);
 
 router.patch("/productEdition/:id", upload.single("imagen"), productController.update);
