@@ -34,7 +34,17 @@ const productController = {
 
         res.render("product/productEdition", {productToEdit})
     },
-    update: (req,res)=>{
+    update: (req,res, next)=>{
+
+        /* para validar archivos con multer */
+
+        const file = req.file
+        if(!file){
+            const error = new Error(" Por favor seleccione un archivo");
+            error.httpStatusCode = 400;
+            return next(error);
+        };
+
         let id = req.params.id
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8")); 
 
@@ -71,6 +81,13 @@ const productController = {
     },
     
     store: (req, res) => {
+        const file = req.file
+        if(!file){
+            const error = new Error(" Por favor seleccione un archivo");
+            error.httpStatusCode = 400;
+            return next(error);
+        }
+
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
         let productoNuevo = {
