@@ -23,3 +23,11 @@
 * dejar de hacer push de los commits **sin avisarnos** cuando lo hayamos pusheado, ya que algun miembro del grupo puede estar trabajando sobre lo mismo y se crea mucha desorganizacion y pérdida de tiempo. Esto ya fue hablado, corregido y aplicado
 
 * empezar a usar siempre en las vistas .ejs en los tamaños la **unidad de medida % o VW**, para que los elementos se adaptan al metodo responsive
+
+## **Conclusiones sprint 4**
+
+* Seguir utilizando la herramienta **TRELLO**, ya que efectivamente nos ayudó a dividir tareas y llevarlas a cabo
+
+* Mantener **el apoyo** entre los integrantes del grupo para solucionar problemas que alguno de los miembros no puede resolverlo por si mismo
+
+* Dejar de hacer commits con su push sin antes avisar al equipo porque sino nos podemos pisar el codigo entre nosotros mismos
