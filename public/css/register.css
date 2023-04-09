@@ -160,6 +160,9 @@ main h2{
     width: 32%;
     padding: 1.2%;
 }
+.text-danger{
+    color: red;
+}
 
 /* FOOTER */
 
