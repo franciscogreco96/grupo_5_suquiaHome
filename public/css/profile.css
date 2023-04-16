@@ -17,6 +17,7 @@ header {
     background-color: black;
     color: white;
     padding-top: 1%;
+   
 }
 
 header a {
@@ -31,11 +32,12 @@ a:hover {
 .encabezado-fueguitos-12-pagos {
     width: 100%;
     font-size: 0.9vw;
-    display: none;
+    /* display: flex; */
     flex-direction: row;
     justify-content: center;
     padding: 1%;
     color: white;
+    display: none;
 }
 
 .encabezado-fueguitos-12-pagos i, p {
@@ -94,24 +96,27 @@ section {
 
 header nav ul {
     display: none;
+    flex-direction: column;
     color: white;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     margin-top: 1%;
     font-size: 0.8vw;
     white-space: nowrap;
     padding-bottom: 2%;
     text-decoration: none;
-    margin-right: 4%;
+   /*  margin-right: 4%; */
 }
+
 header nav .menuHamburguesa i{
-    color: white;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    font-size: 70%;
-    }
+color: white;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;    
+font-size: 70%;
+}
 
 header nav ul a {
     color: white;
@@ -124,68 +129,15 @@ header nav ul li {
 
 /* MAIN */
 main h2{
-    text-align: center;
+    text-align: left;
     margin: 2%;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
+    padding-bottom: 1%;
 }
-.form{
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} 
+main img{
 
-.form input{
-    width: 25vw;
-    margin: 1%;
-    padding: 1%;
-    font-size: 1vw;
+    border-radius: 5%;
 }
-#fotoPerfil{
-    border: 1px solid #5a8284;
-    border-radius: 2px;
-}
-
-.form button{
-    background-color: black;
-    color: white;
-    width: 30%;
-    cursor: pointer;
-    transition: all 0.8s;
-}
-
-.form button:hover{
-    width: 32%;
-    padding: 1.2%;
-}
-.text-danger{
-    color: red;
-}
-.form .categoria{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 25vw;
-    margin: 1%;
-    padding: 1%;
-    font-size: 1vw;
-    
-    border: 1px solid #5a8284;
-    border-radius: 2px;
-}
-.form .categoria label{
-   padding-bottom: 1%;
-    font-size: 1.2vw;
-}
-.form .categoria select{
-    font-size: 1.25vw; 
-}
-.form .categoria select option{
-    font-weight:normal;
-}
-
 
 
 /* FOOTER */
@@ -225,18 +177,21 @@ footer {
     flex-direction: column;
 }
 
+
 footer div a,
 section {
-    padding: 1%;
-}
-
- footer div div {
     padding: 1%;
 }
 
 footer {
     margin-top: 2%;
 }
+
+ footer div div {
+    padding: 1%;
+}
+
+
 
 #fromulario-footer-flex-column {
     display: flex;
@@ -269,6 +224,7 @@ footer button {
 footer a {
     color: white;
 }
+
 #find-us{
     width: 25%;
 }
@@ -285,9 +241,9 @@ footer a {
         color: white;
     }
     header {
-        padding-top: 0;
+        padding-top: 0%;
     }
-    
+   
     header nav ul {
         display: flex;
         flex-direction: row;

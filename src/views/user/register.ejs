@@ -32,6 +32,16 @@
                 <% if (locals.errors && errors.telefono) { %>
                     <p class="text-danger"><%= errors.telefono.msg  %></p>
                 <% } %>
+                <div class="categoria">
+                    <Label>Seleccione una categoria</Label> 
+
+                        <select name="categoria" id="categoria">
+                            <option value="Administrador">Administrador</option>
+                            <option value="Usuario">Usuario</option>
+                        </select>
+                        
+                </div>  
+
                 <input type="password" name="contraseña" placeholder="Contraseña (8 a 20 caracteres)" title="Inserte lo que va a ser su próxima contraseña" minlength="8"
                     maxlength="20" >
                 <input type="password" name="confirmar contraseña" placeholder="Confirmar Contraseña" title="Debe ser igual a la contraseña anterior">

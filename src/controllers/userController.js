@@ -17,6 +17,9 @@ const userController={
      });
        }
        return res.send("Sin errores, okei todas las validaciones")
+    },
+    profile: (req,res)=>{
+     res.render('user/profile');
     }
 }
 module.exports = userController;
