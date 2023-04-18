@@ -1,5 +1,7 @@
 const path= require('path');
 const { validationResult } = require("express-validator")
+const User = require("../models/Users")
+const bcryptjs = require("bcryptjs");
 
 const userController={
     login: (req,res)=>{
@@ -16,7 +18,14 @@ const userController={
           oldData: req.body
      });
        }
-       return res.send("Sin errores, okei todas las validaciones")
+       let userToCreate = {
+          ...req.body,
+          /* contraseña: bcryptjs.hashSync(req.body.contraseña, 10), */
+          imagen: req.file.filename
+       }
+
+       User.create(userToCreate);
+       return res.send("ok ! se guardó el usuario");
     },
     profile: (req,res)=>{
      res.render('user/profile');

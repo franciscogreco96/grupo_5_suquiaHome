@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": 1,
     "first_name": "Chucho",
     "last_name": "Blacklawe",
@@ -6,7 +7,8 @@
     "contraseña": "Jmc4WnUz",
     "categoria": "administrador",
     "imagen": "http://dummyimage.com/199x100.png/dddddd/000000"
-  }, {
+  },
+  {
     "id": 2,
     "first_name": "Anestassia",
     "last_name": "Duff",
@@ -14,7 +16,8 @@
     "contraseña": "gheuBbEuGqn3",
     "categoria": "administrador",
     "imagen": "http://dummyimage.com/193x100.png/cc0000/ffffff"
-  }, {
+  },
+  {
     "id": 3,
     "first_name": "Townie",
     "last_name": "Houlworth",
@@ -22,7 +25,8 @@
     "contraseña": "dg8rglg",
     "categoria": "usuario",
     "imagen": "http://dummyimage.com/145x100.png/cc0000/ffffff"
-  }, {
+  },
+  {
     "id": 4,
     "first_name": "Flo",
     "last_name": "Soonhouse",
@@ -30,7 +34,8 @@
     "contraseña": "VYZMVeb0B",
     "categoria": "administrador",
     "imagen": "http://dummyimage.com/223x100.png/dddddd/000000"
-  }, {
+  },
+  {
     "id": 5,
     "first_name": "Cully",
     "last_name": "Bodechon",
@@ -38,5 +43,26 @@
     "contraseña": "LASx9QiWfXP",
     "categoria": "administrador",
     "imagen": "http://dummyimage.com/248x100.png/cc0000/ffffff"
-  }]
-  
+  },
+  {
+    "id": 6,
+    "nombre": "fran",
+    "apellido": "grek",
+    "email": "franciscogreco@marmolessuquia.com",
+    "telefono": "franciscogreco@marmolessuquia.com",
+    "categoria": "Administrador",
+    "contraseÃ±a": "fdvdfvhfghfd",
+    "confirmar contraseÃ±a": ""
+  },
+  {
+    "id": 7,
+    "nombre": "fran",
+    "apellido": "grekkkk",
+    "email": "franciscogreco@marmolessuquia.com",
+    "telefono": "franciscogreco@marmolessuquia.com",
+    "categoria": "Administrador",
+    "contraseÃ±a": "fdvdfvhfghfd",
+    "confirmar contraseÃ±a": "geergergewrgwe",
+    "imagen": "../../img/users/fotoPerfil-1681849714115.jpg"
+  }
+]
