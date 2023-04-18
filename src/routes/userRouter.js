@@ -49,5 +49,8 @@ router.get('/login', userController.login);
 router.get('/register', userController.register);
 router.post('/register', uploadFile.single("fotoPerfil"), validations, userController.store);
 
+/* Rutas para ver perfil de usuario */
+router.get('/profile', userController.profile);
+
 
 module.exports = router;
