@@ -5,10 +5,6 @@ const bcryptjs = require("bcryptjs");
 const { log } = require('console');
 
 const userController={
-    login: (req,res)=>{
-         res.render('user/login');
-
-    },
     register: (req,res)=>{
          res.render('user/register');
     },
@@ -23,7 +19,7 @@ const userController={
 
        /* Verificando si el email no esa registrado */
        let userInDB= User.findByField('email',req.body.email);
-
+      
        if(userInDB){
          return res.render('user/register', {
          errors: {
@@ -36,38 +32,43 @@ const userController={
           oldData: req.body
          });
       }
-       
+
        let userToCreate = {
           ...req.body,
-          /* contraseña: bcryptjs.hashSync(req.body.contraseña, 10), */
+      /*     constraseña:  bcryptjs.hashSync(req.body.contraseña, 10), */
           imagen: req.file.filename
        }
 
-       User.create(userToCreate);
-       return res.render('user/profile', req.body);
+       let userCreated= User.create(userToCreate);
+       return res.render('user/login');
     },
 
-   
+    login: (req,res)=>{
+      res.render('user/login');
+      
 
+      },
     /* min 40 a 60 aprox de video, no aparecen los errores ni envia a la vista de perfil, solo recarga el login */
     processLogin: (req,res) =>{
       let userToLogin= User.findByField('email',req.body.email);
-
+         
       if(userToLogin){
 
          /*  CHEQUEO DE PASSWORD ENCRIPTADA */
-         /* let chequeoPassword= bcryptjs.compareSync(req.body.password,userToLogin.password);
+
+         /* let chequeoPassword= bcryptjs.compareSync(req.body.contraseña,userToLogin.contraseña);
 
          if(chequeoPassword){
          return res.redirect('user/profile')
          } */
-
          req.session.userLogged=userToLogin;
-
-         return res.redirect('/user/profile')
+        
+         return res.redirect('user/profile')
       }
 
+   /* no aparece el error si esta registrado, solo recarga el login */
       return res.render('user/login', {
+         
    errors: {
       email: { 
          msg: 'Este email no esta registrado'
@@ -75,12 +76,18 @@ const userController={
    }
 })
     },
-    profile: (req,res)=>{
-      console.log("Estas en profile");
-      console.log(req.session);
-      res.render('user/profile',{
+    profile: (req, res)=>{
+
+      /* retorno de la variable para reutilizar datos de la session 1:05 video*/
+
+     return  res.render('user/profile',{
          user: req.session.userLogged
       });
+     },
+
+     logout: (req,res) =>{
+      req.session.destroy();
+      return res.redirect('/')
      }
 }
 module.exports = userController;
