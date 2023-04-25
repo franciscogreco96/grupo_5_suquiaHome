@@ -27,7 +27,6 @@ const userController={
                      msg: 'Este email ya está registrado'
                }
             },
-            /* queda doble el campo email al encontrar un error */
             
           oldData: req.body 
          });
@@ -48,7 +47,7 @@ const userController={
     login: (req,res)=>{
       res.render('user/login');
       },
-    /* min 40 a 60 aprox de video, no aparecen los errores ni envia a la vista de perfil, solo recarga el login */
+    
     processLogin: (req,res) =>{
 
       let userToLogin = User.findByField("email", req.body.email);
