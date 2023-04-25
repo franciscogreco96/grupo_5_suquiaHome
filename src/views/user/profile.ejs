@@ -12,12 +12,11 @@
 
 
     <main>
-        <div>
-            <h2>Perfil de .. </h2> <!-- Etiqueta con EJS -->
-            <img src="/img/avatars/default-image.png" alt="imagenPerfil"> <!-- Etiqueta con EJS -->
-
-            <h2>Email: email.prueba@gmail.com <!-- Etiqueta con EJS --></h2>
-            <h2>Tipo de usuario: Administrador<!-- Etiqueta con EJS --></h2>
+        <div class="tarjetaPerfil"> 
+            <h2>Perfil de : <%=user.nombre%> </h2>
+            <h2>Email: <%=user.email%> </h2>
+            <h2>Tipo de usuario: <%=user.categoria%></h2>
+            <img src="/img/avatars/<%=user.imagen%>" alt="imagenPerfil">
            
         </div>
     </main>

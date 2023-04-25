@@ -43,15 +43,13 @@ const userController={
        return res.render('user/login');
     },
 
+
     login: (req,res)=>{
       res.render('user/login');
-      
-
       },
     /* min 40 a 60 aprox de video, no aparecen los errores ni envia a la vista de perfil, solo recarga el login */
     processLogin: (req,res) =>{
       let userToLogin= User.findByField('email',req.body.email);
-         
       if(userToLogin){
 
          /*  CHEQUEO DE PASSWORD ENCRIPTADA */
@@ -61,20 +59,21 @@ const userController={
          if(chequeoPassword){
          return res.redirect('user/profile')
          } */
-         req.session.userLogged=userToLogin;
+          req.session.userLogged=userToLogin; 
         
-         return res.redirect('user/profile')
+         return res.redirect('/user/profile')
       }
 
    /* no aparece el error si esta registrado, solo recarga el login */
       return res.render('user/login', {
-         
    errors: {
       email: { 
          msg: 'Este email no esta registrado'
       }
    }
 })
+      
+
     },
     profile: (req, res)=>{
 

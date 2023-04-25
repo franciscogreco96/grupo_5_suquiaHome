@@ -128,15 +128,29 @@ header nav ul li {
 }
 
 /* MAIN */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1%;
+}
 main h2{
     text-align: left;
     margin: 2%;
     font-size: 1.5vw;
-    padding-bottom: 1%;
+    padding-bottom: 7%;
 }
 main img{
-
+    width: 10vw;
     border-radius: 5%;
+    margin-left: 2%;
+    padding-bottom: 7%;
+}
+.tarjetaPerfil{
+    background-color: #c9e1e2;
+    border: 1px solid black;
+    border-radius: 1%;
+    margin-left: 5%;
 }
 
 
