@@ -45,6 +45,9 @@ const userController= require('../controllers/userController');
 /* rutas para logueo de usuario */
 router.get('/login', userController.login);
 
+/* Ruta proceso de login */
+router.post('/login', userController.processLogin);
+
 /* rutas para registro de usuario */
 router.get('/register', userController.register);
 router.post('/register', uploadFile.single("fotoPerfil"), validations, userController.store);
