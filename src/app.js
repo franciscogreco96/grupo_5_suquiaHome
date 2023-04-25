@@ -22,12 +22,11 @@ app.use(methodOverride("_method"));
 
 
 
-/* middlewares de para tipos de usuarios */
- const guestMiddleware= require("./middlewares/guestMiddleware"); /* se usa en get de login y get de registro */
- const authMiddleware= require("./middlewares/authMiddleware"); /* se usa en get profile */
- const userLoggedMiddleware= require('./middlewares/userLoggedMiddleware');
+ 
+ 
 
- /*app.use(userLoggedMiddleware); */
+const userLoggedMiddleware= require('./middlewares/userLoggedMiddleware.js');
+ app.use(userLoggedMiddleware); 
 
 
 

@@ -38,22 +38,27 @@ const validations = [
     })
 ];
 
+/* MIDDLEWARES DE SESSION*/
+const guestMiddleware= require("../middlewares/guestMiddleware"); 
+const authMiddleware= require("../middlewares/authMiddleware"); 
 
 
 const userController= require('../controllers/userController');
 
 /* rutas para logueo de usuario */
-router.get('/login', userController.login);
+router.get('/login',guestMiddleware, userController.login);
 
 /* Ruta proceso de login */
 router.post('/login', userController.processLogin);
 
 /* rutas para registro de usuario */
-router.get('/register', userController.register);
+router.get('/register',guestMiddleware, userController.register);
 router.post('/register', uploadFile.single("fotoPerfil"), validations, userController.store);
 
 /* Rutas para ver perfil de usuario */
-router.get('/profile', userController.profile);
+router.get('/profile',authMiddleware,  userController.profile);
 
+/* Rutas para borrar sesion */
+router.get('/logout/',authMiddleware,  userController.logout);
 
 module.exports = router;

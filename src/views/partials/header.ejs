@@ -16,37 +16,60 @@
             <a href="/"><img src="/img/logo-SuquiaHome.svg.svg" alt="logo-suquia-home"></a>
         </section>
         <div>
+            <% if (locals.isLogged) { %>
+            <a id="icono-login"><i class="far fa-user"></i></a>
+            <a href="/user/profile" id="icono-login">Profile</a>
+            <a href="/user/logout" id="icono-login">Logout</a>
+            <% }  else {%> 
             <a href="/user/login" id="icono-login"><i class="far fa-user"></i></a>
+            <% }%>
         </div>
         <div>
-            <a href="/productCart" class="iconos-blancos"><i class="fas fa-shopping-bag"></i></a>
+            <a href="/product/productCart" class="iconos-blancos"><i class="fas fa-shopping-bag"></i></a>
         </div>
     </div>
 
     <nav class="barra-menu">
         <div class="menuHamburguesa">
             <i class="fas fa-bars"></i>
-            
+            <% if (locals.isLogged) { %>
             <ul>
                 <a href="/">
-                <li>HOME</li>
+                    <li>HOME</li>
                 </a>
                 <a href="/product">
-                <li>PRODUCT LIST</li>
+                    <li>PRODUCT LIST</li>
                 </a>
                 <a href="/product/productCreation">
-                <li>PRODUCT CREATION</li>
-                </a>            
+                    <li>PRODUCT CREATION</li>
+                </a>
                 <a href="/product/productCart">
-                <li>PRODUCT CART</li>
+                    <li>PRODUCT CART</li>
                 </a>
-                <a href="/user/register">
-                <li>REGISTER</li>
-                </a>
-                <a href="/user/login">
-                <li>LOGIN</li>
-                </a>
+                
             </ul>
+            <% }  else {%> 
+                <ul>
+                    <a href="/">
+                    <li>HOME</li>
+                    </a>
+                    <a href="/product">
+                    <li>PRODUCT LIST</li>
+                    </a>
+                     <a href="/product/productCart">
+                    <li>PRODUCT CART</li>
+                    </a>
+                    <a href="/user/register">
+                    <li>REGISTER</li>
+                    </a>
+                    <a href="/user/login">
+                    <li>LOGIN</li>
+                    </a>
+                </ul>
+                <% } %>
+             
+          
+
         </div>
     </nav>
 </header>

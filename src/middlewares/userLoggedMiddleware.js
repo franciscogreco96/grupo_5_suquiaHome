@@ -13,5 +13,3 @@ function userLoggedMiddleware(req,res,next){
 
 module.exports= userLoggedMiddleware;
 
-
-/* 1:25 del video muestra como cambiar header para datos del usuario logeado o no*/
