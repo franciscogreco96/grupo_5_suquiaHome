@@ -17,25 +17,26 @@ const userController={
      });
        }
 
-       /* Verificando si el email no esa registrado */
+       /* Verificando si el email no está registrado */
        let userInDB= User.findByField('email',req.body.email);
       
        if(userInDB){
          return res.render('user/register', {
          errors: {
                email: {
-                     msg: 'Este email ya esta registrado'
+                     msg: 'Este email ya está registrado'
                }
             },
             /* queda doble el campo email al encontrar un error */
             
-          oldData: req.body
+          oldData: req.body 
          });
       }
 
        let userToCreate = {
           ...req.body,
-      /*     constraseña:  bcryptjs.hashSync(req.body.contraseña, 10), */
+          contrasena:  bcryptjs.hashSync(req.body.contrasena, 10),
+          confirmarContrasena:  bcryptjs.hashSync(req.body.confirmarContrasena, 10),
           imagen: req.file.filename
        }
 
@@ -49,36 +50,37 @@ const userController={
       },
     /* min 40 a 60 aprox de video, no aparecen los errores ni envia a la vista de perfil, solo recarga el login */
     processLogin: (req,res) =>{
-      let userToLogin= User.findByField('email',req.body.email);
+
+      let userToLogin = User.findByField("email", req.body.email);
+
       if(userToLogin){
 
-         /*  CHEQUEO DE PASSWORD ENCRIPTADA */
+         let isOkThePassword = bcryptjs.compareSync(req.body.contrasena, userToLogin.contrasena);
+         if(isOkThePassword){
+            delete userToLogin.contrasena;
+            delete userToLogin.confirmarContrasena;
+            req.session.userLogged = userToLogin;
+            return res.redirect("/user/profile");
+         }
 
-         /* let chequeoPassword= bcryptjs.compareSync(req.body.contraseña,userToLogin.contraseña);
-
-         if(chequeoPassword){
-         return res.redirect('user/profile')
-         } */
-          req.session.userLogged=userToLogin; 
-        
-         return res.redirect('/user/profile')
-      }
-
-   /* no aparece el error si esta registrado, solo recarga el login */
       return res.render('user/login', {
-   errors: {
-      email: { 
-         msg: 'Este email no esta registrado'
-      }
+         errors: {
+            email:{
+               msg: "Las credenciales son inválidas"
+            }
+         }
+      });
    }
-})
-      
-
+   
+      return res.render('user/login', {
+         errors: {
+            email:{
+               msg: "No se encuentra este email en nuestra base de datos"
+            }
+         }
+      })
     },
     profile: (req, res)=>{
-
-      /* retorno de la variable para reutilizar datos de la session 1:05 video*/
-
      return  res.render('user/profile',{
          user: req.session.userLogged
       });

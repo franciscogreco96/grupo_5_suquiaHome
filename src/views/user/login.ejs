@@ -14,12 +14,12 @@
     <main>
         <div>
             <h2>INGRESA A TU CUENTA</h2>
-            <form class="form" action="login" method="POST" >
+            <form class="form" action="/user/login" method="POST" >
                 <input type="email" name="email" placeholder="Correo electrónico" title="Ingrese su e-mail" required>
                 <% if (locals.errors && errors.email) { %>
                     <div class="text-danger"><%= errors.email.msg  %></div>
                 <% } %>
-                <input type="password" name="contraseña" placeholder="Contraseña" title="Ingrese su contraseña" minlength="8"
+                <input type="password" name="contrasena" placeholder="Contraseña" title="Ingrese su contraseña" minlength="8"
                     maxlength="20" required>
                 <div class="recordar">
                     <label>¿Desea recordar su email y contraseña en este sitio?</label>

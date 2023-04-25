@@ -142,6 +142,9 @@ main h2{
     align-items: center;
 } 
 
+.text-danger{
+    color: red;
+}
 .form input{
     width: 25vw;
     margin: 1%;

@@ -42,9 +42,9 @@
                         
                 </div>  
 
-                <input type="password" name="contraseña" placeholder="Contraseña (8 a 20 caracteres)" title="Inserte lo que va a ser su próxima contraseña" minlength="8"
+                <input type="password" name="contrasena" placeholder="Contraseña (8 a 20 caracteres)" title="Inserte lo que va a ser su próxima contraseña" minlength="8"
                     maxlength="20" >
-                <input type="password" name="confirmar contraseña" placeholder="Confirmar Contraseña" title="Debe ser igual a la contraseña anterior">
+                <input type="password" name="confirmarContrasena" placeholder="Confirmar Contraseña" title="Debe ser igual a la contraseña anterior">
                 <input type="file" name="fotoPerfil" id="fotoPerfil" placeholder="Foto de Perfil" tittle="Añada una foto de perfil si desea">
                 <% if (locals.errors && errors.fotoPerfil) { %>
                  <p class="text-danger"><%= errors.fotoPerfil.msg%></p>

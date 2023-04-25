@@ -5,7 +5,7 @@
 // 4. Editar la info de un usuario
 // 5. Eliminar a un usuario de la DB
 
- const { Console } = require("console");
+const { Console } = require("console");
 const fs = require("fs");
 
 const User = {
