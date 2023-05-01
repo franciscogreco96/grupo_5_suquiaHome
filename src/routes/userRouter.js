@@ -25,13 +25,13 @@ const validations = [
     body("telefono").notEmpty().withMessage("Debe completar un numero telefonico"),
     body("fotoPerfil").custom((value, {req}) => {
         let file = req.file;
-        let acceptedExtensions = [".jpg", ".png", ".gif"];
+        let acceptedExtensions = [".jpg", ".png", ".gif", ".pdf"];
         if (!file){
             throw new Error ("Tienes que subir una imagen ")
         }else{
             let fileExtension = path.extname(file.originalname);
             if (!acceptedExtensions.includes(fileExtension)){
-                throw new Error ("Las extensiones de archivo permitidas son .jpg, .png, .gif" )
+                throw new Error ("Las extensiones de archivo permitidas son .jpg, .png, .gif, .pdf" )
             }
         }
         return true;

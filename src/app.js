@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const methodOverride = require("method-override");
 const session = require("express-session");
+const cookies = require("cookie-parser");
 
 app.use(session({
     secret: 'SHH',
@@ -20,13 +21,10 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(methodOverride("_method"));
 
-
-
- 
- 
-
 const userLoggedMiddleware= require('./middlewares/userLoggedMiddleware.js');
  app.use(userLoggedMiddleware); 
+
+ app.use(cookies());
 
 
 

@@ -49,7 +49,6 @@ const userController={
       },
     
     processLogin: (req,res) =>{
-
       let userToLogin = User.findByField("email", req.body.email);
 
       if(userToLogin){
@@ -59,6 +58,11 @@ const userController={
             delete userToLogin.contrasena;
             delete userToLogin.confirmarContrasena;
             req.session.userLogged = userToLogin;
+
+            if(req.body.recordar_contrasena){
+               res.cookie("userEmail", req.body.email, { maxAge: (1000 * 60) * 60 })
+            }
+
             return res.redirect("/user/profile");
          }
 
@@ -80,14 +84,16 @@ const userController={
       })
     },
     profile: (req, res)=>{
+      console.log(req.cookies.userEmail)
      return  res.render('user/profile',{
          user: req.session.userLogged
       });
      },
 
      logout: (req,res) =>{
+      res.clearCookie("userEmail");
       req.session.destroy();
-      return res.redirect('/')
+      return res.redirect('/');
      }
 }
 module.exports = userController;
