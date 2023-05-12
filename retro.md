@@ -31,3 +31,12 @@
 * Mantener **el apoyo** entre los integrantes del grupo para solucionar problemas que alguno de los miembros no puede resolverlo por si mismo
 
 * Dejar de hacer commits con su push sin antes avisar al equipo porque sino nos podemos pisar el codigo entre nosotros mismos
+
+## **Conclusiones sprint 5**
+
+* Empezar a ver el alcance de cada tarea para ser mas claros hasta donde llega el desarrollo de la tarea de cada integrante
+
+* Establecer si una tarea necesita ser terminada antes de empezar otra tarea para ver si dependen entre ellas y que se cree una mejor comunicacion entre los integrantes a la hora de empezar la tarea posterior a esta
+
+* seguir manteniendo el apoyo entre nosotros para ayudar en algunos puntos que el compañero no pueda avanzar y puede que con la simple ayuda se avance mas reapido y hacer mas fluido el proyecto. Para ello mantenemos una comunicacion activa y crea mucho dinamismo ya que es el objetivo de aplicar la metodologia scrum
+
