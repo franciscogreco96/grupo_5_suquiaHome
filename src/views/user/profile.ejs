@@ -12,13 +12,18 @@
 
 
     <main>
-        <div class="tarjetaPerfil"> 
-            <h2>Perfil de : <%=user.nombre%> </h2>
+        
+        <h1 class="nombre">Hola  <%=user.nombre%> !</h1>
+
+        <div class="tarjetaPerfil">  
+            <h2>Nombre de usuario: <%=user.nombre%> </h2>
             <h2>Email: <%=user.email%> </h2>
-            <h2>Tipo de usuario: <%=user.categoria%></h2>
-            <img src="/img/avatars/<%=user.imagen%>" alt="imagenPerfil">
-           
-        </div>
+            <h2>Categoria de usuario: <%=user.categoria%></h2>
+            <div class="imagenPerfil">
+                <img src="/img/avatars/<%=user.imagen%>" alt="imagenPerfil">
+            </div>
+         </div> 
+         <button class="logout"> <a href="/user/logout">LOGOUT</a></button>
     </main>
 
 <!-- footer -->
