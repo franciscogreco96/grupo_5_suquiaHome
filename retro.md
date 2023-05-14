@@ -40,3 +40,5 @@
 
 * seguir manteniendo el apoyo entre nosotros para ayudar en algunos puntos que el compañero no pueda avanzar y puede que con la simple ayuda se avance mas reapido y hacer mas fluido el proyecto. Para ello mantenemos una comunicacion activa y crea mucho dinamismo ya que es el objetivo de aplicar la metodologia scrum
 
+
+
