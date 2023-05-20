@@ -1,6 +1,6 @@
 module.exports = {
   "development": {
-    "username": "conexion",
+    "username": "root",
     "password": null,
     "database": "suquia_home",
     "host": "127.0.0.1",
