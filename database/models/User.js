@@ -1,7 +1,7 @@
 const { INTEGER, TINYINT, DECIMAL } = require("sequelize");
 
 module.exports= (sequelize, dataTypes) => {
-    let alias= "Usuarios";
+    let alias= "Users";
     let cols= {
         id: {
             allowNull: false,
@@ -44,14 +44,20 @@ module.exports= (sequelize, dataTypes) => {
         tableName: "users",
         timeStamps: false
     };
-    const Usuario= sequelize.define(alias,cols, config);
+    const User= sequelize.define(alias,cols, config);
 
 
     /* TESTEAR SI FUNCIONA CON UNA CONSULTA */
-     Usuario.associate= function(models){
-        Usuario.hasMany(models.UserCategory,{
-            as: "usercategory",
+     User.associate= function(models){
+        User.belongsTo(models.UsersCategory,{
+            as: "userscategory",
             foreignKey: "categoria_id"
+        })
+    } 
+     User.associate= function(models){
+        User.hasMany(models.ProductsCart,{
+            as: "productcart",
+            foreignKey: "usuario_id"
         })
     } 
 
