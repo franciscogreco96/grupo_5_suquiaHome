@@ -5,7 +5,7 @@ const path = require("path");
 /* ruta acceso archivo products.json */
 const productsFilePath = path.join(__dirname, "../data/products.json") 
 
- /*  let db= require("../database/models/Product.js");  */
+  let db= require("../database/models/Product.js");  
 
 const productController = {
 
@@ -69,7 +69,7 @@ const productController = {
 
             /*ACTUALIZACION DE PRODUCTO  */
 
-    /* update: (req,res)=>{ */
+    /*update: (req,res)=>{ */
        /*  db.Products.update({ */
             /* id: , */
             /* nombre: req.body.nombre, */
@@ -103,6 +103,8 @@ const productController = {
 
 
 
+
+        
 
      /* ------------------METODOS CON JSON------------------ */
     /* LIST CON JSON */

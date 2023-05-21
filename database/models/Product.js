@@ -44,13 +44,13 @@ module.exports = (sequelize, dataTypes) => {
 
     Product.associate = function(models){
         Product.belongsTo(models.ProductColors, {
-            as: "color",
+            as: "productscolor",
             foreignKey: "color_id"
         })
     }
     Product.associate = function(models){
         Product.belongsTo(models.ProductsCategory, {
-            as: "categoria",
+            as: "productscategory",
             foreignKey: "categoria_id"
         })
     }
