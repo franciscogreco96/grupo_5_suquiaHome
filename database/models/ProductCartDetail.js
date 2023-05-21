@@ -19,14 +19,21 @@ module.exports = (sequelize, dataTypes) => {
     };
     let config = {
         tableName: "productcartdetail",
-        timestamps: false /* si mi tabla no tiene create_date ni update_date porque si no coloco esta propiedad no me va a funcionar */
+        timestamps: false 
     }
     const ProductCartDetail = sequelize.define(alias, cols, config);
 
     ProductCartDetail.associate = function(models){
+        ProductCartDetail.belongsTo(models.ProductsCart, {
+            as: "productcart",
+            foreignKey: "carrito_compras_id"
+        })
+    }
+
+    ProductCartDetail.associate = function(models){
         ProductCartDetail.hasMany(models.Products, {
-            as: "productos",
-            foreignKey: "color_id"
+            as: "products",
+            foreignKey: "producto_id"
         })
     }
 
