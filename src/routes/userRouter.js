@@ -45,6 +45,7 @@ const authMiddleware= require("../middlewares/authMiddleware");
 
 const userController= require('../controllers/userController');
 
+/* SECCION RUTAS USUARIO */
 /* rutas para logueo de usuario */
 router.get('/login',guestMiddleware, userController.login);
 
@@ -60,5 +61,8 @@ router.get('/profile',authMiddleware,  userController.profile);
 
 /* Rutas para borrar sesion */
 router.get('/logout/',authMiddleware,  userController.logout);
+
+
+
 
 module.exports = router;

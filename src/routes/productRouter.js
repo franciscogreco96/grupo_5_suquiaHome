@@ -18,10 +18,13 @@ const upload = multer({storage:storage});
 /*  controler require */
 const productController = require("../controllers/productController");
 
+/* LISTADO DE PRODUCTOS */
 router.get("/", productController.list);
 
+/* DETALLE CARRITO */
 router.get("/productCart", productController.cart);
 
+/* DETALLE PRODUCTO */
 router.get("/productDetail/:id", productController.detail);
 
 /*  CREACION DE PRODUCTOS */
