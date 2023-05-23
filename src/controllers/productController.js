@@ -5,26 +5,27 @@ const path = require("path");
 /* ruta acceso archivo products.json */
 const productsFilePath = path.join(__dirname, "../data/products.json") 
 
-  let db= require("../database/models/Product.js");  
+  let db= require("../database/models");  
 
 const productController = {
 
    
 
     /* LIST CON SEQUELIZE */
-    /* list:(req,res) =>{
+    list:(req,res) =>{
         db.Products.findAll()
         .then(function(products){
-            return res.render("productList", {products:products});
+           console.log(products);
+             return res.render("productList", {products:products}); 
         })
-    }, */
+    },
     /* CREACION CON SEQUELIZE */
-    /* creation: (req, res) => {
+    creation: (req, res) => {
         db.Products.findAll()
         .then(function(products){
             return res.render("productCreation");
         })
-    }, */
+    },
 
     /* GUARDADO CON SEQUELIZE */
     /* store: (req,res)=>{ */
@@ -109,16 +110,16 @@ const productController = {
      /* ------------------METODOS CON JSON------------------ */
     /* LIST CON JSON */
 
-     list:(req, res) => {
+    /*  list:(req, res) => {
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
         res.render("product/productList", { products })
-    }, 
+    },  */
 
 
      /* CREACION CON JSON */
-     creation: (req, res) => {
+    /*  creation: (req, res) => {
         res.render("product/productCreation")
-    }, 
+    },  */
 
     /* CARRITO CON JSON */
      cart: (req, res) => {
