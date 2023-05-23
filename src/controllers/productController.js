@@ -16,32 +16,34 @@ const productController = {
         db.Products.findAll()
         .then(function(products){
            console.log(products);
-             return res.render("productList", {products:products}); 
+             return res.render("product/productList", {products:products}); 
         })
     },
     /* CREACION CON SEQUELIZE */
     creation: (req, res) => {
         db.Products.findAll()
         .then(function(products){
-            return res.render("productCreation");
+            return res.render("product/productCreation");
         })
     },
 
     /* GUARDADO CON SEQUELIZE */
-    /* store: (req,res)=>{ */
-       /*  db.Products.create({ */
-            /* id: , */
-            /* nombre: req.body.nombre, */
-            /* precio: req.body.precio, */
-           /*  color_id:   , */
-            /* descripcion: req.body.descripcion, */
-            /* categoria_id: , */
-            /* imagen: req.body.imagen, */
-            /* stock: req.body.stock, */
-            /* descuento: req.body.descuento */
+     store: (req,res)=>{ 
+        db.Products.create({ 
+            /* id: products[products.length -1].id + 1, */ 
+            nombre: req.body.nombre, 
+            precio: parseInt(req.body.precio), 
+            color_id: req.body.colores,
+            descripcion: req.body.descripcion, 
+            categoria_id: req.body.categoria,
+            imagen: req.file ? req.file.filename : "default-image.png", 
+            stock: req.body.stock, 
+            descuento: parseInt(req.body.descuento)
             
-        /* }) */
-    /* }, */
+         }) 
+         res.redirect("/product");
+
+     },
 
 
     /* DETALLE CON SEQUELIZE */
@@ -145,7 +147,7 @@ const productController = {
 
 
     /* STORE/GUARDADO CON JSON */
-     store: (req, res) => {
+     /* store: (req, res) => {
         const file = req.file
         if(!file){
             const error = new Error(" Por favor seleccione un archivo");
@@ -174,7 +176,7 @@ const productController = {
 
         res.redirect("/product");
         
-    }, 
+    } *//* , */ 
     /* DETAIIL CON JSON */
      detail: (req, res) => {
         const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));

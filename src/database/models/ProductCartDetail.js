@@ -7,10 +7,10 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER,
             allowNull: false
         },
-        producto_id:{
+        /* producto_id:{
             allowNull: false,
             type: dataTypes.INTEGER
-        },
+        }, */
         carrito_compras_id:{
             allowNull: false,
             type: dataTypes.INTEGER
@@ -27,11 +27,11 @@ module.exports = (sequelize, dataTypes) => {
         ProductCartDetail.belongsTo(models.ProductsCart, {
             as: "productcart",
             foreignKey: "carrito_compras_id"
-        }),
+        })/* ,
         ProductCartDetail.hasMany(models.Products, {
             as: "products",
             foreignKey: "producto_id"
-        })
+        }) */
     }
 
    

@@ -50,7 +50,11 @@ module.exports = (sequelize, dataTypes) => {
         Product.belongsTo(models.ProductsCategory, {
             as: "productscategory",
             foreignKey: "categoria_id"
-        })
+        })/* ,
+        Product.hasMany(models.ProductsCartDetail, {
+            as: "productscartdetail",
+            foreignKey: "producto_id"
+        }) */
     }
     
     return Product
