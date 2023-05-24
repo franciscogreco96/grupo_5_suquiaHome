@@ -19,11 +19,11 @@
                 
                 <select name="categoria" id="categoria" class="categoria" placeholder="Categoría">
                     <option value="Categoría">Categoría </option>
-                    <option value="interior">Interior</option>
-                    <option value="exterior">Exterior</option>
-                    <option value="baño">Bazar</option>
-                    <option value="exterior">Sillas</option>
-                    <option value="baño">Mesas</option>
+                    <option value="1">Interior</option>
+                    <option value="2">Exterior</option>
+                    <option value="3">Bazar</option>
+                    <option value="4">Sillas</option>
+                    <option value="5">Mesas</option>
                 </select>
 
                 <div class="imagen-producto">
@@ -32,7 +32,14 @@
                 </div>
                 
                 <input type="text" name="descripcion" placeholder="Descipción" title="Inserte una descripcion" required>
-                <input type="text" name="colores" placeholder="Color" title="Inserte el color" required>
+                <select name="colores" id="color" class="color" placeholder="Color">
+                    <option value="Colores">Colores </option>
+                    <option value="1">Negro</option>
+                    <option value="2">Blanco</option>
+                    <option value="3">Marron</option>
+                    <option value="4">Azul</option>
+                    <option value="5">Rojo</option>
+                </select>
                 <input type="number" name="precio" placeholder="Precio" title="Inserte precio" required>
                 <input type="number" name="descuento" placeholder="Descuento" title="Inserte descuento" required>
                 
