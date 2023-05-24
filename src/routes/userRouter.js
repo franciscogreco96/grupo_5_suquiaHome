@@ -56,6 +56,11 @@ router.post('/login', userController.processLogin);
 router.get('/register',guestMiddleware, userController.register);
 router.post('/register', uploadFile.single("fotoPerfil"), validations, userController.store);
 
+/* ruta para editar usuario */
+router.get('/edit/:id', userController.edit);
+router.post('/edit/:id', userController.update);
+
+
 /* Rutas para ver perfil de usuario */
 router.get('/profile',authMiddleware,  userController.profile);
 

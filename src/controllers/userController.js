@@ -4,21 +4,73 @@ const User = require("../models/Users")
 const bcryptjs = require("bcryptjs");
 const { log } = require('console');
 
+const db = require("../database/models");
+
 const userController={
-    register: (req,res)=>{
+
+/* SEQUELIZE CRUD */
+   register:(req, res) => {
+      db.Users.findAll()
+      .then(function(users){
+         return res.render("user/register")
+      })
+   },
+
+   store: (req, res)=>{
+      db.Users.create({
+         first_name: req.body.nombre,
+         last_name: req.body.apellido,
+         email: req.body.email,
+         password: req.body.contrasena,
+         categoria_id: req.body.categoria,
+         imagen: req.file.filename,
+         telefono: req.body.telefono,
+         /* id_carrito_compras: , */
+
+      })
+   },
+   edit: (req, res)=>{
+      db.Users.findByPk(req.params.id)
+         .then((user)=>{
+            res.render("user/edit", {user:user})
+         })
+   },
+   update:(req, res)=>{
+      db.Users.update({
+         first_name: req.body.nombre,
+         last_name: req.body.apellido,
+         email: req.body.email,
+         password: req.body.contrasena,
+         categoria_id: req.body.categoria,
+         imagen: req.file.filename,
+         telefono: req.body.telefono,
+         /* id_carrito_compras: , */
+      }), {
+         where:{
+            id:req.params.id
+         }
+      }
+      res.redirect("/user/edit/" + req.params.id)
+   },
+
+
+
+
+/* --------------------------------------- */
+   /*  register: (req,res)=>{
          res.render('user/register');
-    },
-    store: (req, res)=>{
+    }, */
+    /* store: (req, res)=>{
        const resultValidation = validationResult(req);
        if(resultValidation.errors.length > 0){
           return res.render("user/register",{
           errors: resultValidation.mapped(),
           oldData: req.body
      });
-       }
+       } */
 
        /* Verificando si el email no está registrado */
-       let userInDB= User.findByField('email',req.body.email);
+       /* let userInDB= User.findByField('email',req.body.email);
       
        if(userInDB){
          return res.render('user/register', {
@@ -41,7 +93,7 @@ const userController={
 
        let userCreated= User.create(userToCreate);
        return res.render('user/login');
-    },
+    } ,*/
 
 
     login: (req,res)=>{

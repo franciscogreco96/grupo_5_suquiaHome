@@ -30,7 +30,6 @@ const productController = {
     /* GUARDADO CON SEQUELIZE */
      store: (req,res)=>{ 
         db.Products.create({ 
-            /* id: products[products.length -1].id + 1, */ 
             nombre: req.body.nombre, 
             precio: parseInt(req.body.precio), 
             color_id: req.body.colores,
