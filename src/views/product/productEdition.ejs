@@ -1,7 +1,7 @@
 
 <!-- head -->
 
-<%- include ('../partials/head', {tituloWeb:'Produt Edition | Suquia Home',css: 'productEdition.css'}); %>
+<%- include ('../partials/head', {tituloWeb:'Product Edition | Suquia Home',css: 'productEdition.css'}); %>
 
 
 
@@ -13,20 +13,20 @@
 
     <main>
         <div>
-            <h2>EDITANDO PRODUCTO: <%= productToEdit.nombre %> </h2>
-            <form class="form" action="/product/productEdition/<%= productToEdit.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
+            <h2>EDITANDO PRODUCTO: <%= pedidoProducto.nombre %> </h2>
+            <form class="form" action="/product/productEdition/<%= pedidoProducto.id %>?_method=PATCH" method="POST" enctype="multipart/form-data">
                 <label for="nombre">Nombre del Producto</label>
                 <input type="text" name="nombre" placeholder="Nombre" 
-                value="<%= productToEdit.nombre %>" title="Inserte nombre del producto" required >
+                value="<%= pedidoProducto.nombre %>" title="Inserte nombre del producto" required >
 
                <label for="categoria">Seleccione la categoria del producto</label>
                 <select name="categoria" id="categoria" class="categoria" placeholder="Categoría">
-                    <option value="Categoría"><%= productToEdit.categoria %>  </option>
-                    <option value="interior">Interior</option>
-                    <option value="exterior">Exterior</option>
-                    <option value="baño">Bazar</option>
-                    <option value="exterior">Sillas</option>
-                    <option value="baño">Mesas</option>
+                    <option value="Categoría">Categoría</option>
+                    <option value="1">Interior</option>
+                    <option value="2">Exterior</option>
+                    <option value="3">Bazar</option>
+                    <option value="4">Sillas</option>
+                    <option value="5">Mesas</option>
                 </select>
 
                 
@@ -35,12 +35,18 @@
                 <input type="file" name="imagen" id="imagen" placeholder="Añadir imagen del producto" title="Agregar imagen del producto" required>
                 </div>
                 <label for="descripcion">Descripcion</label>
-                <input type="text" name="descripcion" placeholder="Descipción" value="<%= productToEdit.descripcion %>"  title="Inserte una descripcion" required>
-                <label for="color">Color del producto</label>
-                <input type="text" name="colores" placeholder="Color" value="<%= productToEdit.colores %>" title="Inserte el color" required>
-                <!-- <input type="text" name="tamaño" placeholder="Tamaño" title="Indique tamaño del producto" required> -->
+                <input type="text" name="descripcion" placeholder="Descipción" value="<%= pedidoProducto.descripcion %>"  title="Inserte una descripcion" required>
+                <label for="color">Seleccione el color del producto</label>
+                <select name="colores" id="color" class="color" placeholder="Color">
+                    <option value="Colores">Colores </option>
+                    <option value="1">Negro</option>
+                    <option value="2">Blanco</option>
+                    <option value="3">Marron</option>
+                    <option value="4">Azul</option>
+                    <option value="5">Rojo</option>
+                </select>
                 <label for="precio">Precio</label>
-                <input type="text" name="precio" placeholder="Precio" value="<%= productToEdit.precio %>" title="Inserte precio" required>
+                <input type="text" name="precio" placeholder="Precio" value="<%= pedidoProducto.precio %>" title="Inserte precio" required>
                 <label for="descuento">Descuento</label>
                 <input type="number" name="descuento" placeholder="Descuento" title="Inserte descuento" required>
                 

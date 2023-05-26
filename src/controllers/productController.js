@@ -54,10 +54,10 @@ const productController = {
 
     detail: function(req,res){
             db.Products.findByPk(req.params.id,{
-                include: [{association:"color"}, { association:"categoria"}]
+                include: [{association:"productscolors"}, { association:"productsCategories"}]
             })
             .then(function(product){
-                res.render("productDetail", {product:product});
+                res.render("product/productDetail", {product:product});
             }) 
      },
  
@@ -65,16 +65,17 @@ const productController = {
     /*  EDICION CON SEQUELIZE */
 
             edition: function(req,res){
-                let pedidoProducto=db.Products.findByPk(req.params.id);
+                 let pedidoProducto=db.Products.findByPk(req.params.id)
 
-                Promise.All(pedidoProducto)
-                .then(function([producto]){
-                    res.render("productEdition", {product:product})
+                .then(function(pedidoProducto){
+                    res.render("product/productEdition", {pedidoProducto:pedidoProducto})
                 })
             },
 
 
             /*ACTUALIZACION DE PRODUCTO  */
+
+            /* FALTA CAMBIO DE IMAGEN */
 
     update: (req,res)=>{
         db.Products.update({
@@ -106,6 +107,7 @@ const productController = {
                     id: req.params.id
                 }
             })
+            res.redirect("/product") 
         } 
 
      

@@ -13,7 +13,7 @@ module.exports = (sequelize, dataTypes) => {
         } 
     };
     let config = {
-        tableName: "productscolor",
+        tableName: "productscolors",
         timestamps: false /* si mi tabla no tiene create_date ni update_date porque si no coloco esta propiedad no me va a funcionar */
     }
     const ProductColor = sequelize.define(alias, cols, config);

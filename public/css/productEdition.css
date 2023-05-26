@@ -169,6 +169,11 @@ main h2{
     margin: 1%;
     padding: 1%;
 }
+.color{
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+}
 
 .form button{
     background-color: black;
