@@ -54,48 +54,6 @@ const userController={
    },
 
 
-
-
-/* --------------------------------------- */
-   /*  register: (req,res)=>{
-         res.render('user/register');
-    }, */
-    /* store: (req, res)=>{
-       const resultValidation = validationResult(req);
-       if(resultValidation.errors.length > 0){
-          return res.render("user/register",{
-          errors: resultValidation.mapped(),
-          oldData: req.body
-     });
-       } */
-
-       /* Verificando si el email no está registrado */
-       /* let userInDB= User.findByField('email',req.body.email);
-      
-       if(userInDB){
-         return res.render('user/register', {
-         errors: {
-               email: {
-                     msg: 'Este email ya está registrado'
-               }
-            },
-            
-          oldData: req.body 
-         });
-      }
-
-       let userToCreate = {
-          ...req.body,
-          contrasena:  bcryptjs.hashSync(req.body.contrasena, 10),
-          confirmarContrasena:  bcryptjs.hashSync(req.body.confirmarContrasena, 10),
-          imagen: req.file.filename
-       }
-
-       let userCreated= User.create(userToCreate);
-       return res.render('user/login');
-    } ,*/
-
-
     login: (req,res)=>{
       res.render('user/login');
       },

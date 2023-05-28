@@ -85,7 +85,7 @@ const productController = {
             color_id:  req.body.colores,
             descripcion: req.body.descripcion,
             categoria_id: req.body.categoria,
-            imagen: req.body.imagen,
+            imagen: req.file.filename,  /* VER PQ NO FUNCIONA CON REQ.BODY.IMAGEN NI CON REQ.FILE NI FILE.FILENAME */
             stock: req.body.stock,
             descuento: req.body.descuento
             

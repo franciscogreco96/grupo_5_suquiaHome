@@ -66,76 +66,29 @@
                                     </select>
                                 </form>
                                 <button> Agregar al carrito<i class="fas fa-shopping-cart"></i></button>
-                        </div>    
-                        <div class="editar-eliminar">
-                            <a href="/product/productEdition/<%= product.id %>" class="editar-producto">EDITAR
-                                PRODUCTO</a>
-                            <form action="/product/delete/<%= product.id %>?_method=DELETE" method="POST"
-                                style="display: inline-flex">
-                                <button type="submit" class="eliminar-producto">ELIMINAR</button>
-                            </form>
-                        </div>
+                        </div>   
+                        
+                        <% if (locals.isLogged) { %>
+                            <div class="editar-eliminar">
+                                <a href="/product/productEdition/<%= product.id %>" class="editar-producto">EDITAR
+                                    PRODUCTO</a>
+                                <form action="/product/delete/<%= product.id %>?_method=DELETE" method="POST"
+                                    style="display: inline-flex">
+                                    <button type="submit" class="eliminar-producto">ELIMINAR</button>
+                                </form>
+                            </div>
+                           
+                                
+                                <% } %>
+                        
                     </div>
 
                     </section>
 
-                        <!-- <h3 class="precio">$<%= product.precio %>
-                        </h3> -->
-
-                   <!--  <div class="precio-cantidad-carrito">
-                        <h3 class="precio">$<%= product.precio %>
-                        </h3>
-                            <form action="#">
-                                <select name="cantidad" id="cantidad">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select>
-                            </form>
-                            <button> Agregar al carrito<i class="fas fa-shopping-cart"></i></button>
-                    </div>    
-                    <div>
-                        <a href="/product/productEdition/<%= product.id %>" class="editar-producto">EDITAR
-                            PRODUCTO</a>
-                        <form action="/product/delete/<%= product.id %>?_method=DELETE" method="POST"
-                            style="display: inline-flex">
-                            <button type="submit" class="eliminar-producto">ELIMINAR</button>
-                        </form>
-                    </div> -->
                 </div>
 
                 <section class="detalle">
-                    <!-- <div class="precio">
-                        <h3>$<%= product.precio %>
-                        </h3>
-                    </div>
-
-                    <div class="unidades">
-                        <div class="stock">
-                            <form action="#">
-                                <select name="cantidad" id="cantidad">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-
-                                </select>
-                            </form>
-                        </div>
-
-                        <div class="carrito">
-                            <button> Agregar al carrito<i class="fas fa-shopping-cart"></i></button>
-                        </div>
-                        <br>
-                        <a href="/product/productEdition/<%= product.id %>" class="editar-producto">EDITAR
-                            PRODUCTO</a>
-                        <form action="/product/delete/<%= product.id %>?_method=DELETE" method="POST"
-                            style="display: inline-flex">
-                            <button type="submit" class="eliminar-producto">ELIMINAR</button>
-                        </form>
-                    </div> -->
-
-
+                   
                     <div class="caracteristicas">
 
                         <h3>Características</h3>
