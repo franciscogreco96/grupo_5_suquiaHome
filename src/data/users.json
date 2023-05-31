@@ -1,102 +1,103 @@
 [
-    {
-        "id": 1,
-        "first_name": "Chucho",
-        "last_name": "Blacklawe",
-        "email": "cblacklawe0@tripod.com",
-        "contraseña": "Jmc4WnUz",
-        "categoria": "administrador",
-        "imagen": "http://dummyimage.com/199x100.png/dddddd/000000"
-    },
-    {
-        "id": 2,
-        "first_name": "Anestassia",
-        "last_name": "Duff",
-        "email": "aduff1@go.com",
-        "contraseña": "gheuBbEuGqn3",
-        "categoria": "administrador",
-        "imagen": "http://dummyimage.com/193x100.png/cc0000/ffffff"
-    },
-    {
-        "id": 3,
-        "first_name": "Townie",
-        "last_name": "Houlworth",
-        "email": "thoulworth2@surveymonkey.com",
-        "contraseña": "dg8rglg",
-        "categoria": "usuario",
-        "imagen": "http://dummyimage.com/145x100.png/cc0000/ffffff"
-    },
-    {
-        "id": 4,
-        "first_name": "Flo",
-        "last_name": "Soonhouse",
-        "email": "fsoonhouse3@yellowbook.com",
-        "contraseña": "VYZMVeb0B",
-        "categoria": "administrador",
-        "imagen": "http://dummyimage.com/223x100.png/dddddd/000000"
-    },
-    {
-        "id": 5,
-        "first_name": "Cully",
-        "last_name": "Bodechon",
-        "email": "cbodechon4@wikimedia.org",
-        "contraseña": "LASx9QiWfXP",
-        "categoria": "administrador",
-        "imagen": "http://dummyimage.com/248x100.png/cc0000/ffffff"
-    },
-    {
-        "id": 6,
-        "nombre": "fran",
-        "apellido": "grek",
-        "email": "franciscogreco@marmolessuquia.com",
-        "telefono": "franciscogreco@marmolessuquia.com",
-        "categoria": "Administrador",
-        "contraseÃ±a": "fdvdfvhfghfd",
-        "confirmar contraseÃ±a": ""
-    },
-    {
-        "id": 7,
-        "nombre": "fran",
-        "apellido": "grekkkk",
-        "email": "franciscogreco@marmolessuquia.com",
-        "telefono": "franciscogreco@marmolessuquia.com",
-        "categoria": "Administrador",
-        "contraseÃ±a": "fdvdfvhfghfd",
-        "confirmar contraseÃ±a": "geergergewrgwe",
-        "imagen": "../../img/users/fotoPerfil-1681849714115.jpg"
-    },
-    {
-        "id": 8,
-        "nombre": "mauri",
-        "apellido": "asdfasfd",
-        "email": "mauri.chocholacek@gmail.com",
-        "telefono": "2352",
-        "categoria": "Administrador",
-        "contraseÃ±a": "fsaffdaqwdfqe4r23",
-        "confirmar contraseÃ±a": "efdaedfdf234523",
-        "imagen": "../../img/users/fotoPerfil-1682292438189.png"
-    },
-    {
-        "id": 9,
-        "nombre": "mauri344134",
-        "apellido": "chocho",
-        "email": "pepito@gmail.com",
-        "telefono": "12431",
-        "categoria": "Usuario",
-        "contrasena": "$2a$10$4IHBzkszMYEzdpheS1jSI.cz7KJ/V4.eA1hcfebEyQ7lzl1i9DzAW",
-        "confirmarContrasena": "$2a$10$WH8GzJLuwX/wRNdd34/teenXkIheduLofT2Qc2SuLK6KoiGxp3S4q",
-        "imagen": "../../img/users/fotoPerfil-1682381793735.png"
-    },
-    {
-        "id": 10,
-        "nombre": "death",
-        "apellido": "note",
-        "email": "deathnote@marmolessuquia.com",
-        "telefono": "3513499022",
-        "categoria": "Usuario",
-        "contrasena": "$2a$10$/jW4ZCBV1jDVqigRx9zv2OekXDMXSBm1llDfINUAtNKi7dec5YHt2",
-        "confirmarContrasena": "$2a$10$rHw4Ex265kZ6nI4LB5inoehaX5F.G6rtJHTifjlf6mZbedXBEM8yK",
-        "imagen": "../../img/users/fotoPerfil-1682551430989.png"
-    }
+ {
+  "id": 1,
+  "first_name": "Chucho",
+  "last_name": "Blacklawe",
+  "email": "cblacklawe0@tripod.com",
+  "contraseña": "Jmc4WnUz",
+  "categoria": "administrador",
+  "imagen": "http://dummyimage.com/199x100.png/dddddd/000000"
+ },
+ {
+  "id": 2,
+  "first_name": "Anestassia",
+  "last_name": "Duff",
+  "email": "aduff1@go.com",
+  "contraseña": "gheuBbEuGqn3",
+  "categoria": "administrador",
+  "imagen": "http://dummyimage.com/193x100.png/cc0000/ffffff"
+ },
+ {
+  "id": 3,
+  "first_name": "Townie",
+  "last_name": "Houlworth",
+  "email": "thoulworth2@surveymonkey.com",
+  "contraseña": "dg8rglg",
+  "categoria": "usuario",
+  "imagen": "http://dummyimage.com/145x100.png/cc0000/ffffff"
+ },
+ {
+  "id": 4,
+  "first_name": "Flo",
+  "last_name": "Soonhouse",
+  "email": "fsoonhouse3@yellowbook.com",
+  "contraseña": "VYZMVeb0B",
+  "categoria": "administrador",
+  "imagen": "http://dummyimage.com/223x100.png/dddddd/000000"
+ },
+ {
+  "id": 5,
+  "first_name": "Cully",
+  "last_name": "Bodechon",
+  "email": "cbodechon4@wikimedia.org",
+  "contraseña": "LASx9QiWfXP",
+  "categoria": "administrador",
+  "imagen": "http://dummyimage.com/248x100.png/cc0000/ffffff"
+ },
+ {
+  "id": 6,
+  "nombre": "fran",
+  "apellido": "grek",
+  "email": "franciscogreco@marmolessuquia.com",
+  "telefono": "franciscogreco@marmolessuquia.com",
+  "categoria": "Administrador",
+  "contraseÃ±a": "fdvdfvhfghfd",
+  "confirmar contraseÃ±a": ""
+ },
+ {
+  "id": 7,
+  "nombre": "fran",
+  "apellido": "grekkkk",
+  "email": "franciscogreco@marmolessuquia.com",
+  "telefono": "franciscogreco@marmolessuquia.com",
+  "categoria": "Administrador",
+  "contraseÃ±a": "fdvdfvhfghfd",
+  "confirmar contraseÃ±a": "geergergewrgwe",
+  "imagen": "../../img/users/fotoPerfil-1681849714115.jpg"
+ },
+ {
+  "id": 8,
+  "nombre": "mauri",
+  "apellido": "asdfasfd",
+  "email": "mauri.chocholacek@gmail.com",
+  "telefono": "2352",
+  "categoria": "Administrador",
+  "contraseÃ±a": "fsaffdaqwdfqe4r23",
+  "confirmar contraseÃ±a": "efdaedfdf234523",
+  "imagen": "../../img/users/fotoPerfil-1682292438189.png"
+ },
+ {
+  "id": 9,
+  "nombre": "mauri344134",
+  "apellido": "chocho",
+  "email": "pepito@gmail.com",
+  "telefono": "12431",
+  "categoria": "Usuario",
+  "contrasena": "$2a$10$4IHBzkszMYEzdpheS1jSI.cz7KJ/V4.eA1hcfebEyQ7lzl1i9DzAW",
+  "confirmarContrasena": "$2a$10$WH8GzJLuwX/wRNdd34/teenXkIheduLofT2Qc2SuLK6KoiGxp3S4q",
+  "imagen": "../../img/users/fotoPerfil-1682381793735.png"
+ },
+ {
+  "id": 10,
+  "nombre": "death",
+  "apellido": "note",
+  "email": "deathnote@marmolessuquia.com",
+  "telefono": "3513499022",
+  "categoria": "Usuario",
+  "contrasena": "$2a$10$/jW4ZCBV1jDVqigRx9zv2OekXDMXSBm1llDfINUAtNKi7dec5YHt2",
+  "confirmarContrasena": "$2a$10$rHw4Ex265kZ6nI4LB5inoehaX5F.G6rtJHTifjlf6mZbedXBEM8yK",
+  "imagen": "../../img/users/fotoPerfil-1682551430989.png"
+ },
+ {},
+ {}
 ]
-

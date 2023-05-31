@@ -2,9 +2,6 @@
 const fs = require("fs");
 const path = require("path");
 
-/* ruta acceso archivo products.json */
-const productsFilePath = path.join(__dirname, "../data/products.json") 
-
   let db= require("../database/models");  
 
 const productController = {
@@ -19,7 +16,7 @@ const productController = {
              return res.render("product/productList", {products:products}); 
         })
     },
-    /* CARRITO CON JSON */
+    /* CARRITO CON SEQUELIZE */
     cart: (req, res) => {
         res.render("product/productCart")
     }, 
@@ -75,7 +72,7 @@ const productController = {
 
             /*ACTUALIZACION DE PRODUCTO  */
 
-            /* FALTA CAMBIO DE IMAGEN */
+           
 
     update: (req,res)=>{
         db.Products.update({
@@ -85,7 +82,7 @@ const productController = {
             color_id:  req.body.colores,
             descripcion: req.body.descripcion,
             categoria_id: req.body.categoria,
-            imagen: req.file.filename,  /* VER PQ NO FUNCIONA CON REQ.BODY.IMAGEN NI CON REQ.FILE NI FILE.FILENAME */
+            imagen: req.file.filename, 
             stock: req.body.stock,
             descuento: req.body.descuento
             

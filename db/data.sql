@@ -6,10 +6,12 @@ INSERT INTO `productscolors` (`id`,`color`) VALUES (3,'MARRON');
 INSERT INTO `productscolors` (`id`,`color`) VALUES (4,'AZUL');
 INSERT INTO `productscolors` (`id`,`color`) VALUES (5,'ROJO');
 
+
+
 /* CATEGORIAS USUARIOS */
 
 INSERT INTO `userscategories` (`id`,`tipo_categoria`) VALUES (1,'Administrador');
-INSERT INTO `userscategories` (`id`,`tipo_categoria`) VALUES (2,'Usuario');productscategories
+INSERT INTO `userscategories` (`id`,`tipo_categoria`) VALUES (2,'Usuario');
 
 /* CATEGORIA PRODUCTOS */
 

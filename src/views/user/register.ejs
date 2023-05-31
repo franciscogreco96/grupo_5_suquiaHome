@@ -19,7 +19,7 @@
                 <input type="text" name="nombre" placeholder="Nombre" title="Inserte su nombre" value="<%= locals.oldData ? oldData.nombre : null  %>">
                 <% if (locals.errors && errors.nombre) { %>
                     <p class="text-danger"><%= errors.nombre.msg  %></p>
-                <% } %>
+                <% } %> 
                 <input type="text" name="apellido" placeholder="Apellido" title="Inserte su apellido" value="<%= locals.oldData ? oldData.apellido : null  %>">
                 <% if (locals.errors && errors.apellido) { %>
                     <p class="text-danger"><%= errors.apellido.msg  %></p>

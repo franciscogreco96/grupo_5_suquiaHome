@@ -33,10 +33,11 @@ module.exports= (sequelize, dataTypes) => {
             type: dataTypes.BOOLEAN,
         },
        telefono: {
-            type: dataTypes.DECIMAL(10,0),
+            type: dataTypes.INTEGER(11),
         },
         id_carrito_compras: {
-            type: dataTypes.INTEGER(11),
+            allowNull: true,
+            type: dataTypes.INTEGER(11) ,
         },
 
     };

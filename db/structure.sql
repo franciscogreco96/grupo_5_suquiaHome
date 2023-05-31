@@ -66,7 +66,6 @@ CREATE TABLE `productsColors` (
 
 ALTER TABLE `users` ADD CONSTRAINT `FK_a963056b-3a6f-44a5-a152-662f4468e6e0` FOREIGN KEY (`id_carrito_compras`) REFERENCES `productCarts`(`id`)  ;
 
-
 ALTER TABLE `products` ADD CONSTRAINT `FK_fd6cdd7b-f24a-4a22-9b9d-45f47ddb53bb` FOREIGN KEY (`categoria_id`) REFERENCES `productsCategories`(`id`)  ;
 
 ALTER TABLE `products` ADD CONSTRAINT `FK_67e5908a-cf44-40f0-ad32-27fb9defaa1f` FOREIGN KEY (`color_id`) REFERENCES `productsColors`(`id`)  ;
@@ -76,7 +75,6 @@ ALTER TABLE `productCartDetails` ADD CONSTRAINT `FK_8694d6d4-e082-44b6-9b98-23b1
 ALTER TABLE `productCartDetails` ADD CONSTRAINT `FK_dc952114-4bcb-4cea-9844-37e5872650ae` FOREIGN KEY (`carrito_compras_id`) REFERENCES `productCarts`(`id`)  ;
 
 ALTER TABLE `productCarts` ADD CONSTRAINT `FK_486f01a6-5d4d-4c38-8f47-25553db9a243` FOREIGN KEY (`usuario_id`) REFERENCES `users`(`id`)  ;
-
 
 ALTER TABLE `users` ADD CONSTRAINT `FK_6dbadf0e-b2cd-4b92-a909-0ce6e7a1b37a` FOREIGN KEY (`categoria_id`) REFERENCES `usersCategories`(`id`) ;
 
