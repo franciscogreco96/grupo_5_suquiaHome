@@ -16,9 +16,9 @@
         <h1 class="nombre">Hola  <%=user.nombre%> !</h1>
 
         <div class="tarjetaPerfil">  
-            <h2>Nombre de usuario: <%=user.nombre%> </h2>
+            <h2>Nombre de usuario: <%=user.first_name%> </h2>
             <h2>Email: <%=user.email%> </h2>
-            <h2>Categoria de usuario: <%=user.categoria%></h2>
+            <h2>Categoria de usuario: <%=user.categoria_id%></h2>
             <div class="imagenPerfil">
                 <img src="/img/avatars/<%=user.imagen%>" alt="imagenPerfil">
             </div>
@@ -26,7 +26,7 @@
          <div class="botones">
          <button class="editProfile"> <a href="/edit">EDIT</a></button>
          <button class="logout"> <a href="/user/logout">LOGOUT</a></button>
-        </div>
+         <button class="logout"> <a href="/user/edit/<%=user.id%>">EDITAR</a></button>
     </main>
 
 <!-- footer -->

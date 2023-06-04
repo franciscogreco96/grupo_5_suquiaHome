@@ -13,7 +13,7 @@ CREATE TABLE `users` (
    `categoria_id` INTEGER NOT NULL,
    `imagen` VARCHAR(255),
    `telefono` INTEGER, 
-   `id_carrito_compras` INTEGER NOT NULL,
+   `id_carrito_compras` INTEGER,
    PRIMARY KEY (`id`)
 );
 

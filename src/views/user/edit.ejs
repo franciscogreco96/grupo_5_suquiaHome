@@ -12,7 +12,7 @@
 
     <main>
         <div>
-            <h2>CREA UNA CUENTA</h2>
+            <h2>EDITAR PERFIL</h2>
             <form class="form" action="/user/edit/<%=user.id%>" method="POST" enctype="multipart/form-data" >
                 <input type="text" name="nombre" placeholder="Nombre" title="Inserte su nombre" value="<%= user.first_name%>">
                 <% if (locals.errors && errors.nombre) { %>
