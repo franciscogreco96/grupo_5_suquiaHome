@@ -190,6 +190,26 @@ main img{
     color: white;
 }
 
+.editProfile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    width: 5%;
+    margin-left: 47.5%;
+}
+.editProfile a:hover{
+    zoom: 1.1;
+    color: #5a8284;
+
+}
+
+.editProfile a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
 
 
 /* FOOTER */
