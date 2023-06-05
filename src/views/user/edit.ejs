@@ -1,6 +1,6 @@
 <!-- head -->
 
-<%- include ('../partials/head', {tituloWeb:'Registro | Suquia Home',css: 'editProfile.css'}); %>
+<%- include ('../partials/head', {tituloWeb:'Edit Profile | Suquia Home',css: 'register.css'}); %>
 
 
 
@@ -14,18 +14,22 @@
         <div>
             <h2>EDITAR PERFIL</h2>
             <form class="form" action="/user/edit/<%=user.id%>" method="POST" enctype="multipart/form-data" >
+                <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" placeholder="Nombre" title="Inserte su nombre" value="<%= user.first_name%>">
                 <% if (locals.errors && errors.nombre) { %>
                     <p class="text-danger"><%= errors.nombre.msg  %></p>
                 <% } %>
+                <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" placeholder="Apellido" title="Inserte su apellido" value="<%= user.last_name%>">
                 <% if (locals.errors && errors.apellido) { %>
                     <p class="text-danger"><%= errors.apellido.msg  %></p>
                 <% } %>
+                <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Correo electrónico" title="Inserte su e-mail" value="<%= user.email %>">
                 <% if (locals.errors && errors.email) { %>
                     <p class="text-danger"><%= errors.email.msg  %></p>
                 <% } %>
+                <label for="telefono">Telefono</label>
                 <input type="tel" name="telefono" placeholder="Teléfono +549()" title="Indique su número de teléfono" value="<%= user.telefono%>">
                 <% if (locals.errors && errors.telefono) { %>
                     <p class="text-danger"><%= errors.telefono.msg  %></p>
@@ -39,15 +43,17 @@
                         </select>
                         
                 </div>  
-
+                <label for="contrasena">Contraseña</label>
                 <input type="password" name="contrasena" placeholder="Contraseña (8 a 20 caracteres)" title="Inserte lo que va a ser su próxima contraseña" minlength="8"
                     maxlength="20" >
+                    <label for="confirmarContrasena">Confirmar Contraseña</label>
                 <input type="password" name="confirmarContrasena" placeholder="Confirmar Contraseña" title="Debe ser igual a la contraseña anterior">
+                <label for="fotoPerfil">Foto de Perfil</label>
                 <input type="file" name="fotoPerfil" id="fotoPerfil" placeholder="Foto de Perfil" tittle="Añada una foto de perfil si desea">
                 <% if (locals.errors && errors.fotoPerfil) { %>
                  <p class="text-danger"><%= errors.fotoPerfil.msg%></p>
                 <% } %>    
-                <button type="submit">CREAR CUENTA</button>
+                <button type="submit">ACTUALIZAR PERFIL</button>
             </form>
         </div>
     </main>
