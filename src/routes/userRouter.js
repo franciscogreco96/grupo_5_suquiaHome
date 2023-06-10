@@ -58,7 +58,7 @@ router.post('/register', uploadFile.single("fotoPerfil"), validations, userContr
 
 /* ruta para editar usuario */
 router.get('/edit/:id', userController.edit);
-router.post('/edit/:id', userController.update);
+router.post('/edit/:id',uploadFile.single("fotoPerfil"), userController.update);
 
 
 /* Rutas para ver perfil de usuario */

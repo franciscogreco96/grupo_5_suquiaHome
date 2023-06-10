@@ -27,7 +27,7 @@ const userController={
       if (!errores.isEmpty()) {
         let errors = errores.mapped();
         console.log(errors);
-        return res.render("user/register", { errors: errors, olds: req.body });
+        return res.render("user/register", { errors: errors, oldData: req.body });
       } 
 
      db.Users.create({
@@ -53,7 +53,10 @@ const userController={
          .then((user)=>{
             res.render("user/edit", {user:user})
          })
+        
    },
+
+   /*  NO ACTUALIZA PERFIL POR EL MAIL(CREO) */
    update:(req, res)=>{
       db.Users.update({
          first_name: req.body.nombre,
@@ -61,7 +64,7 @@ const userController={
          email: req.body.email,
          password: req.body.contrasena,
          categoria_id: req.body.categoria,
-         imagen: req.file.filename,
+         imagen: req.file ? req.file.filename : "default-image.png", 
          telefono: req.body.telefono,
          /* id_carrito_compras: , */
       }), {

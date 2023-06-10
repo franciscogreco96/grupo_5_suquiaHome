@@ -68,7 +68,7 @@
                                 <button> Agregar al carrito<i class="fas fa-shopping-cart"></i></button>
                         </div>   
                         
-                        <% if (locals.isLogged) { %>
+                        <% if (locals.isLogged && userLogged.categoria_id==1){ %>
                             <div class="editar-eliminar">
                                 <a href="/product/productEdition/<%= product.id %>" class="editar-producto">EDITAR
                                     PRODUCTO</a>
@@ -80,6 +80,7 @@
                            
                                 
                                 <% } %>
+                                
                         
                     </div>
 
