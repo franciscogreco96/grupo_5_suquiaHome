@@ -72,7 +72,7 @@ const userController={
             id:req.params.id
          }
       }
-      res.redirect("/user/edit/" + req.params.id)
+      res.redirect("/user/profile/" + req.params.id)
    },
 
 
