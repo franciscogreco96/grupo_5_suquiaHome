@@ -20,6 +20,17 @@ const productApiController = {
         })
     },
 
+    detail: (req,res) =>{
+        db.Products.findByPk(req.params.id,{
+            include: [{association:"productscolors"}, { association:"productsCategories"}]
+        })
+        .then(function(product){
+            res.json({
+                data:product
+            });
+        }) 
+    }
+
 }
 
 module.exports = productApiController;
