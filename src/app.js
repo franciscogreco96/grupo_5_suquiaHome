@@ -52,7 +52,7 @@ app.use("/user", userRouter);
 
 /*  uso de enrutadores de apis */
 app.use("/api/product", productApiRouter);
-/* app.use("/api/user", userApiRouter); */
+app.use("/api/user", userApiRouter);
 
 
 /* levantando el servidor */
