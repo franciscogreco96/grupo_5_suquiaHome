@@ -12,10 +12,10 @@ const productController = {
     list:(req,res) =>{
         db.Products.findAll()
         .then(function(products){
-           console.log(products);
              return res.render("product/productList", {products:products}); 
         })
     },
+
     /* CARRITO CON SEQUELIZE */
     cart: (req, res) => {
         res.render("product/productCart")

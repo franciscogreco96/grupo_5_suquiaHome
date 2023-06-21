@@ -171,13 +171,19 @@ main img{
         justify-content: center;
         align-items: center;
 } 
+.botones{
+    display: flex;
+    justify-content: center;
+    
+}
 .logout{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: black;
     width: 5%;
-    margin-left: 47.5%;
+    margin: 1% 1%;
+    
 }
 .logout a:hover{
     zoom: 1.1;
