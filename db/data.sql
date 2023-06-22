@@ -51,7 +51,7 @@ INSERT INTO users (id,first_name,last_name,email,password,categoria_id,imagen,te
  (8,'santos','roter','rotersantos@marmolessuquia.com','$2a$10$HQkqrKRFASWK4/fBsCBhveV5jK219kr.PTrzsa0na657vqnipahnK',2,'../../img/users/fotoPerfil-1687389438356.png',2147483647,NULL),
  (9,'pablo','gre','pablogre@marmolessuquia.com','$2a$10$NkkoZ2JUuEjZt0.Q5AnRZuMmc/wt4Hn6jdT1QU4MZcw7We6tSiaQq',1,'../../img/users/fotoPerfil-1687389471940.jpg',2147483647,NULL),
  (10,'luca','mont','lucamont@marmolessuquia.com','$2a$10$Yc9mIn8HZGOGkLunhaRyQ.RmNvIs8.5TxNyLQvkIf0PhqEeecfg8C',1,'../../img/users/fotoPerfil-1687389503294.jpg',2147483647,NULL),
- (11,'franco','monta','montafranco@marmolessuquia.com','$2a$10$MJL1y4yamWTeniqEbNseJOMUMlscLXmtq2QsXmqpD9K4cRcdehVgq',2,'../../img/users/fotoPerfil-1687389539258.jpg',2147483647,NULL)
+ (11,'franco','monta','montafranco@marmolessuquia.com','$2a$10$MJL1y4yamWTeniqEbNseJOMUMlscLXmtq2QsXmqpD9K4cRcdehVgq',2,'../../img/users/fotoPerfil-1687389539258.jpg',2147483647,NULL);
 
 
 
