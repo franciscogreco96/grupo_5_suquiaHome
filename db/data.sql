@@ -35,12 +35,12 @@ INSERT INTO products (id, nombre,precio,color_id, descripcion, categoria_id, ima
  (10,"Sillas Deluxe Natuarls",900000,1, "2,40x1,20m",1, "../../img/products/COMBO SILLAS DELUXE.jpg",2,15),
  (11,"Taza + Platito",900000,1, "2,40x1,20m",1,"../../img/products/taza.jpeg",2,7),
  (12, "Mesa Neolith Calacatta + Base de Madera Petiribi Modelo 'W'",900000,1, "2,40x1,20m",1, "../../img/products/mesa neolith estatuario pulido.jpeg",2,10),
- (13,"Mesa Neolith Calacatta + Base de Madera Petiribi Modelo 'H'",75000,1, "2,40x1,20m",1, "../../img/products/mesa neolitj calacatta.jpeg",2,4)
+ (13,"Mesa Neolith Calacatta + Base de Madera Petiribi Modelo 'H'",75000,1, "2,40x1,20m",1, "../../img/products/mesa neolitj calacatta.jpeg",2,4);
 
 
 /* USUARIOS */
 
-INSERT INTO `users` (`id`,`first_name`,`last_name`,`email`,`password`,`categoria_id`,`imagen`,`telefono`,`id_carrito_compras`) VALUES 
+INSERT INTO users (id,first_name,last_name,email,password,categoria_id,imagen,telefono,id_carrito_compras) VALUES 
  (1,'francisco','greco','franciscogreco@marmolessuquia.com','$2a$10$3.FpgHBurAMqjIEY9eVbH.lSuVg0r2lXLx4TGAenIqaua7PiYgyiG',1,'../../img/users/fotoPerfil-1685918601749.png',2147483647,NULL),
  (2,'mauricio','ledesma','mauriledes@gmail.com','$2a$10$MPNE.Xmc1M7OAd6BpA6rjO2k5zdksJuYzTH4VTmOFqkpOsCbF9R.W',2,'../../img/users/fotoPerfil-1687389164511.jpg',2147483647,NULL),
  (3,'juan','guidi','juang@hotmail.com','$2a$10$k.YucTrGpgdglDIvnaLC/OfCMvfFxXNn8NY.Pihk/oGyS6TueOqDK',1,'../../img/users/fotoPerfil-1687389221559.jpg',2147483647,NULL),
