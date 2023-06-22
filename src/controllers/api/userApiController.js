@@ -20,6 +20,14 @@ list:(req,res) =>{
   })
 },
 
+detail: (req,res) =>{
+  db.Users.findByPk(req.params.id)
+  .then(function(user){
+      res.json({
+          data:user
+      });
+  }) 
+}
     
 
 }
