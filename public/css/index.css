@@ -212,7 +212,7 @@ main article:hover {
 
 
  .padding-articulos {
-     padding: 20% 0%;
+     padding: 10% 0%;
  }
 
  #refleja-tu-estilo {
@@ -260,6 +260,14 @@ main article:hover {
      flex-wrap: wrap;
      justify-content: space-evenly;
      padding: 2% 0%;
+ }
+ .flex-articulos a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+ }
+ .flex-articulos p{
+    padding: 1% 0;
  }
 
  .mostrar-todos-los-productos {

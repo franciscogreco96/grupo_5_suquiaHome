@@ -1,9 +1,11 @@
-
+let db= require("../database/models"); 
 const mainController = {
     index: (req, res) => {
-        res.render("index")
+        db.Products.findAll()
+        .then(function(products){
+             return res.render("index", {products:products}); 
+        })
     },
-    
     
 
 };

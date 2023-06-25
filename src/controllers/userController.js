@@ -61,17 +61,20 @@ const userController={
       db.Users.update({
          first_name: req.body.nombre,
          last_name: req.body.apellido,
-         email: req.body.email,
+         /* email: req.body.email, */
          password: req.body.contrasena,
          categoria_id: req.body.categoria,
          imagen: req.file ? req.file.filename : "default-image.png", 
          telefono: req.body.telefono,
          /* id_carrito_compras: , */
-      }), {
-         where:{
-            id:req.params.id
-         }
+         
+      }) ,
+      {where:{
+         id:req.params.id
+      
+   }
       }
+         
       res.redirect("/user/profile/" + req.params.id)
    },
 

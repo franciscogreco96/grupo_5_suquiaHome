@@ -45,94 +45,33 @@
         <h1 id="refleja-tu-estilo">REFLEJA TU ESTILO</h1>
         <hr id="linea-refleja-tu-estilo">
         <section class="flex-articulos" class="padding-articulos">
+            
+        <% products.forEach( product=> {
+            let precioFinal = (product.precio * ((100 - product.descuento) /100)).toFixed(0)
+            %>
             <article>
-                <img src="/img/products/MESA-NEOLITH-BETON.jpg"
-                    alt="mesa neolith beton">
-                <h2>Mesa Neolith Beton + Base Hierro</h2>
-                <p>2,40mx1,10m</p>
-                <p>$900.000</p>
-                <i class="fas fa-eye"></i>
+              <a href="/product/productDetail/<%= product.id%>">
+              <img src="<%= product.imagen  %>" alt="mesa neolith beton">
+              <h2>
+                <%= product.nombre%>
+              </h2>
+              <p>
+                <%= product.descripcion %>
+              </p>
+              <p>
+                $<%= precioFinal %>
+              </p>
+              <p>
+                <%= product.descuento %>% off !
+              </p>
+              <i class="fas fa-eye"></i>
             </article>
-            <article>
-                <img src="/img/products/MESA NEOLITH NERO.jpg"
-                    alt="mesa neolith beton">
-                <h2>Mesa Neolith Nero + Base Madera ¨Cuadros¨</h2>
-                <p>2,50mx1,120m</p>
-                <p>$975.000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/espejo.jpeg" alt="mesa neolith beton">
-                <h2>Mesa Neolith Nero + Base Madera ¨Cuadros¨</h2>
-                <p>2,50mx1,120m</p>
-                <p>$975.000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/taza.jpeg" alt="mesa neolith beton">
-                <h2>Mesa Neolith Nero + Base Madera ¨Cuadros¨</h2>
-                <p>2,50mx1,120m</p>
-                <p>$975.000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/DRESSOIRE GRANITO NEGRO BRASIL LEATHER.jpg"
-                    alt="mesa neolith beton">
-                <h2>Dressoire Granito Negro Brasil Leather + Base Madera</h2>
-                <p>1,30mx0,50m</p>
-                <p>$320.000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/DRESSOIRE MARMOL NEGRO MARQUINA.jpg"
-                    alt="mesa neolith beton">
-                <h2>Dressoire Marmol Negro Marquina + Base Hierro </h2>
-                <p>2mx0,60m</p>
-                <p>$400.000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/MESA AUXILIAR MARMOL CARRARA.jpg"
-                    alt="mesa neolith beton">
-                <h2>Mesa Auxiliar Marmol Carrara + Base Hierro Dorado </h2>
-                <p>0,70mx0,40m</p>
-                <p>$240.000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/MESA AUXILIAR MARMOL CARRARA.jpg"
-                    alt="mesa neolith beton">
-                <h2>Mesa Auxiliar Marmol Carrara + Base Hierro Dorado </h2>
-                <p>0,70mx0,40m</p>
-                <p>$240.000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/COMBO SILLAS DELUXE.JPG" alt="mesa neolith beton">
-                <h2>Sillas Deluxe</h2>
-                <p>x6 Unidades</p>
-                <p>$90,000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/SILLA MATERA BLANCA.jpg" alt="mesa neolith beton">
-                <h2>Silla Matera Blanca</h2>
-                <p>$45,000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/SILLA MATERA NEGRA.jpg" alt="mesa neolith beton">
-                <h2>Silla Matera Negra</h2>
-                <p>$45,000</p>
-                <i class="fas fa-eye"></i>
-            </article>
-            <article>
-                <img src="/img/products/SILLA MATERA NEGRA.jpg" alt="mesa neolith beton">
-                <h2>Silla Matera Negra</h2>
-                <p>$45,000</p>
-                <i class="fas fa-eye"></i>
-            </article>
+             </a>
+
+            <% }); %>
         </section>
+
+      
         <form action="/product" method="get" id="mostrar-todos-los-productos" class="mostrar-todos-los-productos">
             <button type="submit" form="mostrar-todos-los-productos">VER TODOS LOS PRODUCTOS</button>
         </form>
