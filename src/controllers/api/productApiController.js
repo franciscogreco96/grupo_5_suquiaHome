@@ -25,7 +25,7 @@ const productApiController = {
             include: [{association:"productscolors"}, { association:"productsCategories"}]
         })
         .then(function(product){
-            res.json({
+           return res.json({
                 data:product
             });
         }) 
