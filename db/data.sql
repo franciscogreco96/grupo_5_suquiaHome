@@ -15,11 +15,12 @@ INSERT INTO `userscategories` (`id`,`tipo_categoria`) VALUES (2,'Usuario');
 
 /* CATEGORIA PRODUCTOS */
 
-INSERT INTO `productscategories` (`id`,`categoria`) VALUES (1,'INTERIOR');
-INSERT INTO `productscategories` (`id`,`categoria`) VALUES (2,'EXTERIOR');
-INSERT INTO `productscategories` (`id`,`categoria`) VALUES (3,'BAZAR');
-INSERT INTO `productscategories` (`id`,`categoria`) VALUES (4,'SILLAS');
-INSERT INTO `productscategories` (`id`,`categoria`) VALUES (5,'MESAS');
+INSERT INTO `productscategories` (`id`,`categoria`) VALUES (1,'MESAS');
+INSERT INTO `productscategories` (`id`,`categoria`) VALUES (2,'SILLAS Y SILLONES');
+INSERT INTO `productscategories` (`id`,`categoria`) VALUES (3,'HOME DECOR');
+INSERT INTO `productscategories` (`id`,`categoria`) VALUES (4,'MUEBLES');
+INSERT INTO `productscategories` (`id`,`categoria`) VALUES (5,'CERAMICA');
+INSERT INTO `productscategories` (`id`,`categoria`) VALUES (6,'MARMOL');
 
 
 /* PRODUCTOS */ 

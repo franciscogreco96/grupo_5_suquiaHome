@@ -19,6 +19,18 @@ const productApiController = {
              ); 
         })
     },
+    listCategories: (req, res) => {
+        db.ProductsCategory.findAll()
+        .then(function(categories){
+             return res.json({
+                total: categories.length,
+                data: categories,
+                status: 200
+             }
+                
+             ); 
+        })
+    } ,
 
     detail: (req,res) =>{
         db.Products.findByPk(req.params.id,{

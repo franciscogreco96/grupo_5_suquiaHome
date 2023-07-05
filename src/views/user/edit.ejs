@@ -13,7 +13,7 @@
     <main>
         <div>
             <h2>EDITAR PERFIL</h2>
-            <form class="form" action="/user/edit/<%=user.id%>" method="POST" enctype="multipart/form-data" >
+            <form class="form" action="/user/edit/<%=user.id%>?_method=PUT" method="POST" enctype="multipart/form-data" >
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" placeholder="Nombre" title="Inserte su nombre" value="<%= user.first_name%>">
                 <% if (locals.errors && errors.nombre) { %>
@@ -25,7 +25,7 @@
                     <p class="text-danger"><%= errors.apellido.msg  %></p>
                 <% } %>
                 <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Correo electrónico" title="Inserte su e-mail" value="<%= user.email %>">
+                <input type="email" name="email" placeholder="Correo electrónico" title="Inserte su e-mail" value="<%= user.email %>" readonly>
                 <% if (locals.errors && errors.email) { %>
                     <p class="text-danger"><%= errors.email.msg  %></p>
                 <% } %>
