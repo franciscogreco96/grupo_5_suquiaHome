@@ -53,7 +53,12 @@
                 <% if (locals.errors && errors.fotoPerfil) { %>
                  <p class="text-danger"><%= errors.fotoPerfil.msg%></p>
                 <% } %>    
-                <button type="submit">ACTUALIZAR PERFIL</button>
+                <div class="botones">
+                    <button class="logout"type="submit">ACTUALIZAR PERFIL</button>
+                    <button class="logout"> <a href="/">VOLVER AL INICIO</a></button>
+                   </div>
+               
+
             </form>
         </div>
     </main>

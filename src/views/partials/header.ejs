@@ -31,40 +31,59 @@
     <nav class="barra-menu">
         <div class="menuHamburguesa">
             <i class="fas fa-bars"></i>
-            <% if (locals.isLogged) { %>
-            <ul>
-                <a href="/">
-                    <li>HOME</li>
-                </a>
-                <a href="/product">
-                    <li>PRODUCT LIST</li>
-                </a>
-                <a href="/product/productCreation">
-                    <li>PRODUCT CREATION</li>
-                </a>
-                <a href="/product/productCart">
-                    <li>PRODUCT CART</li>
-                </a>
-                
-            </ul>
-            <% }  else {%> 
-                <ul>
-                    <a href="/">
-                    <li>HOME</li>
-                    </a>
-                    <a href="/product">
-                    <li>PRODUCT LIST</li>
-                    </a>
-                     <a href="/product/productCart">
-                    <li>PRODUCT CART</li>
-                    </a>
-                    <a href="/user/register">
-                    <li>REGISTER</li>
-                    </a>
-                    <a href="/user/login">
-                    <li>LOGIN</li>
-                    </a>
-                </ul>
+           
+
+
+                <% if (locals.isLogged && userLogged.categoria_id==1) { %>
+                    <ul>
+                        <a href="/">
+                            <li>HOME</li>
+                        </a>
+                        <a href="/product">
+                            <li>PRODUCT LIST</li>
+                        </a>
+                        <a href="/product/productCreation">
+                            <li>PRODUCT CREATION</li>
+                        </a>
+                        <a href="/product/productCart">
+                            <li>PRODUCT CART</li>
+                        </a>
+                        
+                    </ul>
+                <% } else if (locals.isLogged) { %>
+                    <ul>
+                        <a href="/">
+                            <li>HOME</li>
+                        </a>
+                        <a href="/product">
+                            <li>PRODUCT LIST</li>
+                        </a>
+                        <a href="/product/productCart">
+                            <li>PRODUCT CART</li>
+                        </a>
+                        <a href="/user/profile">
+                            <li>PROFILE</li>
+                        </a>
+                        
+                    </ul>
+                <% } else { %>
+                    <ul>
+                        <a href="/">
+                        <li>HOME</li>
+                        </a>
+                        <a href="/product">
+                        <li>PRODUCT LIST</li>
+                        </a>
+                         <a href="/product/productCart">
+                        <li>PRODUCT CART</li>
+                        </a>
+                        <a href="/user/register">
+                        <li>REGISTER</li>
+                        </a>
+                        <a href="/user/login">
+                        <li>LOGIN</li>
+                        </a>
+                    </ul>
                 <% } %>
              
           

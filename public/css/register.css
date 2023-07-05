@@ -151,7 +151,7 @@ main h2{
 .form button{
     background-color: black;
     color: white;
-    width: 30%;
+    width: 50%;
     cursor: pointer;
     transition: all 0.8s;
 }
@@ -187,7 +187,31 @@ main h2{
 }
 
 
+.botones{
+    display: flex;
+    justify-content: center;
+    
+}
+.logout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    width: 5%;
+    margin: 1% 1%;
+    
+}
+.logout a:hover{
+    zoom: 1.1;
+    color: #5a8284;
 
+}
+
+.logout a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
 /* FOOTER */
 
 footer button {
